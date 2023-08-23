@@ -5,7 +5,7 @@
 #include "../database_singleton.h"
 #include "../memory/memory.h"
 #include "../parse.h"
-//#include "../tree/tree_type.h"
+#include "../tree/tree_type.h"
 #include <string>
 #include <string_view>
 
@@ -18,7 +18,7 @@ private:
 	allocator_type _pool_allocator_type;
 	unsigned int _pool_allocator_size;
 	memory::allocate_mode _pool_allocator_allocation_mode;
-	//tree_type _tree_type;
+	tree_type _tree_type;
 
 public:
 	bool can_execute(std::string const& request) noexcept final
@@ -35,7 +35,7 @@ public:
 
 			auto result_parsed_strings = validation(request, ' ');
 
-			if (result_parsed_strings.size() == 5)
+			if (result_parsed_strings.size() == 6)
 			{
 
 				_pool_name = result_parsed_strings[1];
@@ -90,7 +90,7 @@ public:
 					return false;
 				}
 
-				/*if (result_parsed_strings[5] == "binary_search_tree")
+				if (result_parsed_strings[5] == "binary_search_tree")
 				{
 					_tree_type = tree_type::BINARY_SEARCH_TREE;
 				}
@@ -108,7 +108,7 @@ public:
 				else
 				{
 					return false;
-				}*/
+				}
 
 				return true;
 				// _pool_name = std::move(result_parsed_strings[1]);
@@ -149,7 +149,7 @@ public:
 	void execute(std::string const& request) noexcept final
 	{
 		logger_singleton::get_instance()->get_logger()->log("command_add_pool::execute(std::string const &request) called", logger::severity::trace);
-		database_singleton::get_instance()->add_pool(_pool_name, _pool_allocator_type, _pool_allocator_size, _pool_allocator_allocation_mode);
+		database_singleton::get_instance()->add_pool(_pool_name, _pool_allocator_type, _pool_allocator_size, _pool_allocator_allocation_mode, _tree_type);
 	}
 };
 #endif // FUNDAMENTAL_ALGO_COMMAND_ADD_POOL_H

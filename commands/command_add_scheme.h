@@ -5,7 +5,7 @@
 #include "command.h"
 #include "../logger_singleton.h"
 #include "../database_singleton.h"
-//#include "../tree/tree_type.h"
+#include "../tree/tree_type.h"
 
 class command_add_scheme final : public command<std::string>
 {
@@ -29,25 +29,25 @@ public:
 				_pool_name = std::move(result_parsed_strings[1]);
 				_scheme_name = std::move(result_parsed_strings[2]);
 
-				//if (result_parsed_strings[5] == "binary_search_tree")
-				//{
-				//	_tree_type = tree_type::BINARY_SEARCH_TREE;
-				//}
-				//else if (result_parsed_strings[5] == "red_black_tree")
-				//{
-				//	_tree_type = tree_type::RED_BLACK_TREE;
-				//}
-				//else if (result_parsed_strings[5] == "avl_tree")
-				//{
-				//	_tree_type = tree_type::AVL_TREE;
-				//}
-				//else if (result_parsed_strings[5] == "splay_tree") {
-				//	_tree_type = tree_type::SPALY_TREE;
-				//}
-				//else
-				//{
-				//	return false;
-				//}
+				/*if (result_parsed_strings[5] == "binary_search_tree")
+				{
+					_tree_type = tree_type::BINARY_SEARCH_TREE;
+				}
+				else if (result_parsed_strings[5] == "red_black_tree")
+				{
+					_tree_type = tree_type::RED_BLACK_TREE;
+				}
+				else if (result_parsed_strings[5] == "avl_tree")
+				{
+					_tree_type = tree_type::AVL_TREE;
+				}
+				else if (result_parsed_strings[5] == "splay_tree") {
+					_tree_type = tree_type::SPALY_TREE;
+				}
+				else
+				{
+					return false;
+				}*/
 
 				return true;
 			}

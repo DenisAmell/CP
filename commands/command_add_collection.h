@@ -4,7 +4,7 @@
 #include "command.h"
 #include "../database_singleton.h"
 #include "../logger_singleton.h"
-//#include "../tree/tree_type.h"
+#include "../tree/tree_type.h"
 
 class command_add_collection final : public command<std::string>
 {

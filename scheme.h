@@ -3,9 +3,9 @@
 
 #include <iostream>
 
-//#include "tree/tree_type.h"
-//#include "tree/avl_tree.h"
-//#include "tree/binary_search_tree.h"
+#include "tree/tree_type.h"
+#include "tree/avl_tree.h"
+#include "tree/binary_search_tree.h"
 //#include "tree/splay_tree.h"
 #include "tree/red_black_tree.h"
 #include "comparers.h"
@@ -23,22 +23,24 @@ private:
 
 
 public:
-	scheme() : _scheme(new red_black_tree<std::string, collection, stdstring_comparer>())
-	{/*
-		switch (tree_type) {
-		case tree_type::BINARY_SEARCH_TREE:
-			_scheme = new binary_search_tree<std::string, collection, stdstring_comparer>();
-			break;
-		case tree_type::RED_BLACK_TREE:
-			_scheme = new red_black_tree<std::string, collection, stdstring_comparer>();
-			break;
-		case tree_type::AVL_TREE:
-			_scheme = new avl_tree<std::string, collection, stdstring_comparer>();
-			break;
-		case tree_type::SPALY_TREE:
-			_scheme = new splay_tree<std::string, collection, stdstring_comparer>();
-			break;
-		}*/
+	scheme() :
+		_scheme(new red_black_tree<std::string, collection, stdstring_comparer>())
+	{
+		//switch (tree_type) {
+		//case tree_type::BINARY_SEARCH_TREE:
+		//	_scheme = new binary_search_tree<std::string, collection, stdstring_comparer>();
+		//	break;
+		//case tree_type::RED_BLACK_TREE:
+		//	_scheme = new red_black_tree<std::string, collection, stdstring_comparer>();
+
+		//	break;
+		//case tree_type::AVL_TREE:
+		//	_scheme = new avl_tree<std::string, collection, stdstring_comparer>();
+		//	break;
+		//	/*case tree_type::SPALY_TREE:
+		//		_scheme = new splay_tree<std::string, collection, stdstring_comparer>();
+		//		break;*/
+		//}
 	}
 
 	~scheme()
@@ -71,20 +73,21 @@ public:
 		_scheme(new red_black_tree<std::string, collection, stdstring_comparer>(*reinterpret_cast<red_black_tree<std::string, collection, stdstring_comparer>*>(other._scheme)))
 
 	{
-		/*switch (_tree_type) {
-		case tree_type::BINARY_SEARCH_TREE:
-			_scheme = new binary_search_tree<std::string, collection, stdstring_comparer>(*reinterpret_cast<binary_search_tree<std::string, collection, stdstring_comparer>*>(other._scheme));
-			break;
-		case tree_type::RED_BLACK_TREE:
-			_scheme = new red_black_tree<std::string, collection, stdstring_comparer>(*reinterpret_cast<red_black_tree<std::string, collection, stdstring_comparer>*>(other._scheme));
-			break;
-		case tree_type::AVL_TREE:
-			_scheme = new avl_tree<std::string, collection, stdstring_comparer>(*reinterpret_cast<avl_tree<std::string, collection, stdstring_comparer>*>(other._scheme));
-			break;
-		case tree_type::SPALY_TREE:
-			_scheme = new splay_tree<std::string, collection, stdstring_comparer>(*reinterpret_cast<splay_tree<std::string, collection, stdstring_comparer>*>(other._scheme));
-			break;
-		}*/
+		//switch (_tree_type) {
+		//case tree_type::BINARY_SEARCH_TREE:
+		//	_scheme = new binary_search_tree<std::string, collection, stdstring_comparer>(*reinterpret_cast<binary_search_tree<std::string, collection, stdstring_comparer>*>(other._scheme));
+		//	break;
+		//case tree_type::RED_BLACK_TREE:
+		//	_scheme = new red_black_tree<std::string, collection, stdstring_comparer>(*reinterpret_cast<red_black_tree<std::string, collection, stdstring_comparer>*>(other._scheme));
+
+		//	break;
+		//case tree_type::AVL_TREE:
+		//	_scheme = new avl_tree<std::string, collection, stdstring_comparer>(*reinterpret_cast<avl_tree<std::string, collection, stdstring_comparer>*>(other._scheme));
+		//	break;
+		//	/*case tree_type::SPALY_TREE:
+		//		_scheme = new splay_tree<std::string, collection, stdstring_comparer>(*reinterpret_cast<splay_tree<std::string, collection, stdstring_comparer>*>(other._scheme));
+		//		break;*/
+		//}
 	}
 
 	scheme& operator=(scheme const& other)
@@ -99,20 +102,22 @@ public:
 		this->_scheme = new red_black_tree<std::string, collection, stdstring_comparer>(*reinterpret_cast<red_black_tree<std::string, collection, stdstring_comparer>*>(other._scheme));
 
 
-		/*	switch (_tree_type) {
-			case tree_type::BINARY_SEARCH_TREE:
-				this->_scheme = new binary_search_tree<std::string, collection, stdstring_comparer>(*reinterpret_cast<binary_search_tree<std::string, collection, stdstring_comparer>*>(other._scheme));
-				break;
-			case tree_type::RED_BLACK_TREE:
-				this->_scheme = new red_black_tree<std::string, collection, stdstring_comparer>(*reinterpret_cast<red_black_tree<std::string, collection, stdstring_comparer>*>(other._scheme));
-				break;
-			case tree_type::AVL_TREE:
-				this->_scheme = new avl_tree<std::string, collection, stdstring_comparer>(*reinterpret_cast<avl_tree<std::string, collection, stdstring_comparer>*>(other._scheme));
-				break;
-			case tree_type::SPALY_TREE:
-				this->_scheme = new splay_tree<std::string, collection, stdstring_comparer>(*reinterpret_cast<splay_tree<std::string, collection, stdstring_comparer>*>(other._scheme));
-				break;
-			}*/
+		//switch (_tree_type) {
+		//case tree_type::BINARY_SEARCH_TREE:
+		//	this->_scheme = new binary_search_tree<std::string, collection, stdstring_comparer>(*reinterpret_cast<binary_search_tree<std::string, collection, stdstring_comparer>*>(other._scheme));
+		//	break;
+		//case tree_type::RED_BLACK_TREE:
+		//	this->_scheme = new red_black_tree<std::string, collection, stdstring_comparer>(*reinterpret_cast<red_black_tree<std::string, collection, stdstring_comparer>*>(other._scheme));
+		//	break;
+		//case tree_type::AVL_TREE:
+		//	this->_scheme = new avl_tree<std::string, collection, stdstring_comparer>(*reinterpret_cast<avl_tree<std::string, collection, stdstring_comparer>*>(other._scheme));
+		//	break;
+		//	/*	case tree_type::SPALY_TREE:
+		//			this->_scheme = new splay_tree<std::string, collection, stdstring_comparer>(*reinterpret_cast<splay_tree<std::string, collection, stdstring_comparer>*>(other._scheme));
+		//			break*/;
+		//}
+		//this->_tree_type = other._tree_type;
+
 
 		return *this;
 	}
@@ -121,6 +126,8 @@ public:
 	{
 		this->_scheme = other._scheme;
 		other._scheme = nullptr;
+		//this->_tree_type = other._tree_type;
+		//other._tree_type = tree_type::RED_BLACK_TREE;
 	}
 
 	scheme& operator=(scheme&& other) noexcept
@@ -136,6 +143,10 @@ public:
 		this->_scheme = other._scheme;
 
 		other._scheme = nullptr;
+
+		//this->_tree_type = other._tree_type;
+		//other._tree_type = tree_type::RED_BLACK_TREE;
+
 
 		return *this;
 	}

@@ -6,12 +6,12 @@
 #include "logger/logger.h"
 #include "comparers.h"
 #include "allocator_type.h"
-//#include "tree_type.h"
+#include "tree/tree_type.h"
 #include "student_definition.h"
 #include "tree/associative_container.h"
-//#include "tree/avl_tree.h"
+#include "tree/avl_tree.h"
 #include "tree/binary_search_tree.h"
-//#include "tree/splay_tree.h"
+#include "tree/splay_tree.h"
 #include "tree/red_black_tree.h"
 #include "allocators/boundary_tags_allocator.h"
 #include "allocators/memory_buddy_system.h"
@@ -110,7 +110,8 @@ public:
 		std::string const& pool_name,
 		allocator_type pool_allocator_type,
 		unsigned int pool_allocator_size,
-		memory::allocate_mode pool_allocator_allocation_mode)
+		memory::allocate_mode pool_allocator_allocation_mode,
+		tree_type tree_type)
 	{
 
 		try {
@@ -132,7 +133,7 @@ public:
 			}
 
 
-			_database_entrypoint->insert(pool_name, std::move(pool(allocator)));
+			_database_entrypoint->insert(pool_name, std::move(pool(allocator, tree_type)));
 
 			std::cout << "[ADD_POOL] Pool with name:" << pool_name << " added to data base" << std::endl << std::endl;
 		}

@@ -2,9 +2,9 @@
 #define POOL_H
 
 #include "scheme.h"
-//#include "tree/tree_type.h"
-// #include "tree/avl_tree.h"
-//#include "tree/binary_search_tree.h"
+#include "tree/tree_type.h"
+#include "tree/avl_tree.h"
+#include "tree/binary_search_tree.h"
 //#include "tree/splay_tree.h"
 #include "tree/red_black_tree.h"
 #include "tree/associative_container.h"
@@ -16,12 +16,12 @@ class pool
 private:
 	memory* _allocator;
 	associative_container<std::string, scheme>* _pool;
-	// tree_type _tree_type;
+	tree_type _tree_type;
 
 public:
-	pool(memory* allocator = nullptr) : _pool(new red_black_tree<std::string, scheme, stdstring_comparer>()), _allocator(allocator)
+	pool(memory* allocator = nullptr, tree_type tree_type = tree_type::RED_BLACK_TREE) : _allocator(allocator), _tree_type(tree_type)
 	{
-		/*switch (tree_type) {
+		switch (tree_type) {
 		case tree_type::BINARY_SEARCH_TREE:
 			_pool = new binary_search_tree<std::string, scheme, stdstring_comparer>();
 			break;
@@ -31,10 +31,10 @@ public:
 		case tree_type::AVL_TREE:
 			_pool = new avl_tree<std::string, scheme, stdstring_comparer>();
 			break;
-		case tree_type::SPALY_TREE:
-			_pool = new splay_tree<std::string, scheme, stdstring_comparer>();
-			break;
-		}*/
+			/*case tree_type::SPALY_TREE:
+				_pool = new splay_tree<std::string, scheme, stdstring_comparer>();
+				break*/;
+		}
 	}
 
 	~pool()
@@ -69,33 +69,33 @@ public:
 	}
 
 public:
-	pool(const pool& other)
-
-		: _pool(new red_black_tree<std::string, scheme, stdstring_comparer>(*reinterpret_cast<red_black_tree<std::string, scheme, stdstring_comparer>*>(other._pool))), _allocator(other._allocator)
+	pool(const pool& other) : _allocator(other._allocator), _tree_type(other._tree_type)
 	{
-		/*	switch (_tree_type) {
-			case tree_type::BINARY_SEARCH_TREE:
-				_pool = new binary_search_tree<std::string, scheme, stdstring_comparer>(*reinterpret_cast<binary_search_tree<std::string, scheme, stdstring_comparer>*>(other._pool));
-				break;
-			case tree_type::RED_BLACK_TREE:
-				_pool = new red_black_tree<std::string, scheme, stdstring_comparer>(*reinterpret_cast<red_black_tree<std::string, scheme, stdstring_comparer>*>(other._pool));
-				break;
-			case tree_type::AVL_TREE:
-				_pool = new avl_tree<std::string, scheme, stdstring_comparer>(*reinterpret_cast<avl_tree<std::string, scheme, stdstring_comparer>*>(other._pool));
-				break;
-			case tree_type::SPALY_TREE:
-				_pool = new splay_tree<std::string, scheme, stdstring_comparer>(*reinterpret_cast<splay_tree<std::string, scheme, stdstring_comparer>*>(other._pool));
-				break;
-			}*/
+		switch (_tree_type) {
+		case tree_type::BINARY_SEARCH_TREE:
+			_pool = new binary_search_tree<std::string, scheme, stdstring_comparer>(*reinterpret_cast<binary_search_tree<std::string, scheme, stdstring_comparer>*>(other._pool));
+			break;
+		case tree_type::RED_BLACK_TREE:
+			_pool = new red_black_tree<std::string, scheme, stdstring_comparer>(*reinterpret_cast<red_black_tree<std::string, scheme, stdstring_comparer>*>(other._pool));
+			break;
+		case tree_type::AVL_TREE:
+			_pool = new avl_tree<std::string, scheme, stdstring_comparer>(*reinterpret_cast<avl_tree<std::string, scheme, stdstring_comparer>*>(other._pool));
+			break;
+			//case tree_type::SPALY_TREE:
+			//	_pool = new splay_tree<std::string, scheme, stdstring_comparer>(*reinterpret_cast<splay_tree<std::string, scheme, stdstring_comparer>*>(other._pool));
+			//	break;
+		}
 	}
 
 	pool(pool&& other) noexcept
 	{
 		this->_pool = other._pool;
 		this->_allocator = other._allocator;
+		this->_tree_type = other._tree_type;
 
 		other._pool = nullptr;
 		other._allocator = nullptr;
+		other._tree_type = tree_type::RED_BLACK_TREE;
 	}
 
 	pool& operator=(const pool& other)
@@ -113,23 +113,25 @@ public:
 			this->_allocator = other._allocator;
 		}
 
-		this->_pool = new red_black_tree<std::string, scheme, stdstring_comparer>(*reinterpret_cast<red_black_tree<std::string, scheme, stdstring_comparer>*>(other._pool));
+		//this->_pool = new red_black_tree<std::string, scheme, stdstring_comparer>(*reinterpret_cast<red_black_tree<std::string, scheme, stdstring_comparer>*>(other._pool));
 
-
-		/*	switch (_tree_type) {
-			case tree_type::BINARY_SEARCH_TREE:
-				this->_pool = new binary_search_tree<std::string, scheme, stdstring_comparer>(*reinterpret_cast<binary_search_tree<std::string, scheme, stdstring_comparer>*>(other._pool));
-				break;
-			case tree_type::RED_BLACK_TREE:
-				this->_pool = new red_black_tree<std::string, scheme, stdstring_comparer>(*reinterpret_cast<red_black_tree<std::string, scheme, stdstring_comparer>*>(other._pool));
-				break;
-			case tree_type::AVL_TREE:
-				this->_pool = new avl_tree<std::string, scheme, stdstring_comparer>(*reinterpret_cast<avl_tree<std::string, scheme, stdstring_comparer>*>(other._pool));
-				break;
-			case tree_type::SPALY_TREE:
+		switch (_tree_type) {
+		case tree_type::BINARY_SEARCH_TREE:
+			this->_pool = new binary_search_tree<std::string, scheme, stdstring_comparer>(*reinterpret_cast<binary_search_tree<std::string, scheme, stdstring_comparer>*>(other._pool));
+			break;
+		case tree_type::RED_BLACK_TREE:
+			this->_pool = new red_black_tree<std::string, scheme, stdstring_comparer>(*reinterpret_cast<red_black_tree<std::string, scheme, stdstring_comparer>*>(other._pool));
+			break;
+		case tree_type::AVL_TREE:
+			this->_pool = new avl_tree<std::string, scheme, stdstring_comparer>(*reinterpret_cast<avl_tree<std::string, scheme, stdstring_comparer>*>(other._pool));
+			break;
+			/*case tree_type::SPALY_TREE:
 				this->_pool = new splay_tree<std::string, scheme, stdstring_comparer>(*reinterpret_cast<splay_tree<std::string, scheme, stdstring_comparer>*>(other._pool));
-				break;
-			}*/
+				break;*/
+		}
+
+		this->_tree_type = other._tree_type;
+
 
 		return *this;
 	}
@@ -146,9 +148,11 @@ public:
 
 		this->_pool = other._pool;
 		this->_allocator = other._allocator;
+		this->_tree_type = other._tree_type;
 
 		other._pool = nullptr;
 		other._allocator = nullptr;
+		other._tree_type = tree_type::RED_BLACK_TREE;
 
 		return *this;
 	}
