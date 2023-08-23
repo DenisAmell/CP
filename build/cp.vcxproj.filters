@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\logger\logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\logger\logger_holder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\logger\logger_builder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\logger\logger_builder_concrete.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\logger\logger_concrete.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\memory\memory_holder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\memory\memory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\allocators\list_memory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\allocators\boundary_tags_allocator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\allocators\memory_buddy_system.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\logger\logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\logger\logger_holder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\logger\logger_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\logger\logger_builder_concrete.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\logger\logger_concrete.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\memory\memory_holder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\memory\memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\not_implemented\not_implemented.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\allocators\list_memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\allocators\boundary_tags_allocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\allocators\memory_buddy_system.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\tree\associative_container.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\tree\binary_search_tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\tree\red_black_tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\tree\avl_tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\tree\splay_tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\tree\tree_type.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\database_singleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\commands\command_add_collection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\commands\command_add_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\commands\command_add_pool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\commands\command_add_scheme.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\commands\command_get_data_between.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\commands\command_get_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\commands\command_remove_collection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\commands\command_remove_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\commands\command_remove_pool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\commands\command_remove_scheme.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\commands\command_update_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\exception\doesnt_exist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\commands\command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\abstract_handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\allocator_type.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\comparers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\logger_singleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\parse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\request_handler_with_command_chain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\request_handler_with_command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\student_definition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\pool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\scheme.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\collection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Denis\OneDrive\Рабочий стол\CP\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{DE3E3239-A63D-305A-88AD-023063A91DE0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{03D59003-7A8C-3DAE-9443-3FD8AD31ABE1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
