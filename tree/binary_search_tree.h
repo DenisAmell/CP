@@ -32,6 +32,10 @@ protected:
 
 		node* right_subtree_address;
 
+		explicit node(tkey const& target_key, tvalue&& target_value) : key(target_key), value(std::move(target_value)) {
+
+		}
+
 		virtual ~node() = default;
 	};
 
@@ -162,7 +166,8 @@ protected:
 
 		virtual size_t get_node_size() const;
 
-		virtual void call_constructor_node(node* mem) const;
+		virtual void call_constructor_node(node* mem, tkey const& key,
+			tvalue&& value) const;
 
 		virtual void initialize_node_additional_data(node* mem) const;
 
@@ -902,9 +907,11 @@ template <
 	typename tvalue,
 	typename tkey_comparer>
 void binary_search_tree<tkey, tvalue, tkey_comparer>::insertion_template_method::call_constructor_node(
-	typename binary_search_tree<tkey, tvalue, tkey_comparer>::node* mem) const
+	typename binary_search_tree<tkey, tvalue, tkey_comparer>::node* mem,
+	tkey const& key,
+	tvalue&& value) const
 {
-	new (mem) typename binary_search_tree<tkey, tvalue, tkey_comparer>::node;
+	new (mem) typename binary_search_tree<tkey, tvalue, tkey_comparer>::node(key, std::move(value));
 }
 
 template <
@@ -916,9 +923,9 @@ void binary_search_tree<tkey, tvalue, tkey_comparer>::insertion_template_method:
 	tkey const& key,
 	tvalue&& value) const
 {
-	call_constructor_node(mem);
-	mem->key = key;
-	mem->value = std::move(value);
+	call_constructor_node(mem, key, std::move(value));
+	//mem->key = key;
+	//mem->value = std::move(value);
 	mem->left_subtree_address = mem->right_subtree_address = nullptr;
 	initialize_node_additional_data(mem);
 }

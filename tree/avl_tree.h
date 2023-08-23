@@ -11,9 +11,12 @@ class avl_tree final : public binary_search_tree<tkey, tvalue, tkey_comparer>
 {
 
 protected:
-	struct avl_node : binary_search_tree<tkey, tvalue, tkey_comparer>::node
+	struct avl_node final : binary_search_tree<tkey, tvalue, tkey_comparer>::node
 	{
 		size_t height = 0;
+		avl_node(tkey const& target_key, tvalue&& target_value) : binary_search_tree<tkey, tvalue, tkey_comparer>::node(target_key, std::move(target_value)) {
+
+		}
 	};
 
 protected:
@@ -31,8 +34,9 @@ protected:
 	private:
 		size_t get_node_size() const override;
 
-		void call_constructor_node(
-			typename binary_search_tree<tkey, tvalue, tkey_comparer>::node* mem) const override;
+		void call_constructor_node(typename binary_search_tree<tkey, tvalue, tkey_comparer>::node* mem,
+			tkey const& key,
+			tvalue&& value) const override;
 
 		void initialize_node_additional_data(
 			typename binary_search_tree<tkey, tvalue, tkey_comparer>::node* mem) const override;
@@ -135,10 +139,11 @@ template <
 	typename tkey,
 	typename tvalue,
 	typename tkey_comparer>
-void avl_tree<tkey, tvalue, tkey_comparer>::avl_insertion_template_method::call_constructor_node(
-	typename binary_search_tree<tkey, tvalue, tkey_comparer>::node* mem) const
+void avl_tree<tkey, tvalue, tkey_comparer>::avl_insertion_template_method::call_constructor_node(typename binary_search_tree<tkey, tvalue, tkey_comparer>::node* mem,
+	tkey const& key,
+	tvalue&& value) const
 {
-	new (mem) typename avl_tree<tkey, tvalue, tkey_comparer>::avl_node;
+	new (mem) typename avl_tree<tkey, tvalue, tkey_comparer>::avl_node(key, std::move(value));
 }
 
 template <

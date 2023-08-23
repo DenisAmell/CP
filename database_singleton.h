@@ -142,13 +142,13 @@ public:
 		}
 	}
 
-	void add_scheme(std::string const& pool_name, std::string const& scheme_name)
+	void add_scheme(std::string const& pool_name, std::string const& scheme_name, tree_type tree_type)
 	{
 		try {
 
 			if (_database_entrypoint->find_to_string(pool_name))
 			{
-				reinterpret_cast<pool&>(_database_entrypoint->find(pool_name)).add(scheme_name, std::move(scheme()));
+				reinterpret_cast<pool&>(_database_entrypoint->find(pool_name)).add(scheme_name, std::move(scheme(tree_type)));
 				std::cout << "[ADD_SCHEME] Scheme with name:" << scheme_name << " added to " << pool_name << std::endl << std::endl;
 			}
 			else
@@ -161,7 +161,7 @@ public:
 		}
 	}
 
-	void add_collection(std::string const& pool_name, std::string const& scheme_name, std::string const& collection_name)
+	void add_collection(std::string const& pool_name, std::string const& scheme_name, std::string const& collection_name, tree_type tree_type)
 	{
 		try {
 			if (_database_entrypoint->find_to_string(pool_name))
@@ -172,7 +172,7 @@ public:
 
 				if (current_pool.find_to_string(scheme_name))
 				{
-					reinterpret_cast<scheme&>(current_pool.find(scheme_name)).add(collection_name, std::move(collection(allocator)));
+					reinterpret_cast<scheme&>(current_pool.find(scheme_name)).add(collection_name, std::move(collection(allocator, tree_type)));
 					std::cout << "[ADD_COLLECTION] Collection with name:" << collection_name << " added to " << scheme_name << " " << pool_name << std::endl << std::endl;
 				}
 				else

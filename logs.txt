@@ -1,14 +1,10 @@
-[trace][23.08.2023 21:10:46] command_add_pool::can_execute(std::string const &request) called
-[trace][23.08.2023 21:10:46] command_add_scheme::can_execute(std::string const &request) called
-[trace][23.08.2023 21:10:46] command_add_collection::can_execute(std::string const &request) called
-[trace][23.08.2023 21:10:46] command_add_data::can_execute(std::string const &request) called
-[trace][23.08.2023 21:10:46] command_get_data::can_execute(std::string const &request) called
-[trace][23.08.2023 21:10:46] command_remove_pool::can_execute(std::string const &request) called
-[trace][23.08.2023 21:10:46] command_remove_scheme::can_execute(std::string const &request) called
-[trace][23.08.2023 21:10:46] command_remove_collection::can_execute(std::string const &request) called
-[trace][23.08.2023 21:10:46] command_remove_data::can_execute(std::string const &request) called
-[trace][23.08.2023 21:10:46] command_update_data::can_execute(std::string const &request) called
-[trace][23.08.2023 21:10:46] command_get_data_between::can_execute(std::string const &request) called
-[trace][23.08.2023 21:10:48] command_add_pool::can_execute(std::string const &request) called
-[trace][23.08.2023 21:11:16] command_add_pool::execute(std::string const &request) called
-[trace][23.08.2023 21:11:16] Boundary tags system allocator initialized!
+[trace][23.08.2023 22:52:39] command_add_pool::can_execute(std::string const &request) called
+[trace][23.08.2023 22:52:39] command_add_pool::execute(std::string const &request) called
+[trace][23.08.2023 22:52:39] Boundary tags system allocator initialized!
+[trace][23.08.2023 22:52:39] command_add_pool::can_execute(std::string const &request) called
+[trace][23.08.2023 22:52:39] command_add_scheme::can_execute(std::string const &request) called
+[trace][23.08.2023 22:52:39] command_add_scheme::execute(std::string const &request) called
+[trace][23.08.2023 22:52:39] command_add_pool::can_execute(std::string const &request) called
+[trace][23.08.2023 22:52:39] command_add_scheme::can_execute(std::string const &request) called
+[trace][23.08.2023 22:52:39] command_add_collection::can_execute(std::string const &request) called
+[trace][23.08.2023 22:52:39] command_add_collection::execute(std::string const &request) called

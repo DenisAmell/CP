@@ -5,8 +5,8 @@
 #include <tuple>
 #include <iostream>
 #include "memory/memory_holder.h"
-//#include "tree/tree_type.h"
-//#include "tree/avl_tree.h"
+#include "tree/tree_type.h"
+#include "tree/avl_tree.h"
 #include "tree/binary_search_tree.h"
 //#include "tree/splay_tree.h"
 #include "tree/red_black_tree.h"
@@ -18,26 +18,25 @@ class collection final : protected memory_holder
 private:
 	memory* _allocator;
 	associative_container<key*, values*>* _data;
-	//tree_type _tree_type;
+	tree_type _tree_type;
 
 public:
-	collection(memory* allocator = nullptr) :
-		_data(new red_black_tree<key*, values*, key_comparer>()), _allocator(allocator)
+	collection(memory* allocator = nullptr, tree_type tree_type = tree_type::RED_BLACK_TREE) : _allocator(allocator), _tree_type(tree_type)
 	{
-		//switch (tree_type) {
-		//case tree_type::BINARY_SEARCH_TREE:
-		//	_data = new binary_search_tree<key*, values*, key_comparer>();
-		//	break;
-		//case tree_type::RED_BLACK_TREE:
-		//	_data = new red_black_tree<key*, values*, key_comparer>();
-		//	break;
-		//case tree_type::AVL_TREE:
-		//	_data = new avl_tree<key*, values*, key_comparer>();
-		//	break;
-		//	/*case tree_type::SPALY_TREE:
-		//		_data = new splay_tree<key*, values*, key_comparer>();
-		//		break;*/
-		//}
+		switch (tree_type) {
+		case tree_type::BINARY_SEARCH_TREE:
+			_data = new binary_search_tree<key*, values*, key_comparer>();
+			break;
+		case tree_type::RED_BLACK_TREE:
+			_data = new red_black_tree<key*, values*, key_comparer>();
+			break;
+		case tree_type::AVL_TREE:
+			_data = new avl_tree<key*, values*, key_comparer>();
+			break;
+			/*case tree_type::SPALY_TREE:
+				_data = new splay_tree<key*, values*, key_comparer>();
+				break;*/
+		}
 	}
 
 	~collection()
@@ -132,24 +131,23 @@ public:
 	}
 
 public:
-	collection(collection const& other) :
-		_data(new red_black_tree<key*, values*, key_comparer>(*reinterpret_cast<red_black_tree<key*, values*, key_comparer>*>(other._data))), _allocator(other._allocator)
+	collection(collection const& other) : _allocator(other._allocator), _tree_type(other._tree_type)
 	{
 
-		//switch (_tree_type) {
-		//case tree_type::BINARY_SEARCH_TREE:
-		//	_data = new binary_search_tree<key*, values*, key_comparer>(*reinterpret_cast<binary_search_tree<key*, values*, key_comparer>*>(other._data));
-		//	break;
-		//case tree_type::RED_BLACK_TREE:
-		//	_data = new red_black_tree<key*, values*, key_comparer>(*reinterpret_cast<red_black_tree<key*, values*, key_comparer>*>(other._data));
-		//	break;
-		//case tree_type::AVL_TREE:
-		//	_data = new avl_tree<key*, values*, key_comparer>(*reinterpret_cast<avl_tree<key*, values*, key_comparer>*>(other._data));
-		//	break;
-		//	/*case tree_type::SPALY_TREE:
-		//		_data = new splay_tree<key*, values*, key_comparer>(*reinterpret_cast<splay_tree<key*, values*, key_comparer>*>(other._data));
-		//		break;*/
-		//}
+		switch (_tree_type) {
+		case tree_type::BINARY_SEARCH_TREE:
+			_data = new binary_search_tree<key*, values*, key_comparer>(*reinterpret_cast<binary_search_tree<key*, values*, key_comparer>*>(other._data));
+			break;
+		case tree_type::RED_BLACK_TREE:
+			_data = new red_black_tree<key*, values*, key_comparer>(*reinterpret_cast<red_black_tree<key*, values*, key_comparer>*>(other._data));
+			break;
+		case tree_type::AVL_TREE:
+			_data = new avl_tree<key*, values*, key_comparer>(*reinterpret_cast<avl_tree<key*, values*, key_comparer>*>(other._data));
+			break;
+			/*case tree_type::SPALY_TREE:
+				_data = new splay_tree<key*, values*, key_comparer>(*reinterpret_cast<splay_tree<key*, values*, key_comparer>*>(other._data));
+				break;*/
+		}
 	}
 
 	collection& operator=(collection const& other)
@@ -167,7 +165,7 @@ public:
 			this->_allocator = other._allocator;
 		}
 
-		//this->_tree_type = other._tree_type;
+		this->_tree_type = other._tree_type;
 
 		return *this;
 	}
@@ -176,11 +174,11 @@ public:
 	{
 		this->_data = other._data;
 		this->_allocator = other._allocator;
-		//this->_tree_type = other._tree_type;
+		this->_tree_type = other._tree_type;
 
 		other._data = nullptr;
 		other._allocator = nullptr;
-		//other._tree_type = tree_type::RED_BLACK_TREE;
+		other._tree_type = tree_type::RED_BLACK_TREE;
 	}
 
 	collection& operator=(collection&& other) noexcept
@@ -195,11 +193,11 @@ public:
 
 		this->_data = other._data;
 		this->_allocator = other._allocator;
-		//this->_tree_type = other._tree_type;
+		this->_tree_type = other._tree_type;
 
 		other._data = nullptr;
 		other._allocator = nullptr;
-		//other._tree_type = tree_type::RED_BLACK_TREE;
+		other._tree_type = tree_type::RED_BLACK_TREE;
 
 
 		return *this;

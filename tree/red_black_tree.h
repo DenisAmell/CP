@@ -18,7 +18,11 @@ public:
 
 	struct red_black_node final : public binary_search_tree<tkey, tvalue, tkey_comparer>::node
 	{
+
 		color_node color;
+		red_black_node(tkey const& target_key, tvalue&& target_value) : binary_search_tree<tkey, tvalue, tkey_comparer>::node(target_key, std::move(target_value)) {
+
+		}
 	};
 
 public:
@@ -73,8 +77,8 @@ private:
 	private:
 		size_t get_node_size() const override;
 
-		void call_constructor_node(
-			typename binary_search_tree<tkey, tvalue, tkey_comparer>::node* mem) const override;
+		void call_constructor_node(typename binary_search_tree<tkey, tvalue, tkey_comparer>::node* mem, tkey const& key,
+			tvalue&& value) const override;
 
 		void initialize_node_additional_data(
 			typename binary_search_tree<tkey, tvalue, tkey_comparer>::node* mem) const override;
@@ -182,10 +186,11 @@ template <
 	typename tkey,
 	typename tvalue,
 	typename tkey_comparer>
-void red_black_tree<tkey, tvalue, tkey_comparer>::red_black_insertion_template_method::call_constructor_node(
-	typename binary_search_tree<tkey, tvalue, tkey_comparer>::node* mem) const
+void red_black_tree<tkey, tvalue, tkey_comparer>::red_black_insertion_template_method::call_constructor_node(typename binary_search_tree<tkey, tvalue, tkey_comparer>::node* mem,
+	tkey const& key,
+	tvalue&& value) const
 {
-	new (mem) typename red_black_tree<tkey, tvalue, tkey_comparer>::red_black_node;
+	new (mem) typename red_black_tree<tkey, tvalue, tkey_comparer>::red_black_node(key, std::move(value));
 }
 
 template <
