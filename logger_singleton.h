@@ -1,5 +1,5 @@
-#ifndef FUNDAMENTAL_ALGO_LOGGER_SINGLETON_H
-#define FUNDAMENTAL_ALGO_LOGGER_SINGLETON_H
+#ifndef LOGGER_SINGLETON_H
+#define LOGGER_SINGLETON_H
 
 #include "logger/logger_holder.h"
 #include "logger/logger_builder_concrete.h"
@@ -50,4 +50,4 @@ public:
 
 logger_singleton *logger_singleton::_instance = nullptr;
 
-#endif // FUNDAMENTAL_ALGO_LOGGER_SINGLETON_H
+#endif // LOGGER_SINGLETON_H

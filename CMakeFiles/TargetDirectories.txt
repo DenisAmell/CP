@@ -1,0 +1,3 @@
+D:/education/institute/kursach/CMakeFiles/KURSACH.dir
+D:/education/institute/kursach/CMakeFiles/ALL_BUILD.dir
+D:/education/institute/kursach/CMakeFiles/ZERO_CHECK.dir

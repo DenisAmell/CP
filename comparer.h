@@ -1,5 +1,5 @@
-#ifndef comparer_H
-#define comparer_H
+#ifndef COMPARER_H
+#define COMPARER_H
 
 class string_comparer
 {
@@ -55,4 +55,4 @@ public:
     }
 };
 
-#endif // comparer_H
+#endif // COMPARER_H

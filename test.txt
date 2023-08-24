@@ -1,0 +1,13 @@
+ADD_POOL pool1 memory_list 100000 first_fit rb
+ADD_SCHEME pool1 scheme1 avl
+ADD_COLLECTION pool1 scheme1 collection1 bst
+ADD_DATA pool1 scheme1 collection1 3 daily face_to_face meeting_for_defense_of_kursach http//pizdec.lol Ilya Irbitsky Sergeevich 02.09.2023 9:00 90 Yana_Kasyanova
+ADD_DATA pool1 scheme1 collection1 1 daily face_to_face meeting_for_defense_of_kursach http//pizdec.lol Ilya Irbitsky Sergeevich 02.09.2023 9:00 90 Yana_Kasyanova
+GET_DATA pool1 scheme1 collection1 1
+GET_DATA_BETWEEN pool1 scheme1 collection1 1 3
+REMOVE_DATA pool1 scheme1 collection1 3
+UPDATE pool1 scheme1 collection1 1 interview remote meeting_for_defense_of_kursach http//pizdec.lol Ilya Irbitsky Sergeevich 02.09.2023 10:00 20 Yana_Kasyanova
+GET_DATA pool1 scheme1 collection1 1
+REMOVE_COLLECTION pool1 scheme1 collection1
+REMOVE_SCHEME pool1 scheme1
+REMOVE_POOL pool1

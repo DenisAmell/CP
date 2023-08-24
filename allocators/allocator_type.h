@@ -4,8 +4,10 @@
 enum class allocator_type
 {
     GLOBAL_HEAP,
-    MEMORY_LIST
-    //TODO: доделать другие аллокаторы
+    MEMORY_LIST,
+    BUDDIES_SYSTEM,
+    BORDER_DESCRIPTORS
+    // TODO: доделать другие аллокаторы
 };
 
-#endif //ALLOCATOR_TYPE_H
+#endif // ALLOCATOR_TYPE_H

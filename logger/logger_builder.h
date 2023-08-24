@@ -10,7 +10,7 @@ class logger_builder
 public:
 
     virtual logger_builder *add_stream(std::string const &, logger::severity) = 0;
-    //virtual logger_builder *from_json(std:: string const &) = 0;
+   // virtual logger_builder *from_json(std:: string const &) = 0;
 
     virtual logger *construct() const = 0;
 

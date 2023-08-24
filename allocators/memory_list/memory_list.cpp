@@ -2,6 +2,7 @@
 #include <iostream>
 #include <cstring>
 #include <string>
+
 size_t memory_list::get_service_part_allocator_size() const
 {
     return sizeof(memory *) + sizeof(logger *) + sizeof( size_t) + sizeof(allocate_mode) + sizeof(void*);

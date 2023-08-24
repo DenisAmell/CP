@@ -14,7 +14,7 @@ private:
 public:
 
     logger_builder *add_stream(std::string const &, logger::severity) override;
-   // logger_builder *from_json(std:: string const &) override;
+  //  logger_builder *from_json(std:: string const &) override;
 
     logger *construct() const override;
 
