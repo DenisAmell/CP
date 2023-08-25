@@ -186,13 +186,21 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+<<<<<<< Updated upstream
 cp_BINARY_DIR:STATIC=C:/Users/Denis/OneDrive/Рабочий стол/CP/build
+=======
+KURSACH_BINARY_DIR:STATIC=C:/Users/Denis/OneDrive/Рабочий стол/CP/build
+>>>>>>> Stashed changes
 
 //Value Computed by CMake
 cp_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
+<<<<<<< Updated upstream
 cp_SOURCE_DIR:STATIC=C:/Users/Denis/OneDrive/Рабочий стол/CP
+=======
+KURSACH_SOURCE_DIR:STATIC=C:/Users/Denis/OneDrive/Рабочий стол/CP
+>>>>>>> Stashed changes
 
 
 ########################
