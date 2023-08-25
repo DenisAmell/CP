@@ -2,4 +2,5 @@
 
 logger::~logger()
 {
+
 }

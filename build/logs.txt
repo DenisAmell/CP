@@ -1,0 +1,8 @@
+[trace][16.08.2023 20:56:51] Database constructor
+[trace][16.08.2023 20:56:51] List system allocator initialized
+[trace][16.08.2023 20:56:51] Pool constructor
+[trace][16.08.2023 20:56:51] Pool constructor
+[trace][16.08.2023 20:56:51] Pool distructor
+[trace][16.08.2023 20:56:51] Scheme constructor
+[trace][16.08.2023 20:56:51] Scheme constructor
+[trace][16.08.2023 20:56:51] Scheme distructor

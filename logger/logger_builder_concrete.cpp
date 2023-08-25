@@ -1,9 +1,9 @@
 #include "logger_builder_concrete.h"
 #include "logger_concrete.h"
-// #include "../../logger/nlohmann-json/json-3.11.2/single_include/nlohmann/json.hpp"
+//#include "nlohmann-json/json-3.11.2/single_include/nlohmann/json.hpp"
 #include <fstream>
 
-// using json = nlohmann::json;
+//using json = nlohmann::json;
 
 logger_builder *logger_builder_concrete::add_stream(
     std::string const &path,
@@ -13,42 +13,41 @@ logger_builder *logger_builder_concrete::add_stream(
 
     return this;
 }
-
-//logger_builder *logger_builder_concrete::from_json(std::string const &path)
+    
+//logger_builder *logger_builder_concrete::from_json(
+//    std::string const &name_json_file)
 //{
-//    std::ifstream f(path);
+//    std::ifstream f(name_json_file);
 //    json data = json::parse(f);
-//    std::string curr;
-//    logger::severity severity;
-//    for (auto &i : data.items())
+//    logger::severity sever;
+//    for (auto &json_stream : data.items())
 //    {
-//        if (i.value() == "error")
+//        if (json_stream.value() == "error")
 //        {
-//            severity = logger::severity::error;
+//            sever = logger::severity::error;
 //        }
-//        if (i.value() == "warning")
+//        if (json_stream.value() == "trace")
 //        {
-//            severity = logger::severity::warning;
+//            sever = logger::severity::trace;
 //        }
-//        if (i.value() == "critical")
+//        if (json_stream.value() == "warning")
 //        {
-//            severity = logger::severity::critical;
+//            sever = logger::severity::warning;
 //        }
-//        if (i.value() == "trace")
+//        if (json_stream.value() == "debug")
 //        {
-//            severity = logger::severity::trace;
+//            sever = logger::severity::debug;
 //        }
-//        if (i.value() == "debug")
+//        if (json_stream.value() == "information")
 //        {
-//            severity = logger::severity::debug;
+//            sever = logger::severity::information;
 //        }
-//        if (i.value() == "information")
+//        if (json_stream.value() == "critical")
 //        {
-//            severity = logger::severity::information;
+//            sever = logger::severity::critical;
 //        }
-//        _construction_info[i.key()] = severity;
+//        _construction_info[json_stream.key()] = sever;
 //    }
-//
 //    return this;
 //}
 

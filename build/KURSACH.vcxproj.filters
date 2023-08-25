@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\allocators\global_heap\memory_global_heap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\allocators\memory_list\memory_list.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\logger\logger_builder_concrete.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\logger\logger_builder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\logger\logger_concrete.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\logger\logger_holder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\logger\logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\memory\memory_holder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\allocators\global_heap\memory_global_heap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\allocators\memory_list\memory_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\database_singleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\classes\pool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\classes\scheme.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\classes\collection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\collections\work_calendar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\logger\logger_builder_concrete.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\logger\logger_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\logger\logger_concrete.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\logger\logger_holder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\logger\logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\memory\memory_holder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\memory\memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\trees\BST\associative_container.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\trees\BST\binary_search_tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\trees\RB\red_black_tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\comparer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\logger_singleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Denis\OneDrive\Рабочий стол\kursach\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3EBC6A2B-F784-37B1-8F7B-4DBD42DD9044}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1BD5F235-DF7B-3A87-9081-18AAC1FC6B64}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

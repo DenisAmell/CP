@@ -2,4 +2,5 @@
 
 logger_builder::~logger_builder()
 {
+
 }

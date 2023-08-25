@@ -7,6 +7,7 @@ class logger
 {
 
 public:
+
     enum class severity
     {
         trace,
@@ -18,10 +19,13 @@ public:
     };
 
 public:
+
     virtual ~logger();
 
 public:
+
     virtual logger const *log(const std::string &, severity) const = 0;
+
 };
 
-#endif // SANDBOX_CPP_LOGGER_H
+#endif //SANDBOX_CPP_LOGGER_H

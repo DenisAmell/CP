@@ -3,13 +3,13 @@
 #include <fstream>
 #include <ctime>
 
-std::map<std::string, std::pair<std::ofstream *, size_t>> logger_concrete::_streams =
-    std::map<std::string, std::pair<std::ofstream *, size_t>>();
+std::map<std::string, std::pair<std::ofstream *, size_t> > logger_concrete::_streams =
+    std::map<std::string, std::pair<std::ofstream *, size_t> >();
 
 logger_concrete::logger_concrete(
-    std::map<std::string, logger::severity> const &targets)
+    std::map<std::string, logger::severity> const & targets)
 {
-    for (auto &target : targets)
+    for (auto & target : targets)
     {
         auto global_stream = _streams.find(target.first);
         std::ofstream *stream = nullptr;
@@ -36,7 +36,7 @@ logger_concrete::logger_concrete(
 
 logger_concrete::~logger_concrete()
 {
-    for (auto &logger_stream : _logger_streams)
+    for (auto & logger_stream : _logger_streams)
     {
         auto global_stream = _streams.find(logger_stream.first);
         if (--(global_stream->second.second) == 0)
@@ -53,7 +53,7 @@ logger_concrete::~logger_concrete()
     }
 }
 
-std::string currentDateTime()
+        std::string currentDateTime()
 {
     std::time_t t = std::time(nullptr);
     std::tm *now = std::localtime(&t);
@@ -63,56 +63,50 @@ std::string currentDateTime()
     return buffer;
 }
 
-logger const *
-logger_concrete::log(
+logger const *logger_concrete::log(
     const std::string &to_log,
     logger::severity severity) const
 {
 
-    for (auto &logger_stream : _logger_streams)
+    std::string sever;
+    for (auto & logger_stream : _logger_streams)
     {
-        time_t now = time(0);
-        tm *datetime = localtime(&now);
         if (logger_stream.second.second > severity)
         {
             continue;
         }
 
-        std::string curr_sev;
         switch (severity)
         {
-        case logger::severity::critical:
-            curr_sev = "critical";
-            break;
-        case logger::severity::error:
-            curr_sev = "error";
-            break;
-        case logger::severity::warning:
-            curr_sev = "warning";
-            break;
         case logger::severity::trace:
-            curr_sev = "trace";
-            break;
-        case logger::severity::information:
-            curr_sev = "information";
+            sever = "trace";
             break;
         case logger::severity::debug:
-            curr_sev = "debug";
+            sever = "debug";
+            break;
+        case logger::severity::information:
+            sever = "information";
+            break;
+        case logger::severity::warning:
+            sever = "warning";
+            break;
+
+        case logger::severity::error:
+            sever = "error";
+            break;
+        case logger::severity::critical:
+            sever = "critical";
             break;
         }
+
 
         if (logger_stream.second.first == nullptr)
         {
-
-            std::cout << "[" << curr_sev << "]"
-                      << "[" << currentDateTime() << "]"
-                      << " " << to_log << std::endl;
+            std::cout << "[" << sever << "]" << "[" <<  currentDateTime() << "] " << to_log << std::endl;
         }
         else
         {
-            (*logger_stream.second.first) << "[" << curr_sev << "]"
-                                          << "[" << currentDateTime() << "]"
-                                          << " " << to_log << std::endl;
+            (*logger_stream.second.first) << "[" << sever << "]" << "[" <<  currentDateTime() << "] " << to_log << std::endl;
         }
     }
 

@@ -1,19 +1,17 @@
-#ifndef FUNDAMENTAL_ALGO_COMMAND_H
-#define FUNDAMENTAL_ALGO_COMMAND_H
+#ifndef COMMAND_H
+#define COMMAND_H
 
-#include "../parse.h"
-#include <sstream>
-#include <iostream>
-#include <vector>
-template <typename trequest>
 class command
 {
-public:
-    virtual ~command() = default;
+    public:
+        virtual ~command() = default;
 
-public:
-    virtual bool can_execute(trequest const &) noexcept = 0;
-    virtual void execute(trequest const &) noexcept = 0;
-};
+    public:
+        virtual bool can_execute(std::string const &) = 0;
+        virtual void execute(std::string const &) = 0;
 
-#endif // FUNDAMENTAL_ALGO_COMMAND_H
+}
+
+
+
+#endif //COMMAND_H

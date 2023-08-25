@@ -1,10 +1,8 @@
-[trace][23.08.2023 22:52:39] command_add_pool::can_execute(std::string const &request) called
-[trace][23.08.2023 22:52:39] command_add_pool::execute(std::string const &request) called
-[trace][23.08.2023 22:52:39] Boundary tags system allocator initialized!
-[trace][23.08.2023 22:52:39] command_add_pool::can_execute(std::string const &request) called
-[trace][23.08.2023 22:52:39] command_add_scheme::can_execute(std::string const &request) called
-[trace][23.08.2023 22:52:39] command_add_scheme::execute(std::string const &request) called
-[trace][23.08.2023 22:52:39] command_add_pool::can_execute(std::string const &request) called
-[trace][23.08.2023 22:52:39] command_add_scheme::can_execute(std::string const &request) called
-[trace][23.08.2023 22:52:39] command_add_collection::can_execute(std::string const &request) called
-[trace][23.08.2023 22:52:39] command_add_collection::execute(std::string const &request) called
+[trace][16.08.2023 19:48:48] Database constructor
+[trace][16.08.2023 19:48:48] List system allocator initialized
+[trace][16.08.2023 19:48:48] Pool constructor
+[trace][16.08.2023 19:48:48] Pool constructor
+[trace][16.08.2023 19:48:48] Pool distructor
+[trace][16.08.2023 19:48:48] Pool constructor
+[trace][16.08.2023 19:48:48] Pool distructor
+[trace][16.08.2023 19:48:48] Scheme constructor
