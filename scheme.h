@@ -54,6 +54,7 @@ public:
 
 	void remove(std::string const& key)
 	{
+		_scheme->remove(key);
 	}
 
 	collection& find(std::string const& collection_name) const

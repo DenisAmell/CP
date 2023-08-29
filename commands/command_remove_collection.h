@@ -2,9 +2,9 @@
 #define FUNDAMENTAL_ALGO_COMMAND_REMOVE_COLLECTION_H
 #include <iostream>
 #include "command.h"
-#include "logger_singleton.h"
-#include "database_singleton.h"
-#include "parse.h"
+#include "../logger_singleton.h"
+#include "../database_singleton.h"
+#include "../parse.h"
 
 class command_remove_collection final : public command<std::string>
 {

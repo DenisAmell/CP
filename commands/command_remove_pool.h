@@ -1,7 +1,7 @@
 #ifndef FUNDAMENTAL_ALGO_COMMAND_REMOVE_POOL_H
 #define FUNDAMENTAL_ALGO_COMMAND_REMOVE_POOL_H
-#include "logger_singleton.h"
-#include "logger/logger.h"
+#include "../logger_singleton.h"
+#include "../logger/logger.h"
 #include "command.h"
 #include "../parse.h"
 #include "../database_singleton.h"

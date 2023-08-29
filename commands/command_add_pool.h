@@ -33,12 +33,14 @@ public:
 		if (request.starts_with("ADD_POOL"))
 		{
 
+
 			auto result_parsed_strings = validation(request, ' ');
 
 			if (result_parsed_strings.size() == 6)
 			{
 
 				_pool_name = result_parsed_strings[1];
+
 
 				if (result_parsed_strings[2] == "list_memory")
 				{
@@ -60,6 +62,7 @@ public:
 
 				std::stringstream size(result_parsed_strings[3]);
 				size >> _pool_allocator_size;
+
 
 				// if (_digit_validator(argc[3]))
 				// {
@@ -90,19 +93,20 @@ public:
 					return false;
 				}
 
-				if (result_parsed_strings[5] == "binary_search_tree")
+				if (result_parsed_strings[5].starts_with("binary_search_tree"))
 				{
 					_tree_type = tree_type::BINARY_SEARCH_TREE;
 				}
-				else if (result_parsed_strings[5] == "red_black_tree")
+				else if (result_parsed_strings[5].starts_with("red_black_tree"))
 				{
 					_tree_type = tree_type::RED_BLACK_TREE;
+
 				}
-				else if (result_parsed_strings[5] == "avl_tree")
+				else if (result_parsed_strings[5].starts_with("avl_tree"))
 				{
 					_tree_type = tree_type::AVL_TREE;
 				}
-				else if (result_parsed_strings[5] == "splay_tree") {
+				else if (result_parsed_strings[5].starts_with("splay_tree")) {
 					_tree_type = tree_type::SPALY_TREE;
 				}
 				else
@@ -111,36 +115,7 @@ public:
 				}
 
 				return true;
-				// _pool_name = std::move(result_parsed_strings[1]);
 
-				// try
-				// {
-				//     _pool_allocator_type = string_to_allocator_type(result_parsed_strings[2]);
-				// }
-				// catch (doesnt_exist(&))
-				// {
-				//     return false;
-				// }
-
-				// try
-				// {
-				//     _pool_allocator_allocation_mode = allocation_mode_convert(result_parsed_strings[3]);
-				// }
-				// catch (doesnt_exist(&))
-				// {
-				//     return false;
-				// }
-
-				// try
-				// {
-				//     _pool_allocator_size = is_unsigned_with_convert(result_parsed_strings[4]);
-				// }
-				// catch (doesnt_exist(&))
-				// {
-				//     return false;
-				// }
-
-				// return true;
 			}
 		}
 		return false;

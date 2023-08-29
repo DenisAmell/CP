@@ -31,19 +31,21 @@ public:
 				_scheme_name = std::move(result_parsed_strings[2]);
 				_collection_name = std::move(result_parsed_strings[3]);
 
-				if (result_parsed_strings[4] == "binary_search_tree")
+
+				if (result_parsed_strings[4].starts_with("binary_search_tree"))
 				{
 					_tree_type = tree_type::BINARY_SEARCH_TREE;
 				}
-				else if (result_parsed_strings[4] == "red_black_tree")
+				else if (result_parsed_strings[4].starts_with("red_black_tree"))
 				{
 					_tree_type = tree_type::RED_BLACK_TREE;
+
 				}
-				else if (result_parsed_strings[4] == "avl_tree")
+				else if (result_parsed_strings[4].starts_with("avl_tree"))
 				{
 					_tree_type = tree_type::AVL_TREE;
 				}
-				else if (result_parsed_strings[4] == "splay_tree") {
+				else if (result_parsed_strings[4].starts_with("splay_tree")) {
 					_tree_type = tree_type::SPALY_TREE;
 				}
 				else

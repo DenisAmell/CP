@@ -1,10 +1,10 @@
 #ifndef FUNDAMENTAL_ALGO_COMMAND_UPDATE_DATA_H
 #define FUNDAMENTAL_ALGO_COMMAND_UPDATE_DATA_H
 
-#include "logger_singleton.h"
+#include "../logger_singleton.h"
 #include <iostream>
 #include "command.h"
-#include "parse.h"
+#include "../parse.h"
 #include "../database_singleton.h"
 #include "../student_definition.h"
 
