@@ -32,8 +32,8 @@ protected:
 
 		node* right_subtree_address;
 
-		explicit node(tkey const& target_key, tvalue&& target_value) : key(target_key), value(std::move(target_value)) {
-
+		explicit node(tkey const& target_key, tvalue&& target_value) : key(target_key), value(std::move(target_value))
+		{
 		}
 
 		virtual ~node() = default;
@@ -924,8 +924,8 @@ void binary_search_tree<tkey, tvalue, tkey_comparer>::insertion_template_method:
 	tvalue&& value) const
 {
 	call_constructor_node(mem, key, std::move(value));
-	//mem->key = key;
-	//mem->value = std::move(value);
+	// mem->key = key;
+	// mem->value = std::move(value);
 	mem->left_subtree_address = mem->right_subtree_address = nullptr;
 	initialize_node_additional_data(mem);
 }
@@ -1137,6 +1137,7 @@ template <
 	typename tkey_comparer>
 bool binary_search_tree<tkey, tvalue, tkey_comparer>::find_to_string(tkey const& key)
 {
+
 	return _reading->read(key, _root);
 }
 
@@ -1214,6 +1215,8 @@ bool binary_search_tree<tkey, tvalue, tkey_comparer>::reading_template_method::r
 	node*& subtree_root_address,
 	std::stack<node**>& path_to_subtree_root_exclusive)
 {
+
+
 	if (subtree_root_address == nullptr)
 	{
 		this->trace_with_guard("Key not found");
@@ -1337,7 +1340,7 @@ std::tuple<tkey, tvalue> binary_search_tree<tkey, tvalue, tkey_comparer>::removi
 		}
 	}
 
-	if (*removed_node == nullptr)
+	if (removed_node == nullptr)
 	{
 		std::string message = "Key not found";
 		this->warning_with_guard(message);
@@ -1448,6 +1451,7 @@ tvalue binary_search_tree<tkey, tvalue, tkey_comparer>::removing_template_method
 	binary_search_tree<tkey, tvalue, tkey_comparer>::node*& subtree_root_address,
 	std::list<binary_search_tree<tkey, tvalue, tkey_comparer>::node**>& path_to_subtree_root_exclusive)
 {
+
 	if (subtree_root_address == nullptr)
 	{
 		this->warning_with_guard("Tree is empty");

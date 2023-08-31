@@ -180,11 +180,13 @@ CMakeFiles/cp.dir/main.cpp.o: \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/comparers.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/student_definition.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/allocator_type.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/tree/tree_type.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/tree/associative_container.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/tree/avl_tree.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/tree/binary_search_tree.h \
  /usr/include/c++/11/stack /usr/include/c++/11/deque \
  /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
@@ -200,8 +202,9 @@ CMakeFiles/cp.dir/main.cpp.o: \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/tree/../logger/logger_builder_concrete.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/tree/../memory/memory.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/tree/../memory/memory_holder.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/tree/red_black_tree.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/tree/binary_search_tree.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/tree/splay_tree.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/tree/red_black_tree.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/allocators/boundary_tags_allocator.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/allocators/../logger/logger.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/allocators/../logger/logger_concrete.h \
@@ -212,10 +215,7 @@ CMakeFiles/cp.dir/main.cpp.o: \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/allocators/list_memory.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/pool.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/scheme.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/tree/tree_type.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/collection.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/tree/avl_tree.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/tree/splay_tree.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/request_handler_with_command_chain.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/request_handler_with_command.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/abstract_handler.h \
@@ -238,12 +238,9 @@ CMakeFiles/cp.dir/main.cpp.o: \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/commands/../student_definition.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/commands/command_get_data.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/commands/command_remove_pool.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/./logger_singleton.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/./logger/logger.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/commands/../logger/logger.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/commands/command_remove_scheme.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/commands/command_remove_collection.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/./database_singleton.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/./parse.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/commands/command_remove_data.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/commands/command_update_data.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/commands/command_get_data_between.h \

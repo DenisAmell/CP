@@ -13,7 +13,7 @@ private:
 	key _data_key;
 
 public:
-	bool can_execute(std::string const& request) noexcept final
+	bool can_execute(std::string const &request) noexcept final
 	{
 		logger_singleton::get_instance()->get_logger()->log("command_get_data::can_execute(std::string const &request) called", logger::severity::trace);
 		// if (!prefix_validation("GET_DATA", request))
@@ -37,7 +37,8 @@ public:
 				id_student >> _data_key.id_student;
 
 				_data_key.format = reporting_format_convert(result_parsed_strings[6]);
-				_data_key.subject = result_parsed_strings[7];
+
+				_data_key.subject = std::move(result_parsed_strings[7].substr(0, result_parsed_strings[7].find("\r")));
 
 				return true;
 			}
@@ -45,7 +46,7 @@ public:
 		return false;
 	}
 
-	void execute(std::string const& request) noexcept final
+	void execute(std::string const &request) noexcept final
 	{
 		database_singleton::get_instance()->get_data(_pool_name, _scheme_name, _collection_name, &_data_key);
 		logger_singleton::get_instance()

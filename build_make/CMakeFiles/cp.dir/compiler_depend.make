@@ -1929,12 +1929,14 @@ CMakeFiles/cp.dir/main.cpp.o: ../main.cpp \
   ../comparers.h \
   ../student_definition.h \
   ../allocator_type.h \
+  ../tree/tree_type.h \
   ../tree/associative_container.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  ../tree/avl_tree.h \
   ../tree/binary_search_tree.h \
   /usr/include/c++/11/stack \
   /usr/include/c++/11/deque \
@@ -1953,8 +1955,9 @@ CMakeFiles/cp.dir/main.cpp.o: ../main.cpp \
   ../logger/logger_builder_concrete.h \
   ../memory/memory.h \
   ../memory/memory_holder.h \
-  ../tree/red_black_tree.h \
   ../tree/binary_search_tree.h \
+  ../tree/splay_tree.h \
+  ../tree/red_black_tree.h \
   ../allocators/boundary_tags_allocator.h \
   ../logger/logger.h \
   ../logger/logger_concrete.h \
@@ -1967,9 +1970,6 @@ CMakeFiles/cp.dir/main.cpp.o: ../main.cpp \
   ../allocators/list_memory.h \
   ../pool.h \
   ../scheme.h \
-  ../tree/tree_type.h \
-  ../tree/avl_tree.h \
-  ../tree/splay_tree.h \
   ../collection.h \
   ../request_handler_with_command_chain.h \
   ../request_handler_with_command.h \
@@ -1994,12 +1994,9 @@ CMakeFiles/cp.dir/main.cpp.o: ../main.cpp \
   ../student_definition.h \
   ../commands/command_get_data.h \
   ../commands/command_remove_pool.h \
-  ../logger_singleton.h \
   ../logger/logger.h \
   ../commands/command_remove_scheme.h \
   ../commands/command_remove_collection.h \
-  ../database_singleton.h \
-  ../parse.h \
   ../commands/command_remove_data.h \
   ../commands/command_update_data.h \
   ../commands/command_get_data_between.h \
@@ -2435,8 +2432,6 @@ CMakeFiles/cp.dir/memory/memory_holder.cpp.o: ../memory/memory_holder.cpp \
 
 ../collection.h:
 
-../tree/tree_type.h:
-
 ../scheme.h:
 
 ../tree/red_black_tree.h:
@@ -2466,6 +2461,8 @@ CMakeFiles/cp.dir/memory/memory_holder.cpp.o: ../memory/memory_holder.cpp \
 /usr/include/c++/11/vector:
 
 ../tree/associative_container.h:
+
+../tree/tree_type.h:
 
 ../allocator_type.h:
 

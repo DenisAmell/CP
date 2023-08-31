@@ -67,26 +67,22 @@ int main(int argc, char* argv[])
 
 
 			if (number_menu == 1) {
+				bytesWritten += send(clientSd, "Command", strlen("Command"), 0);
 				while (true) {
 
 					std::getline(std::cin, command);
 					memset(&msg, 0, sizeof(msg)); // clear the buffer
 					strcpy(msg, command.c_str());
-					if (command == "exit")
-					{
-						send(clientSd, (char*)&msg, strlen(msg), 0);
-						break;
-					}
 					bytesWritten += send(clientSd, (char*)&msg, strlen(msg), 0);
-					cout << "Awaiting server response..." << endl;
-					memset(&msg, 0, sizeof(msg)); // clear the buffer
-					bytesRead += recv(clientSd, (char*)&msg, sizeof(msg), 0);
-					if (!strcmp(msg, "exit"))
-					{
-						cout << "Server has quit the session" << endl;
-						break;
-					}
-					cout << "Server: " << msg << endl;
+					//cout << "Awaiting server response..." << endl;
+					//memset(&msg, 0, sizeof(msg)); // clear the buffer
+					//bytesRead += recv(clientSd, (char*)&msg, sizeof(msg), 0);
+					//if (!strcmp(msg, "exit"))
+					//{
+					//	cout << "Server has quit the session" << endl;
+					//	break;
+					//}
+					//cout << "Server: " << msg << endl;
 					/*if (command.starts_with("-1")) break;
 
 					if (!chain.handle(command) && command != "")
@@ -98,83 +94,29 @@ int main(int argc, char* argv[])
 				}
 			}
 			else if (number_menu == 2) {
+				bytesWritten += send(clientSd, "File", strlen("File"), 0);
 				std::string file_name;
 				std::cout << "Enter name file ";
 				std::cin >> file_name;
 				memset(&msg, 0, sizeof(msg)); // clear the buffer
 				strcpy(msg, file_name.c_str());
 				bytesWritten += send(clientSd, (char*)&msg, strlen(msg), 0);
-
-				//std::ifstream file(file_name);
-				//if (file.is_open())
-				//{
-				//	while (std::getline(file, command))
-				//	{
-				//		//memset(&msg, 0, sizeof(msg)); // clear the buffer
-				//		//strcpy(msg, command.c_str());
-				//		//if (command == "exit")
-				//		//{
-				//		//	send(clientSd, (char*)&msg, strlen(msg), 0);
-				//		//	break;
-				//		//}
-				//		bytesWritten += send(clientSd, (char*)command, strlen(command.c_str()), 0);
-				//		std::cout << msg << std::endl;
-				//		//cout << "Awaiting server response..." << endl;
-				//		//memset(&msg, 0, sizeof(msg)); // clear the buffer
-				//		//bytesRead += recv(clientSd, (char*)&msg, sizeof(msg), 0);
-				//		//if (!strcmp(msg, "exit"))
-				//		//{
-				//		//	cout << "Server has quit the session" << endl;
-				//		//	break;
-				//		//}
-				//		//cout << "Server: " << msg << endl;
-				//		/*if (!chain.handle(command))
-				//		{
-				//			std::cout << "[DATA BASE] command can't be executed" << std::endl
-				//				<< std::endl;
-				//		}*/
-				//	}
-				//}
-				//else
-				//{
-				//	std::cout << "File with name:" << file_name << " can't be opened" << std::endl;
-				//	continue;
-				//}
-
 			}
-			else if (number_menu == 3) break;
-
-			/*throw std::invalid_argument::invalid_argument("Error input!");*/
+			else if (number_menu == 3) {
+				memset(&msg, 0, sizeof(msg)); // clear the buffer
+				strcpy(msg, "Exit");
+				bytesWritten += send(clientSd, (char*)&msg, strlen(msg), 0);
+				break;
+			}
+			else
+				throw std::logic_error("Error input!");
 
 		}
 	}
-	catch (std::invalid_argument const& ex) {
+	catch (std::logic_error const& ex) {
 		std::cout << ex.what() << std::endl;
 	}
 
-	//while (1)
-	//{
-	//	cout << ">";
-	//	string data;
-	//	getline(cin, data);
-	//	memset(&msg, 0, sizeof(msg)); // clear the buffer
-	//	strcpy(msg, data.c_str());
-	//	if (data == "exit")
-	//	{
-	//		send(clientSd, (char *)&msg, strlen(msg), 0);
-	//		break;
-	//	}
-	//	bytesWritten += send(clientSd, (char *)&msg, strlen(msg), 0);
-	//	cout << "Awaiting server response..." << endl;
-	//	memset(&msg, 0, sizeof(msg)); // clear the buffer
-	//	bytesRead += recv(clientSd, (char *)&msg, sizeof(msg), 0);
-	//	if (!strcmp(msg, "exit"))
-	//	{
-	//		cout << "Server has quit the session" << endl;
-	//		break;
-	//	}
-	//	cout << "Server: " << msg << endl;
-	//}
 	gettimeofday(&end1, NULL);
 	close(clientSd);
 	cout << "********Session********" << endl;

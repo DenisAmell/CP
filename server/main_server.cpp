@@ -112,31 +112,52 @@ int main(int argc, char* argv[])
 
 	while (1)
 	{
-
-		// receive a message from the client (listen)
-		//cout << "Awaiting client response..." << endl;
 		memset(&msg, 0, sizeof(msg)); // clear the buffer
 		bytesRead += recv(newSd, (char*)&msg, sizeof(msg), 0);
-		std::string command;
-		std::ifstream file(msg);
-		if (file.is_open())
-		{
-			while (std::getline(file, command))
-			{
-				if (!chain.handle(command))
+
+		std::cout << msg << std::endl;
+
+		if (strcmp(msg, "Exit") == 0) break;
+
+		if (strcmp(msg, "Command") == 0) {
+			while (true) {
+				memset(&msg, 0, sizeof(msg));
+				bytesRead += recv(newSd, (char*)&msg, sizeof(msg), 0);
+
+				std::cout << msg << std::endl;
+
+				if (!chain.handle(msg))
 				{
 					std::cout << "[DATA BASE] command can't be executed" << std::endl
 						<< std::endl;
 				}
 			}
 		}
-		else
-		{
-			std::cout << "File with name:" << msg << " can't be opened" << std::endl;
-			continue;
+		else if (strcmp(msg, "File") == 0) {
+
+			memset(&msg, 0, sizeof(msg));
+			bytesRead += recv(newSd, (char*)&msg, sizeof(msg), 0);
+
+			std::string command;
+			std::ifstream file(msg);
+			if (file.is_open())
+			{
+				while (std::getline(file, command))
+				{
+					if (!chain.handle(command))
+					{
+						std::cout << "[DATA BASE] command can't be executed" << std::endl
+							<< std::endl;
+					}
+				}
+			}
+			else
+			{
+				std::cout << "File with name:" << msg << " can't be opened" << std::endl;
+				continue;
+			}
+
 		}
-
-
 
 		//if (!strcmp(msg, "exit"))
 		//{

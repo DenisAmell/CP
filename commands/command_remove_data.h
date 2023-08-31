@@ -21,22 +21,19 @@ private:
 	reporting_format _format;
 	std::string _subject;
 
-
 public:
-
-	bool can_execute(std::string const& request) noexcept final
+	bool can_execute(std::string const &request) noexcept final
 	{
 		logger_singleton::get_instance()->get_logger()->log("command_remove_data::can_execute(std::string const &request) called", logger::severity::trace);
 
-		if (request.starts_with("REMOVE_DATA")) {
+		if (request.starts_with("REMOVE_DATA"))
+		{
 			std::vector<std::string> result_parsed_strings = validation(request, ' ');
 			if (result_parsed_strings.size() == 8)
 			{
 				_pool_name = std::move(result_parsed_strings[1]);
 				_scheme_name = std::move(result_parsed_strings[2]);
 				_collection_name = std::move(result_parsed_strings[3]);
-
-
 
 				// TODO: valid
 				_id_session = is_unsigned_with_convert(result_parsed_strings[4]);
@@ -46,7 +43,7 @@ public:
 
 				_format = reporting_format_convert(result_parsed_strings[6]);
 
-				_subject = result_parsed_strings[7];
+				_subject = std::move(result_parsed_strings[7].substr(0, result_parsed_strings[7].find("\r")));
 
 				return true;
 			}
@@ -54,10 +51,10 @@ public:
 		return false;
 	}
 
-	void execute(std::string const& request) noexcept final
+	void execute(std::string const &request) noexcept final
 	{
 
-		key* data_key = new key();
+		key *data_key = new key();
 
 		data_key->id_session = _id_session;
 		data_key->id_student = _id_student;
@@ -69,6 +66,5 @@ public:
 
 		delete data_key;
 	}
-
 };
 #endif // FUNDAMENTAL_ALGO_COMMAND_REMOVE_DATA_H

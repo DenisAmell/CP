@@ -12,23 +12,24 @@ private:
 	std::string _pool_name;
 
 public:
-	bool can_execute(std::string const& request) noexcept final
+	bool can_execute(std::string const &request) noexcept final
 	{
 		logger_singleton::get_instance()->get_logger()->log("command_remove_pool::can_execute(std::string const &request) called", logger::severity::trace);
-		if (request.starts_with("REMOVE_POOL")) {
-
-
+		if (request.starts_with("REMOVE_POOL"))
+		{
 			std::vector<std::string> result_parsed_strings = validation(request, ' ');
+			std::cout << _pool_name << " gg" << std::endl;
 			if (result_parsed_strings.size() == 2)
 			{
 				_pool_name = result_parsed_strings[1];
+
 				return true;
 			}
 		}
 		return false;
 	}
 
-	void execute(std::string const& request) noexcept final
+	void execute(std::string const &request) noexcept final
 	{
 		database_singleton::get_instance()->remove_pool(_pool_name);
 		logger_singleton::get_instance()->get_logger()->log("command_remove_pool::execute(std::string const &request) called", logger::severity::trace);

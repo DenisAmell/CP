@@ -69,7 +69,6 @@ public:
 
 		_database_entrypoint = new red_black_tree<std::string, pool, stdstring_comparer>();
 
-
 		// _chain.add_handler(new command_add_pool());
 		// .add_handler(new command_remove_pool())
 		// .add_handler(new command_add_scheme())
@@ -114,7 +113,8 @@ public:
 		tree_type tree_type)
 	{
 
-		try {
+		try
+		{
 			memory* allocator = nullptr;
 			switch (pool_allocator_type)
 			{
@@ -132,38 +132,44 @@ public:
 				break;
 			}
 
-
 			_database_entrypoint->insert(pool_name, std::move(pool(allocator, tree_type)));
 
-			std::cout << "[ADD_POOL] Pool with name:" << pool_name << " added to data base" << std::endl << std::endl;
+			std::cout << "[ADD_POOL] Pool with name:" << pool_name << " added to data base" << std::endl
+				<< std::endl;
 		}
-		catch (std::exception const& ex) {
+		catch (std::exception const& ex)
+		{
 			std::cout << ex.what() << std::endl;
 		}
 	}
 
 	void add_scheme(std::string const& pool_name, std::string const& scheme_name, tree_type tree_type)
 	{
-		try {
+		try
+		{
 
 			if (_database_entrypoint->find_to_string(pool_name))
 			{
 				reinterpret_cast<pool&>(_database_entrypoint->find(pool_name)).add(scheme_name, std::move(scheme(tree_type)));
-				std::cout << "[ADD_SCHEME] Scheme with name:" << scheme_name << " added to " << pool_name << std::endl << std::endl;
+				std::cout << "[ADD_SCHEME] Scheme with name:" << scheme_name << " added to " << pool_name << std::endl
+					<< std::endl;
 			}
 			else
 			{
-				std::cout << "[FAIL] Pool with name:" << pool_name << " not found" << std::endl << std::endl;
+				std::cout << "[FAIL] Pool with name:" << pool_name << " not found" << std::endl
+					<< std::endl;
 			}
 		}
-		catch (std::exception const& ex) {
+		catch (std::exception const& ex)
+		{
 			std::cout << ex.what() << std::endl;
 		}
 	}
 
 	void add_collection(std::string const& pool_name, std::string const& scheme_name, std::string const& collection_name, tree_type tree_type)
 	{
-		try {
+		try
+		{
 			if (_database_entrypoint->find_to_string(pool_name))
 			{
 				pool& current_pool = _database_entrypoint->find(pool_name);
@@ -173,19 +179,23 @@ public:
 				if (current_pool.find_to_string(scheme_name))
 				{
 					reinterpret_cast<scheme&>(current_pool.find(scheme_name)).add(collection_name, std::move(collection(allocator, tree_type)));
-					std::cout << "[ADD_COLLECTION] Collection with name:" << collection_name << " added to " << scheme_name << " " << pool_name << std::endl << std::endl;
+					std::cout << "[ADD_COLLECTION] Collection with name:" << collection_name << " added to " << scheme_name << " " << pool_name << std::endl
+						<< std::endl;
 				}
 				else
 				{
-					std::cout << "[FAIL] Scheme with name:" << scheme_name << " not found" << std::endl << std::endl;
+					std::cout << "[FAIL] Scheme with name:" << scheme_name << " not found" << std::endl
+						<< std::endl;
 				}
 			}
 			else
 			{
-				std::cout << "[FAIL] Pool with name:" << pool_name << " not found" << std::endl << std::endl;
+				std::cout << "[FAIL] Pool with name:" << pool_name << " not found" << std::endl
+					<< std::endl;
 			}
 		}
-		catch (std::exception const& ex) {
+		catch (std::exception const& ex)
+		{
 			std::cout << ex.what() << std::endl;
 		}
 	}
@@ -204,7 +214,8 @@ public:
 		std::string const& time,
 		unsigned int mark)
 	{
-		try {
+		try
+		{
 			if (_database_entrypoint->find_to_string(pool_name))
 			{
 				pool& current_pool = _database_entrypoint->find(pool_name);
@@ -218,24 +229,29 @@ public:
 					{
 
 						reinterpret_cast<collection&>(current_scheme.find(collection_name)).add(id_session, id_student, format, subject, surname, name, patronymic, date, time, mark);
-						std::cout << "[ADD_DATA] Data added to " << pool_name << " " << scheme_name << " " << collection_name << std::endl << std::endl;
+						std::cout << "[ADD_DATA] Data added to " << pool_name << " " << scheme_name << " " << collection_name << std::endl
+							<< std::endl;
 					}
 					else
 					{
-						std::cout << "[FAIL] Collection with name:" << collection_name << " not found" << std::endl << std::endl;
+						std::cout << "[FAIL] Collection with name:" << collection_name << " not found" << std::endl
+							<< std::endl;
 					}
 				}
 				else
 				{
-					std::cout << "[FAIL] Scheme with name:" << scheme_name << " not found" << std::endl << std::endl;
+					std::cout << "[FAIL] Scheme with name:" << scheme_name << " not found" << std::endl
+						<< std::endl;
 				}
 			}
 			else
 			{
-				std::cout << "[FAIL] Pool with name:" << pool_name << " not found" << std::endl << std::endl;
+				std::cout << "[FAIL] Pool with name:" << pool_name << " not found" << std::endl
+					<< std::endl;
 			}
 		}
-		catch (std::exception const& ex) {
+		catch (std::exception const& ex)
+		{
 			std::cout << ex.what() << std::endl;
 		}
 	}
@@ -250,7 +266,8 @@ public:
 		std::string const& time,
 		unsigned int mark)
 	{
-		try {
+		try
+		{
 			if (_database_entrypoint->find_to_string(pool_name))
 			{
 				pool& current_pool = _database_entrypoint->find(pool_name);
@@ -263,86 +280,112 @@ public:
 					if (current_scheme.find_to_string(collection_name))
 					{
 						reinterpret_cast<collection&>(current_scheme.find(collection_name)).update(data_key, surname, name, patronymic, date, time, mark);
-						std::cout << "[UPDATE_DATE] Data from:" << pool_name << " " << scheme_name << " " << collection_name << " updated" << std::endl << std::endl;
+						std::cout << "[UPDATE_DATE] Data from:" << pool_name << " " << scheme_name << " " << collection_name << " updated" << std::endl
+							<< std::endl;
 					}
 					else
 					{
-						std::cout << "[FAIL] Collection with name:" << collection_name << " not found" << std::endl << std::endl;
+						std::cout << "[FAIL] Collection with name:" << collection_name << " not found" << std::endl
+							<< std::endl;
 					}
 				}
 				else
 				{
-					std::cout << "[FAIL] Scheme with name:" << scheme_name << " not found" << std::endl << std::endl;
+					std::cout << "[FAIL] Scheme with name:" << scheme_name << " not found" << std::endl
+						<< std::endl;
 				}
 			}
 			else
 			{
-				std::cout << "[FAIL] Pool with name:" << pool_name << " not found" << std::endl << std::endl;
+				std::cout << "[FAIL] Pool with name:" << pool_name << " not found" << std::endl
+					<< std::endl;
 			}
 		}
-		catch (std::exception const& ex) {
+		catch (std::exception const& ex)
+		{
 			std::cout << ex.what() << std::endl;
 		}
 	}
 
-	void remove_pool(std::string const& pool_name)
+	void remove_pool(std::string& pool_name)
 	{
-		try {
+		try
+		{
+
+			pool_name = std::move(pool_name.substr(0, pool_name.find("\r"))); // token is "scott"
+
 			if (_database_entrypoint->find_to_string(pool_name))
 			{
 				_database_entrypoint->remove(pool_name);
-				std::cout << "[REMOVE_POOL] Pole with name :" << pool_name << " removed" << std::endl << std::endl;
+				std::cout << "[REMOVE_POOL] Pool with name :" << pool_name << " removed" << std::endl
+					<< std::endl;
+				std::cout.flush();
 			}
 			else
 			{
-				std::cout << "[FAIL] Pool with name:" << pool_name << " not found" << std::endl << std::endl;
+				std::cout << "[FAIL] Pool with name:" << pool_name << " not found" << std::endl
+					<< std::endl;
 			}
 		}
-		catch (std::exception const& ex) {
+		catch (std::exception const& ex)
+		{
 			std::cout << ex.what() << std::endl;
 		}
 	}
 
-	void remove_scheme(std::string const& pool_name, std::string const& scheme_name)
+	void remove_scheme(std::string const& pool_name, std::string& scheme_name)
 	{
-		try {
+		try
+		{
 			if (_database_entrypoint->find_to_string(pool_name))
 			{
+				scheme_name = std::move(scheme_name.substr(0, scheme_name.find("\r")));
+
 				reinterpret_cast<pool&>(_database_entrypoint->find(pool_name)).remove(scheme_name);
-				std::cout << "[REMOVE_SCHEME] Scheme from:" << pool_name << " removed" << std::endl << std::endl;
+				std::cout << "[REMOVE_SCHEME] Scheme from:" << pool_name << " removed" << std::endl
+					<< std::endl;
 			}
 			else
 			{
-				std::cout << "[FAIL] Pool with name:" << pool_name << " not found" << std::endl << std::endl;
+				std::cout << "[FAIL] Pool with name:" << pool_name << " not found" << std::endl
+					<< std::endl;
 			}
 		}
-		catch (std::exception const& ex) {
+		catch (std::exception const& ex)
+		{
 			std::cout << ex.what() << std::endl;
 		}
 	}
 
-	void remove_collection(std::string const& pool_name, std::string const& scheme_name, std::string const& collection_name)
+	void remove_collection(std::string const& pool_name, std::string const& scheme_name, std::string& collection_name)
 	{
-		try {
+		try
+		{
 			if (_database_entrypoint->find_to_string(pool_name))
 			{
 				pool& current_pool = _database_entrypoint->find(pool_name);
 
 				if (current_pool.find_to_string(scheme_name))
 				{
+					collection_name = std::move(collection_name.substr(0, collection_name.find("\r")));
 					reinterpret_cast<scheme&>(current_pool.find(scheme_name)).remove(collection_name);
-					std::cout << "[REMOVE_COLLECTION] Collection from:" << pool_name << " " << scheme_name << " removed" << std::endl << std::endl;
+					std::cout << "[REMOVE_COLLECTION] Collection from:" << pool_name << " " << scheme_name << " removed" << std::endl
+						<< std::endl;
 				}
 				else
 				{
-					std::cout << "[FAIL] Scheme with name:" << pool_name << " not found" << std::endl << std::endl;
+					std::cout << "[FAIL] Scheme with name:" << pool_name << " not found" << std::endl
+						<< std::endl;
 				}
 			}
-			else {
-				std::cout << "[FAIL] Pool with name:" << pool_name << " not found" << std::endl << std::endl;
+			else
+			{
+				std::cout << "[FAIL] Pool with name:" << pool_name << " not found" << std::endl
+					<< std::endl;
 			}
 		}
-		catch (std::exception const& ex) {
+		catch (std::exception const& ex)
+		{
 			std::cout << ex.what() << std::endl;
 		}
 	}
@@ -352,7 +395,8 @@ public:
 		std::string const& collection_name,
 		key* data_key)
 	{
-		try {
+		try
+		{
 			if (_database_entrypoint->find_to_string(pool_name))
 			{
 				pool& current_pool = _database_entrypoint->find(pool_name);
@@ -365,31 +409,37 @@ public:
 					if (current_scheme.find_to_string(collection_name))
 					{
 						reinterpret_cast<collection&>(current_scheme.find(collection_name)).remove(data_key);
-						std::cout << "[REMOVE_DATA] Data from:" << pool_name << " " << scheme_name << " " << collection_name << " removed" << std::endl << std::endl;
+						std::cout << "[REMOVE_DATA] Data from:" << pool_name << " " << scheme_name << " " << collection_name << " removed" << std::endl
+							<< std::endl;
 					}
 					else
 					{
-						std::cout << "[FAIL] Collection with name:" << collection_name << " not found" << std::endl << std::endl;
+						std::cout << "[FAIL] Collection with name:" << collection_name << " not found" << std::endl
+							<< std::endl;
 					}
 				}
 				else
 				{
-					std::cout << "[FAIL] Scheme with name:" << pool_name << " not found" << std::endl << std::endl;
+					std::cout << "[FAIL] Scheme with name:" << pool_name << " not found" << std::endl
+						<< std::endl;
 				}
 			}
 			else
 			{
-				std::cout << "[FAIL] Pool with name:" << pool_name << " not found" << std::endl << std::endl;
+				std::cout << "[FAIL] Pool with name:" << pool_name << " not found" << std::endl
+					<< std::endl;
 			}
 		}
-		catch (std::exception const& ex) {
+		catch (std::exception const& ex)
+		{
 			std::cout << ex.what() << std::endl;
 		}
 	}
 
 	void get_data(std::string const& pool_name, std::string const& scheme_name, std::string const& collection_name, key* data_key)
 	{
-		try {
+		try
+		{
 			if (_database_entrypoint->find_to_string(pool_name))
 			{
 
@@ -408,7 +458,8 @@ public:
 
 							values* data = reinterpret_cast<collection&>(current_collection).get(data_key);
 
-							std::cout << "[GET_DATA] Received value from " << pool_name << " " << scheme_name << " " << collection_name << std::endl << std::endl;
+							std::cout << "[GET_DATA] Received value from " << pool_name << " " << scheme_name << " " << collection_name << std::endl
+								<< std::endl;
 
 							std::cout << "\tData:" << std::endl;
 
@@ -419,36 +470,43 @@ public:
 							std::cout << "patronymic: " << data->student_patronymic << std::endl;
 							std::cout << "Date: " << data->event_date << std::endl;
 							std::cout << "Time: " << data->event_time << std::endl;
-							std::cout << "Mark: " << data->mark << std::endl << std::endl;
+							std::cout << "Mark: " << data->mark << std::endl
+								<< std::endl;
 						}
 						else
 						{
-							std::cout << "[FAIL] Data_key not found" << std::endl << std::endl;
+							std::cout << "[FAIL] Data_key not found" << std::endl
+								<< std::endl;
 						}
 					}
 					else
 					{
-						std::cout << "[FAIL] Collection with name:" << collection_name << " not found" << std::endl << std::endl;
+						std::cout << "[FAIL] Collection with name:" << collection_name << " not found" << std::endl
+							<< std::endl;
 					}
 				}
 				else
 				{
-					std::cout << "[FAIL] Scheme with name:" << scheme_name << " not found" << std::endl << std::endl;
+					std::cout << "[FAIL] Scheme with name:" << scheme_name << " not found" << std::endl
+						<< std::endl;
 				}
 			}
 			else
 			{
-				std::cout << "[FAIL] Pool with name:" << pool_name << " not found" << std::endl << std::endl;
+				std::cout << "[FAIL] Pool with name:" << pool_name << " not found" << std::endl
+					<< std::endl;
 			}
 		}
-		catch (std::exception const& ex) {
+		catch (std::exception const& ex)
+		{
 			std::cout << ex.what() << std::endl;
 		}
 	}
 
 	void get_data_between_keys(std::string const& pool_name, std::string const& scheme_name, std::string const& collection_name, key* const& min_key, key* const& max_key)
 	{
-		try {
+		try
+		{
 			if (_database_entrypoint->find_to_string(pool_name))
 			{
 				pool const& current_pool = _database_entrypoint->find(pool_name);
@@ -477,27 +535,32 @@ public:
 							std::cout << "patronymic: " << data_value->student_patronymic << std::endl;
 							std::cout << "Date: " << data_value->event_date << std::endl;
 							std::cout << "Time: " << data_value->event_time << std::endl;
-							std::cout << "Mark: " << data_value->mark << std::endl << std::endl;
+							std::cout << "Mark: " << data_value->mark << std::endl
+								<< std::endl;
 
 							index++;
 						}
 					}
 					else
 					{
-						std::cout << "[FAIL] Collection with name:" << collection_name << " not found" << std::endl << std::endl;
+						std::cout << "[FAIL] Collection with name:" << collection_name << " not found" << std::endl
+							<< std::endl;
 					}
 				}
 				else
 				{
-					std::cout << "[FAIL] Scheme with name:" << scheme_name << " not found" << std::endl << std::endl;
+					std::cout << "[FAIL] Scheme with name:" << scheme_name << " not found" << std::endl
+						<< std::endl;
 				}
 			}
 			else
 			{
-				std::cout << "[FAIL] Pool with name:" << pool_name << " not found" << std::endl << std::endl;
+				std::cout << "[FAIL] Pool with name:" << pool_name << " not found" << std::endl
+					<< std::endl;
 			}
 		}
-		catch (std::exception const& ex) {
+		catch (std::exception const& ex)
+		{
 			std::cout << ex.what() << std::endl;
 		}
 	}

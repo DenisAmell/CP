@@ -17,10 +17,10 @@
 #include "request_handler_with_command_chain.h"
 #include "tree/tree_type.h"
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 
-	database_singleton* db = new database_singleton();
+	database_singleton *db = new database_singleton();
 
 	std::string command;
 
@@ -37,10 +37,11 @@ int main(int argc, char* argv[])
 		.add_handler(new command_update_data())
 		.add_handler(new command_get_data_between());
 
+	try
+	{
 
-	try {
-
-		while (true) {
+		while (true)
+		{
 			size_t number_menu = 0;
 			std::cout << "\tMENU" << std::endl;
 			std::cout << "=================================" << std::endl;
@@ -50,23 +51,25 @@ int main(int argc, char* argv[])
 			std::cout << "Enter: ";
 			std::cin >> number_menu;
 
-
-			if (number_menu == 1) {
-				while (true) {
+			if (number_menu == 1)
+			{
+				while (true)
+				{
 
 					std::getline(std::cin, command);
 
-					if (command.starts_with("-1")) break;
+					if (command.starts_with("-1"))
+						break;
 
 					if (!chain.handle(command) && command != "")
 					{
 						std::cout << "[DATA BASE] command can't be executed" << std::endl
-							<< std::endl;
+								  << std::endl;
 					}
-
 				}
 			}
-			else if (number_menu == 2) {
+			else if (number_menu == 2)
+			{
 				std::string file_name;
 				std::cout << "Enter name file ";
 				std::cin >> file_name;
@@ -78,7 +81,7 @@ int main(int argc, char* argv[])
 						if (!chain.handle(command))
 						{
 							std::cout << "[DATA BASE] command can't be executed" << std::endl
-								<< std::endl;
+									  << std::endl;
 						}
 					}
 				}
@@ -87,19 +90,17 @@ int main(int argc, char* argv[])
 					std::cout << "File with name:" << file_name << " can't be opened" << std::endl;
 					continue;
 				}
-
 			}
-			else if (number_menu == 3) break;
-			else
-				throw std::invalid_argument::invalid_argument("Error input!");
-
+			else if (number_menu == 3)
+				break;
+			/*	else
+					throw std::invalid_argument::invalid_argument("Error input!");*/
 		}
 	}
-	catch (std::invalid_argument const& ex) {
+	catch (std::invalid_argument const &ex)
+	{
 		std::cout << ex.what() << std::endl;
 	}
-
-
 
 	// db->add_pool("aboba", allocator_type::border_descriptors, 1000000, memory::allocate_mode::first_fit);
 
