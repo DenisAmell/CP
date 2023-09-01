@@ -31,20 +31,11 @@ bool command_add_scheme::can_execute(std::string const& request)
 		if (result.size() != 4)
 			return false;
 
-		_pool_name = result[1];
+		_pool_name = empty_check(result[1]);
 
-		_scheme_name = result[2];
+		_scheme_name = empty_check(result[2]);
 
-		if (result[3].starts_with("avl"))
-			_tree_type = trees_type::AVL;
-		else if (result[3].starts_with("bst"))
-			_tree_type = trees_type::BST;
-		else if (result[3].starts_with("rb"))
-			_tree_type = trees_type::RB;
-		else if (result[3].starts_with("splay"))
-			_tree_type = trees_type::SPLAY;
-		else
-			return false;
+		_tree_type = trees_type_convert(result[3]);
 
 		return true;
 	}

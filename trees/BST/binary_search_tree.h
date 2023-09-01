@@ -242,6 +242,11 @@ protected:
 			node*& subtree_root_address,
 			std::stack<node**>& path_to_subtree_root_exclusive);
 
+		virtual void after_read_inner(
+			tkey const& key,
+			binary_search_tree<tkey, tvalue, tkey_comparer>::node*& subtree_root_address,
+			std::stack<binary_search_tree<tkey, tvalue, tkey_comparer>::node**>& path_to_subtree_root_exclusive);
+
 		logger* get_logger() const override;
 	};
 
@@ -823,8 +828,6 @@ void binary_search_tree<tkey, tvalue, tkey_comparer>::insertion_template_method:
 	tvalue&& value)
 {
 	constructor_node(ptr_node, key, std::move(value));
-	ptr_node->key = key;
-	ptr_node->value = std::move(value);
 	ptr_node->left_subtree_address = nullptr;
 	ptr_node->right_subtree_address = nullptr;
 	initialize_node_additional_data(ptr_node);
@@ -1275,6 +1278,18 @@ void binary_search_tree<tkey, tvalue, tkey_comparer>::reading_template_method::a
 {
 }
 
+template <
+	typename tkey,
+	typename tvalue,
+	typename tkey_comparer>
+void binary_search_tree<tkey, tvalue, tkey_comparer>::reading_template_method::after_read_inner(
+	tkey const& key,
+	binary_search_tree<tkey, tvalue, tkey_comparer>::node*& subtree_root_address,
+	std::stack<binary_search_tree<tkey, tvalue, tkey_comparer>::node**>& path_to_subtree_root_exclusive)
+{
+}
+
+
 // endregion reading implementation
 
 template <
@@ -1601,7 +1616,6 @@ typename binary_search_tree<tkey, tvalue, tkey_comparer>::node* binary_search_tr
 
 	_insertion->initialization_node(node_copy, to_copy->key, std::move(tvalue(to_copy->value)));
 	_insertion->inject_additional_data(to_copy, node_copy);
-TODO:
 
 	node_copy->left_subtree_address = copy_inner(to_copy->left_subtree_address);
 	node_copy->right_subtree_address = copy_inner(to_copy->right_subtree_address);

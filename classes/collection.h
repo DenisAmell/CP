@@ -8,61 +8,61 @@
 #include "../trees/BST/binary_search_tree.h"
 #include "../comparer.h"
 #include "../trees/trees_type.h"
-#include "trees/BST/binary_search_tree.h"
-#include "trees/AVL/avl_tree.h"
-#include "trees/RB/red_black_tree.h"
-// #include "trees/SPLAY/splay_tree.h"
-#include "logger_singleton.h"
+#include "../trees/BST/binary_search_tree.h"
+#include "../trees/AVL/avl_tree.h"
+#include "../trees/RB/red_black_tree.h"
+#include "../trees/SPLAY/splay_tree.h"
+#include "../logger_singleton.h"
 
 class collection : public memory_holder
 {
 private:
-	memory *_allocator;
-	associative_container<key *, value *> *_data;
+	memory* _allocator;
+	associative_container<key*, value*>* _data;
 	trees_type _trees_type;
 
 public:
-	collection(memory *allocator = nullptr, trees_type trees_type = trees_type::RB) : _allocator(allocator), _trees_type(trees_type)
+	collection(memory* allocator = nullptr, trees_type trees_type = trees_type::RB) : _allocator(allocator), _trees_type(trees_type)
 	{
 		switch (_trees_type)
 		{
 		case trees_type::AVL:
-			_data = new avl_tree<key *, value *, key_comparer>(_allocator, logger_singleton::get_instance()->get_logger());
+			_data = new avl_tree<key*, value*, key_comparer>(_allocator, logger_singleton::get_instance()->get_logger());
 			break;
 		case trees_type::RB:
-			_data = new red_black_tree<key *, value *, key_comparer>(_allocator, logger_singleton::get_instance()->get_logger());
+			_data = new red_black_tree<key*, value*, key_comparer>(_allocator, logger_singleton::get_instance()->get_logger());
 			break;
-		// case trees_type::SPLAY:
-		// 	_data = new splay_tree<key *, value *, key_comparer>(_allocator, logger_singleton::get_instance()->get_logger());
-		// 	break;
+		case trees_type::SPLAY:
+			_data = new splay_tree<key*, value*, key_comparer>(_allocator, logger_singleton::get_instance()->get_logger());
+			break;
 		case trees_type::BST:
-			_data = new binary_search_tree<key *, value *, key_comparer>(_allocator, logger_singleton::get_instance()->get_logger());
+			_data = new binary_search_tree<key*, value*, key_comparer>(_allocator, logger_singleton::get_instance()->get_logger());
 			break;
 		}
 	}
 
 	~collection() { delete _data; }
 
-	collection(collection const &other) : _allocator(other._allocator), _trees_type(other._trees_type)
+	collection(collection const& other) : _allocator(other._allocator), _trees_type(other._trees_type)
 	{
 		switch (_trees_type)
 		{
 		case trees_type::AVL:
-			_data = new avl_tree<key *, value *, key_comparer>(_allocator, logger_singleton::get_instance()->get_logger());
+			_data = new avl_tree<key*, value*, key_comparer>(_allocator, logger_singleton::get_instance()->get_logger());
 			break;
 		case trees_type::RB:
-			_data = new red_black_tree<key *, value *, key_comparer>(_allocator, logger_singleton::get_instance()->get_logger());
+			_data = new red_black_tree<key*, value*, key_comparer>(_allocator, logger_singleton::get_instance()->get_logger());
 			break;
-		// case trees_type::SPLAY:
-		// 	_data = new splay_tree<key *, value *, key_comparer>(_allocator, logger_singleton::get_instance()->get_logger());
-		// 	break;
+		case trees_type::SPLAY:
+			_data = new splay_tree<key*, value*, key_comparer>(_allocator, logger_singleton::get_instance()->get_logger());
+			break;
 		case trees_type::BST:
-			_data = new binary_search_tree<key *, value *, key_comparer>(_allocator, logger_singleton::get_instance()->get_logger());
+			_data = new binary_search_tree<key*, value*, key_comparer>(_allocator, logger_singleton::get_instance()->get_logger());
 			break;
 		}
 	}
 
-	collection &operator=(collection const &other)
+	collection& operator=(collection const& other)
 	{
 		if (this == &other)
 		{
@@ -81,7 +81,7 @@ public:
 		return *this;
 	}
 
-	collection(collection &&other) noexcept
+	collection(collection&& other) noexcept
 	{
 		this->_data = other._data;
 		this->_allocator = other._allocator;
@@ -92,7 +92,7 @@ public:
 		other._trees_type = trees_type::RB;
 	}
 
-	collection &operator=(collection &&other)
+	collection& operator=(collection&& other)
 	{
 		if (this == &other)
 		{
@@ -114,23 +114,23 @@ public:
 	}
 
 public:
-	void add(key *key, value *value);
-	value *get(key *const &key);
-	bool find_in(key *key);
-	memory *get_memory() const override;
-	value remove(key *data_key);
-	void update(key *data_key, value *target_value);
-	std::vector<value *> get_data_between(key *const &left_key, key *const &right_key);
+	void add(key* key, value* value);
+	value* get(key* const& key);
+	bool find_in(key* key);
+	memory* get_memory() const override;
+	value remove(key* data_key);
+	void update(key* data_key, value* target_value);
+	std::vector<value*> get_data_between(key* const& left_key, key* const& right_key);
 };
 
-void collection::add(key *target_key, value *target_value)
+void collection::add(key* target_key, value* target_value)
 {
-	key *data_key = reinterpret_cast<key *>(allocate_with_guard(sizeof(key)));
+	key* data_key = reinterpret_cast<key*>(allocate_with_guard(sizeof(key)));
 	new (data_key) key;
 
 	data_key->_id = target_key->_id;
 
-	value *data_value = reinterpret_cast<value *>(allocate_with_guard(sizeof(value)));
+	value* data_value = reinterpret_cast<value*>(allocate_with_guard(sizeof(value)));
 	new (data_value) value;
 
 	data_value->_type_of_meeting = target_value->_type_of_meeting;
@@ -148,22 +148,22 @@ void collection::add(key *target_key, value *target_value)
 	_data->insert(data_key, std::move(data_value));
 }
 
-value *collection::get(key *const &key)
+value* collection::get(key* const& key)
 {
 	return _data->get_value(key);
 }
 
-bool collection::find_in(key *key)
+bool collection::find_in(key* key)
 {
 	return _data->find_in(key);
 }
 
-memory *collection::get_memory() const
+memory* collection::get_memory() const
 {
 	return _allocator;
 }
 
-value collection::remove(key *data_key)
+value collection::remove(key* data_key)
 {
 	auto removed_node = _data->remove_node(data_key);
 
@@ -178,9 +178,9 @@ value collection::remove(key *data_key)
 	return result;
 }
 
-void collection::update(key *data_key, value *target_value)
+void collection::update(key* data_key, value* target_value)
 {
-	value *data_value = reinterpret_cast<value *>(allocate_with_guard(sizeof(value)));
+	value* data_value = reinterpret_cast<value*>(allocate_with_guard(sizeof(value)));
 	new (data_value) value;
 
 	data_value->_type_of_meeting = target_value->_type_of_meeting;
@@ -198,7 +198,7 @@ void collection::update(key *data_key, value *target_value)
 	_data->update(data_key, std::move(data_value));
 }
 
-std::vector<value *> collection::get_data_between(key *const &left_key, key *const &right_key)
+std::vector<value*> collection::get_data_between(key* const& left_key, key* const& right_key)
 {
 	return _data->get_data_between(left_key, right_key);
 }

@@ -35,7 +35,7 @@ struct value
 	std::string _middle_name;
 	std::string _data;
 	std::string _time;
-	std::string _duration_of_meeting;
+	unsigned _duration_of_meeting;
 	std::string _list_invitees;
 };
 

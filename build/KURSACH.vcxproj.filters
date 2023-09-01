@@ -1,159 +1,168 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\education\institute\kursach\allocators\global_heap\memory_global_heap.cpp">
+    <ClCompile Include="D:\education\institute\gitreps\CP\allocators\boundery_tags\boundery_tags.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\education\institute\kursach\allocators\memory_list\memory_list.cpp">
+    <ClCompile Include="D:\education\institute\gitreps\CP\allocators\global_heap\memory_global_heap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\education\institute\kursach\logger\logger_builder_concrete.cpp">
+    <ClCompile Include="D:\education\institute\gitreps\CP\allocators\memory_list\memory_list.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\education\institute\kursach\logger\logger_builder.cpp">
+    <ClCompile Include="D:\education\institute\gitreps\CP\logger\logger_builder_concrete.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\education\institute\kursach\logger\logger_concrete.cpp">
+    <ClCompile Include="D:\education\institute\gitreps\CP\logger\logger_builder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\education\institute\kursach\logger\logger_holder.cpp">
+    <ClCompile Include="D:\education\institute\gitreps\CP\logger\logger_concrete.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\education\institute\kursach\logger\logger.cpp">
+    <ClCompile Include="D:\education\institute\gitreps\CP\logger\logger_holder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\education\institute\kursach\memory\memory_holder.cpp">
+    <ClCompile Include="D:\education\institute\gitreps\CP\logger\logger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\education\institute\kursach\main.cpp">
+    <ClCompile Include="D:\education\institute\gitreps\CP\memory\memory_holder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\education\institute\gitreps\CP\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\education\institute\kursach\allocators\global_heap\memory_global_heap.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\allocators\boundery_tags\boundery_tags.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\allocators\memory_list\memory_list.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\allocators\global_heap\memory_global_heap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\database_singleton.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\allocators\memory_list\memory_list.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\classes\pool.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\allocators\allocator_type.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\classes\scheme.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\classes\pool.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\classes\collection.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\classes\scheme.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\collections\work_calendar.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\classes\collection.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\commands\command.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\collections\work_calendar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\commands\command_add_pool.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\commands\command.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\commands\command_add_scheme.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\commands\command_add_pool.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\commands\command_add_collection.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\commands\command_add_scheme.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\commands\command_add_data.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\commands\command_add_collection.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\commands\command_get_data.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\commands\command_add_data.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\commands\command_get_data_between.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\commands\command_get_data.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\commands\command_remove_data.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\commands\command_get_data_between.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\commands\command_remove_collection.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\commands\command_remove_data.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\commands\command_remove_scheme.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\commands\command_remove_collection.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\commands\command_remove_pool.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\commands\command_remove_scheme.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\commands\command_update.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\commands\command_remove_pool.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\logger\logger_builder_concrete.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\commands\command_update.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\logger\logger_builder.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\logger\logger_builder_concrete.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\logger\logger_concrete.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\logger\logger_builder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\logger\logger_holder.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\logger\logger_concrete.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\logger\logger.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\logger\logger_holder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\memory\memory_holder.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\logger\logger.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\memory\memory.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\memory\memory_holder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\trees\BST\associative_container.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\memory\memory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\trees\BST\binary_search_tree.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\trees\BST\associative_container.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\trees\RB\red_black_tree.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\trees\BST\binary_search_tree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\trees\AVL\avl_tree.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\trees\RB\red_black_tree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\trees\SPLAY\splay_tree.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\trees\AVL\avl_tree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\trees\trees_type.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\trees\SPLAY\splay_tree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\abstract_handler.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\trees\trees_type.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\comparer.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\abstract_handler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\logger_singleton.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\comparer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\pars.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\database_singleton.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\request_handler_with_command.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\logger_singleton.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\education\institute\kursach\request_handler_with_command_chain.h">
+    <ClInclude Include="D:\education\institute\gitreps\CP\pars.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\education\institute\gitreps\CP\request_handler_with_command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\education\institute\gitreps\CP\request_handler_with_command_chain.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\education\institute\kursach\CMakeLists.txt" />
+    <CustomBuild Include="D:\education\institute\gitreps\CP\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{E6743BA5-63A1-359B-B9FB-DB01A0BA527D}</UniqueIdentifier>
+      <UniqueIdentifier>{B15198A9-FF82-3961-9FA3-E34592C152DB}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{CD02009A-B85F-3050-8742-E7FBB353678F}</UniqueIdentifier>
+      <UniqueIdentifier>{09D10FEC-A47E-324B-A7D0-048225AE5A5A}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

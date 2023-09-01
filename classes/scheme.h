@@ -1,15 +1,15 @@
 #ifndef SCHEME_H
 #define SCHEME_H
 
-#include "memory/memory.h"
-#include "classes/collection.h"
+#include "../memory/memory.h"
+#include "../classes/collection.h"
 #include "../comparer.h"
-#include "logger_singleton.h"
+#include "../logger_singleton.h"
 #include "../trees/trees_type.h"
-#include "trees/BST/binary_search_tree.h"
-#include "trees/AVL/avl_tree.h"
-#include "trees/RB/red_black_tree.h"
-// #include "trees/SPLAY/splay_tree.h"
+#include "../trees/BST/binary_search_tree.h"
+#include "../trees/AVL/avl_tree.h"
+#include "../trees/RB/red_black_tree.h"
+#include "../trees/SPLAY/splay_tree.h"
 #include <iostream>
 
 class scheme
@@ -17,11 +17,11 @@ class scheme
 	friend class database_singleton;
 
 private:
-	associative_container<std::string, collection> *_scheme;
+	associative_container<std::string, collection>* _scheme;
 	trees_type _trees_type;
 
 public:
-	scheme(trees_type trees_type) : _trees_type(trees_type)
+	scheme(trees_type trees_type = trees_type::RB) : _trees_type(trees_type)
 	{
 		switch (trees_type)
 		{
@@ -31,9 +31,9 @@ public:
 		case trees_type::RB:
 			_scheme = new red_black_tree<std::string, collection, string_comparer>(nullptr, logger_singleton::get_instance()->get_logger());
 			break;
-		// case trees_type::SPLAY:
-		// 	_scheme = new splay_tree<std::string, collection, string_comparer>(nullptr, logger_singleton::get_instance()->get_logger());
-		// 	break;
+		case trees_type::SPLAY:
+			_scheme = new splay_tree<std::string, collection, string_comparer>(nullptr, logger_singleton::get_instance()->get_logger());
+			break;
 		case trees_type::BST:
 			_scheme = new binary_search_tree<std::string, collection, string_comparer>(nullptr, logger_singleton::get_instance()->get_logger());
 			break;
@@ -47,13 +47,13 @@ public:
 		delete _scheme;
 	}
 
-	void add(std::string const &name_collection, collection &&collection);
-	collection &find(std::string const &name_collection);
-	bool find_to_string(std::string const &name_collection);
-	void remove(std::string const &name_collection);
+	void add(std::string const& name_collection, collection&& collection);
+	collection& find(std::string const& name_collection);
+	bool find_to_string(std::string const& name_collection);
+	void remove(std::string const& name_collection);
 
 public:
-	scheme(scheme const &other) : _trees_type(other._trees_type)
+	scheme(scheme const& other) : _trees_type(other._trees_type)
 	{
 		switch (_trees_type)
 		{
@@ -63,16 +63,16 @@ public:
 		case trees_type::RB:
 			_scheme = new red_black_tree<std::string, collection, string_comparer>(*reinterpret_cast<red_black_tree<std::string, collection, string_comparer> *>(other._scheme));
 			break;
-		// case trees_type::SPLAY:
-		// 	_scheme = new splay_tree<std::string, collection, string_comparer>(*reinterpret_cast<splay_tree<std::string, collection, string_comparer> *>(other._scheme));
-		// 	break;
+		case trees_type::SPLAY:
+			_scheme = new splay_tree<std::string, collection, string_comparer>(*reinterpret_cast<splay_tree<std::string, collection, string_comparer> *>(other._scheme));
+			break;
 		case trees_type::BST:
 			_scheme = new binary_search_tree<std::string, collection, string_comparer>(*reinterpret_cast<binary_search_tree<std::string, collection, string_comparer> *>(other._scheme));
 			break;
 		}
 	}
 
-	scheme &operator=(scheme const &other)
+	scheme& operator=(scheme const& other)
 	{
 		if (this == &other)
 		{
@@ -89,9 +89,9 @@ public:
 		case trees_type::RB:
 			this->_scheme = new red_black_tree<std::string, collection, string_comparer>(*reinterpret_cast<red_black_tree<std::string, collection, string_comparer> *>(other._scheme));
 			break;
-		// case trees_type::SPLAY:
-		// 	this->_scheme = new splay_tree<std::string, collection, string_comparer>(*reinterpret_cast<splay_tree<std::string, collection, string_comparer> *>(other._scheme));
-		// 	break;
+		case trees_type::SPLAY:
+			this->_scheme = new splay_tree<std::string, collection, string_comparer>(*reinterpret_cast<splay_tree<std::string, collection, string_comparer> *>(other._scheme));
+			break;
 		case trees_type::BST:
 			this->_scheme = new binary_search_tree<std::string, collection, string_comparer>(*reinterpret_cast<binary_search_tree<std::string, collection, string_comparer> *>(other._scheme));
 			break;
@@ -101,7 +101,7 @@ public:
 		return *this;
 	}
 
-	scheme(scheme &&other) noexcept
+	scheme(scheme&& other) noexcept
 	{
 		this->_scheme = other._scheme;
 		other._scheme = nullptr;
@@ -109,7 +109,7 @@ public:
 		other._trees_type = trees_type::RB;
 	}
 
-	scheme &operator=(scheme &&other) noexcept
+	scheme& operator=(scheme&& other) noexcept
 	{
 
 		if (this == &other)
@@ -129,22 +129,22 @@ public:
 	}
 };
 
-void scheme::add(std::string const &name_collection, collection &&collection)
+void scheme::add(std::string const& name_collection, collection&& collection)
 {
 	_scheme->insert(name_collection, std::move(collection));
 }
 
-collection &scheme::find(std::string const &name_collection)
+collection& scheme::find(std::string const& name_collection)
 {
 	return _scheme->find(name_collection);
 }
 
-bool scheme::find_to_string(std::string const &name_collection)
+bool scheme::find_to_string(std::string const& name_collection)
 {
 	return _scheme->find_to_string(name_collection);
 }
 
-void scheme::remove(std::string const &name_collection)
+void scheme::remove(std::string const& name_collection)
 {
 	_scheme->remove(name_collection);
 }

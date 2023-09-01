@@ -34,41 +34,22 @@ bool command_add_data::can_execute(std::string const& request)
 		if (result.size() != 16)
 			return false;
 
-		_pool_name = result[1];
+		_pool_name = empty_check(result[1]);
+		_scheme_name = empty_check(result[2]);
+		_collection_name = empty_check(result[3]);
 
-		_scheme_name = result[2];
+		_data_key._id = is_unsigned_convert(result[4]);
 
-		_collection_name = result[3];
-
-		std::stringstream size(result[4]);
-		size >> _data_key._id;
-
-		if (result[5] == "daily")
-			_data_value._type_of_meeting = type_of_meeting::DAILY;
-		else if (result[5] == "based_on_results_of_reporting_period")
-			_data_value._type_of_meeting = type_of_meeting::BASED_ON_RESULTS_OF_REPORTING_PERIOD;
-		else if (result[5] == "interview")
-			_data_value._type_of_meeting = type_of_meeting::INTERVIEW;
-		else if (result[5] == "corporate")
-			_data_value._type_of_meeting = type_of_meeting::CORPORATE;
-		else
-			return false;
-
-		if (result[6] == "face_to_face")
-			_data_value._format = format::FACE_TO_FACE;
-		else if (result[6] == "remote")
-			_data_value._format = format::REMOTE;
-		else
-			return false;
-
+		_data_value._type_of_meeting = type_of_meeting_convert(result[5]);
+		_data_value._format = format_convert(result[6]);
 		_data_value._meeting_description = result[7];
 		_data_value._link_to_meeting = result[8];
-		_data_value._first_name = result[9];
-		_data_value._last_name = result[10];
-		_data_value._middle_name = result[11];
-		_data_value._data = result[12];
-		_data_value._time = result[13];
-		_data_value._duration_of_meeting = result[14];
+		_data_value._first_name = name_surname_convert(result[9]);
+		_data_value._last_name = name_surname_convert(result[10]);
+		_data_value._middle_name = middle_name_convert(result[11]);
+		_data_value._data = data_convert(result[12]);
+		_data_value._time = time_convert(result[13]);
+		_data_value._duration_of_meeting = is_unsigned_convert(result[14]);
 		_data_value._list_invitees = result[15];
 
 		return true;

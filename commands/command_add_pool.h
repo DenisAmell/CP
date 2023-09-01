@@ -36,38 +36,15 @@ bool command_add_pool::can_execute(std::string const& request)
 		if (result.size() != 6)
 			return false;
 
-		_pool_name = result[1];
-		if (result[2] == "memory_list")
-			_pool_allocator_type = allocator_type::MEMORY_LIST;
-		else if (result[2] == "buddies_system")
-			_pool_allocator_type = allocator_type::BUDDIES_SYSTEM;
-		else if (result[2] == "border_descriptors")
-			_pool_allocator_type = allocator_type::BORDER_DESCRIPTORS;
-		else
-			return false;
+		_pool_name = empty_check(result[1]);
 
-		std::stringstream size(result[3]);
-		size >> _allocator_size;
+		_pool_allocator_type = allocator_type_convert(result[2]);
 
-		if (result[4] == "first_fit")
-			_pool_allocate_mode = memory::allocate_mode::first_fit;
-		else if (result[4] == "best_fit")
-			_pool_allocate_mode = memory::allocate_mode::best_fit;
-		else if (result[4] == "worst_fit")
-			_pool_allocate_mode = memory::allocate_mode::worst_fit;
-		else
-			return false;
+		_allocator_size = is_unsigned_convert(result[3]);
 
-		if (result[5].starts_with("avl"))
-			_tree_type = trees_type::AVL;
-		else if (result[5].starts_with("bst"))
-			_tree_type = trees_type::BST;
-		else if (result[5].starts_with("rb"))
-			_tree_type = trees_type::RB;
-		else if (result[5].starts_with("splay"))
-			_tree_type = trees_type::SPLAY;
-		else
-			return false;
+		_pool_allocate_mode = allocate_mode_convert(result[4]);
+
+		_tree_type = trees_type_convert(result[5]);
 
 		return true;
 	}

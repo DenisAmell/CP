@@ -32,22 +32,14 @@ bool command_add_collection::can_execute(std::string const& request)
 		if (result.size() != 5)
 			return false;
 
-		_pool_name = result[1];
+		std::cout << '[' << result[1] << ']' << std::endl;
+		_pool_name = empty_check(result[1]);
 
-		_scheme_name = result[2];
+		_scheme_name = empty_check(result[2]);
 
-		_collection_name = result[3];
+		_collection_name = empty_check(result[3]);
 
-		if (result[4].starts_with("avl"))
-			_tree_type = trees_type::AVL;
-		else if (result[4].starts_with("bst"))
-			_tree_type = trees_type::BST;
-		else if (result[4].starts_with("rb"))
-			_tree_type = trees_type::RB;
-		else if (result[4].starts_with("splay"))
-			_tree_type = trees_type::SPLAY;
-		else
-			return false;
+		_tree_type = trees_type_convert(result[4]);
 
 		return true;
 	}

@@ -1,0 +1,3 @@
+/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles/SERVER.dir
+/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles/edit_cache.dir
+/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles/rebuild_cache.dir
