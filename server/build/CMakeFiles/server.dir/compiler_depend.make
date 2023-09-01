@@ -265,6 +265,19 @@ CMakeFiles/server.dir/main_server.cpp.o: ../main_server.cpp \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
   /usr/include/c++/11/bits/fstream.tcc \
+  /usr/include/x86_64-linux-gnu/sys/ipc.h \
+  /usr/include/x86_64-linux-gnu/bits/ipctypes.h \
+  /usr/include/x86_64-linux-gnu/bits/ipc.h \
+  /usr/include/x86_64-linux-gnu/bits/ipc-perm.h \
+  /usr/include/x86_64-linux-gnu/sys/shm.h \
+  /usr/include/x86_64-linux-gnu/bits/shm.h \
+  /usr/include/x86_64-linux-gnu/bits/shmlba.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_shmid_ds.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_shmid64_ds.h \
+  /usr/include/x86_64-linux-gnu/sys/sem.h \
+  /usr/include/x86_64-linux-gnu/bits/sem.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_semid_ds.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_semid64_ds.h \
   /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/database_singleton.h \
   /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/memory/memory.h \
   /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/logger/logger.h \
@@ -2499,8 +2512,6 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memo
 
 /usr/include/c++/11/tr1/modified_bessel_func.tcc:
 
-/usr/include/c++/11/tr1/hypergeometric.tcc:
-
 /usr/include/c++/11/tr1/exp_integral.tcc:
 
 /usr/include/c++/11/tr1/ell_integral.tcc:
@@ -2520,8 +2531,6 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memo
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
-/mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/commands/command_update_data.h:
 
 /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/commands/command_remove_collection.h:
 
@@ -2614,6 +2623,26 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memo
 /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/logger/logger.h:
 
 /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/memory/memory.h:
+
+/mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/commands/command_update_data.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_semid_ds.h:
+
+/usr/include/x86_64-linux-gnu/bits/sem.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_shmid64_ds.h:
+
+/usr/include/c++/11/tr1/hypergeometric.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_shmid_ds.h:
+
+/usr/include/x86_64-linux-gnu/bits/shmlba.h:
+
+/usr/include/x86_64-linux-gnu/bits/shm.h:
+
+/usr/include/x86_64-linux-gnu/bits/ipc.h:
+
+/usr/include/x86_64-linux-gnu/sys/ipc.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
 
@@ -2881,6 +2910,8 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memo
 
 /usr/include/c++/11/concepts:
 
+/usr/include/x86_64-linux-gnu/bits/ipc-perm.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
@@ -2912,6 +2943,8 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memo
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/x86_64-linux-gnu/sys/sem.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
@@ -3045,6 +3078,8 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memo
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
 
+/usr/include/x86_64-linux-gnu/sys/shm.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
 /usr/include/asm-generic/errno.h:
@@ -3072,6 +3107,8 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memo
 /usr/include/x86_64-linux-gnu/bits/uio-ext.h:
 
 /usr/include/c++/11/stdexcept:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_semid64_ds.h:
 
 /usr/include/c++/11/bits/uniform_int_dist.h:
 
@@ -3136,6 +3173,8 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memo
 /usr/include/math.h:
 
 /usr/include/c++/11/cstring:
+
+/usr/include/x86_64-linux-gnu/bits/ipctypes.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
