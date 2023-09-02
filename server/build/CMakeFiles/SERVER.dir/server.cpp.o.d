@@ -53,6 +53,7 @@ CMakeFiles/SERVER.dir/server.cpp.o: \
  /usr/include/c++/11/bits/concept_check.h \
  /usr/include/c++/11/debug/assertions.h \
  /usr/include/c++/11/bits/stl_iterator.h \
+ /usr/include/c++/11/bits/stl_construct.h \
  /usr/include/c++/11/debug/debug.h \
  /usr/include/c++/11/bits/predefined_ops.h /usr/include/c++/11/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
@@ -118,7 +119,6 @@ CMakeFiles/SERVER.dir/server.cpp.o: \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/initializer_list /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/stl_tempbuf.h \
- /usr/include/c++/11/bits/stl_construct.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
  /usr/include/c++/11/bits/range_access.h \
  /usr/include/c++/11/bits/basic_string.h \
@@ -217,6 +217,19 @@ CMakeFiles/SERVER.dir/server.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
+ /usr/include/x86_64-linux-gnu/sys/ipc.h \
+ /usr/include/x86_64-linux-gnu/bits/ipctypes.h \
+ /usr/include/x86_64-linux-gnu/bits/ipc.h \
+ /usr/include/x86_64-linux-gnu/bits/ipc-perm.h \
+ /usr/include/x86_64-linux-gnu/sys/shm.h \
+ /usr/include/x86_64-linux-gnu/bits/shm.h \
+ /usr/include/x86_64-linux-gnu/bits/shmlba.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_shmid_ds.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_shmid64_ds.h \
+ /usr/include/x86_64-linux-gnu/sys/sem.h \
+ /usr/include/x86_64-linux-gnu/bits/sem.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_semid_ds.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_semid64_ds.h \
  /mnt/d/education/institute/gitreps/CP/server/../database_singleton.h \
  /mnt/d/education/institute/gitreps/CP/server/../memory/memory.h \
  /mnt/d/education/institute/gitreps/CP/server/../memory/../logger/logger.h \
@@ -304,6 +317,18 @@ CMakeFiles/SERVER.dir/server.cpp.o: \
  /mnt/d/education/institute/gitreps/CP/server/../allocators/memory_list/../../memory/memory.h \
  /mnt/d/education/institute/gitreps/CP/server/../allocators/memory_list/../../logger/logger_holder.h \
  /mnt/d/education/institute/gitreps/CP/server/../allocators/memory_list/../../memory/memory_holder.h \
+ /mnt/d/education/institute/gitreps/CP/server/../allocators/boundery_tags/boundery_tags.h \
+ /mnt/d/education/institute/gitreps/CP/server/../allocators/boundery_tags/../../memory/memory.h \
+ /mnt/d/education/institute/gitreps/CP/server/../allocators/boundery_tags/../../logger/logger_holder.h \
+ /mnt/d/education/institute/gitreps/CP/server/../allocators/boundery_tags/../../logger/logger.h \
+ /mnt/d/education/institute/gitreps/CP/server/../allocators/boundery_tags/../../logger/logger_concrete.h \
+ /mnt/d/education/institute/gitreps/CP/server/../allocators/boundery_tags/../../memory/memory_holder.h \
+ /usr/include/c++/11/cstring \
+ /mnt/d/education/institute/gitreps/CP/server/../allocators/buddy_system/buddy_system.h \
+ /mnt/d/education/institute/gitreps/CP/server/../allocators/buddy_system/../../memory/memory.h \
+ /mnt/d/education/institute/gitreps/CP/server/../allocators/buddy_system/../../logger/logger.h \
+ /mnt/d/education/institute/gitreps/CP/server/../allocators/buddy_system/../../logger/logger_concrete.h \
+ /mnt/d/education/institute/gitreps/CP/server/../allocators/buddy_system/../../logger/logger_holder.h \
  /mnt/d/education/institute/gitreps/CP/server/../logger_singleton.h \
  /mnt/d/education/institute/gitreps/CP/server/../logger/logger.h \
  /mnt/d/education/institute/gitreps/CP/server/../request_handler_with_command_chain.h \
@@ -358,7 +383,7 @@ CMakeFiles/SERVER.dir/server.cpp.o: \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/bits/ranges_uninitialized.h \
  /usr/include/c++/11/bits/uses_allocator_args.h \
- /usr/include/c++/11/pstl/glue_memory_defs.h /usr/include/c++/11/cstring \
+ /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/bits/regex_constants.h \
  /usr/include/c++/11/bits/regex_error.h \
  /usr/include/c++/11/bits/regex_automaton.h \

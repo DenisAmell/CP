@@ -7,7 +7,7 @@
 #include "../../logger/logger_concrete.h"
 #include "../../memory/memory_holder.h"
 #include <cstring>
-//TODO поменять на норм название
+//TODO поменять на норм название, ПОТОМ КОГДА-НИБУДЬ
 class boundery_tags final : public memory, protected logger_holder
 {
 private:

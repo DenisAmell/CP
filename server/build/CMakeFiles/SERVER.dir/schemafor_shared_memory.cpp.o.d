@@ -1,9 +1,6 @@
-CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.cpp.o: \
- /mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.cpp \
- /usr/include/stdc-predef.h \
- /mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.h \
- /mnt/d/education/institute/gitreps/CP/allocators/global_heap/../../memory/memory.h \
- /usr/include/c++/11/iostream \
+CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.o: \
+ /mnt/d/education/institute/gitreps/CP/server/schemafor_shared_memory.cpp \
+ /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -158,21 +155,18 @@ CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/global_hea
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc \
- /mnt/d/education/institute/gitreps/CP/allocators/global_heap/../../memory/../logger/logger.h \
- /mnt/d/education/institute/gitreps/CP/allocators/global_heap/../../memory/../logger/logger_concrete.h \
- /mnt/d/education/institute/gitreps/CP/allocators/global_heap/../../memory/../logger/logger.h \
- /mnt/d/education/institute/gitreps/CP/allocators/global_heap/../../memory/../logger/logger_builder_concrete.h \
- /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
- /usr/include/c++/11/ext/aligned_buffer.h \
- /usr/include/c++/11/bits/node_handle.h \
- /usr/include/c++/11/bits/stl_map.h /usr/include/c++/11/tuple \
- /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
- /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
- /usr/include/c++/11/bits/invoke.h \
- /usr/include/c++/11/bits/stl_multimap.h \
- /usr/include/c++/11/bits/erase_if.h \
- /mnt/d/education/institute/gitreps/CP/allocators/global_heap/../../memory/../logger/logger_builder.h \
- /mnt/d/education/institute/gitreps/CP/allocators/global_heap/../../memory/../logger/logger_builder.h \
- /mnt/d/education/institute/gitreps/CP/allocators/global_heap/../../memory/../logger/logger_builder_concrete.h \
- /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h
+ /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/cstring \
+ /usr/include/string.h /usr/include/strings.h \
+ /usr/include/x86_64-linux-gnu/sys/ipc.h \
+ /usr/include/x86_64-linux-gnu/bits/ipctypes.h \
+ /usr/include/x86_64-linux-gnu/bits/ipc.h \
+ /usr/include/x86_64-linux-gnu/bits/ipc-perm.h \
+ /usr/include/x86_64-linux-gnu/sys/shm.h \
+ /usr/include/x86_64-linux-gnu/bits/shm.h \
+ /usr/include/x86_64-linux-gnu/bits/shmlba.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_shmid_ds.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_shmid64_ds.h \
+ /usr/include/x86_64-linux-gnu/sys/sem.h \
+ /usr/include/x86_64-linux-gnu/bits/sem.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_semid_ds.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_semid64_ds.h

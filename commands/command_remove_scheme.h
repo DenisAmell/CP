@@ -30,8 +30,8 @@ bool command_remove_scheme::can_execute(std::string const& request)
 			return false;
 
 		_pool_name = empty_check(result[1]);
-
 		_scheme_name = empty_check(result[2]);
+
 
 		return true;
 	}

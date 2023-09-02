@@ -83,10 +83,24 @@ CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/boundery_t
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/boundery_tags/boundery_tags.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/education/institute/gitreps/CP/allocators/boundery_tags/boundery_tags.cpp -o CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/boundery_tags/boundery_tags.cpp.s
 
+CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp.o: CMakeFiles/SERVER.dir/flags.make
+CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp.o: /mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp
+CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp.o: CMakeFiles/SERVER.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp.o -MF CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp.o.d -o CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp.o -c /mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp
+
+CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp > CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp.i
+
+CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp -o CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp.s
+
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.cpp.o: CMakeFiles/SERVER.dir/flags.make
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.cpp.o: /mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.cpp
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.cpp.o: CMakeFiles/SERVER.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.cpp.o -MF CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.cpp.o.d -o CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.cpp.o -c /mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.cpp
 
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/global_hea
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/memory_list/memory_list.cpp.o: CMakeFiles/SERVER.dir/flags.make
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/memory_list/memory_list.cpp.o: /mnt/d/education/institute/gitreps/CP/allocators/memory_list/memory_list.cpp
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/memory_list/memory_list.cpp.o: CMakeFiles/SERVER.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/memory_list/memory_list.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/memory_list/memory_list.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/memory_list/memory_list.cpp.o -MF CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/memory_list/memory_list.cpp.o.d -o CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/memory_list/memory_list.cpp.o -c /mnt/d/education/institute/gitreps/CP/allocators/memory_list/memory_list.cpp
 
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/memory_list/memory_list.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/memory_lis
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_builder_concrete.cpp.o: CMakeFiles/SERVER.dir/flags.make
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_builder_concrete.cpp.o: /mnt/d/education/institute/gitreps/CP/logger/logger_builder_concrete.cpp
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_builder_concrete.cpp.o: CMakeFiles/SERVER.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_builder_concrete.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_builder_concrete.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_builder_concrete.cpp.o -MF CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_builder_concrete.cpp.o.d -o CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_builder_concrete.cpp.o -c /mnt/d/education/institute/gitreps/CP/logger/logger_builder_concrete.cpp
 
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_builder_concrete.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_builder
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_builder.cpp.o: CMakeFiles/SERVER.dir/flags.make
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_builder.cpp.o: /mnt/d/education/institute/gitreps/CP/logger/logger_builder.cpp
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_builder.cpp.o: CMakeFiles/SERVER.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_builder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_builder.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_builder.cpp.o -MF CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_builder.cpp.o.d -o CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_builder.cpp.o -c /mnt/d/education/institute/gitreps/CP/logger/logger_builder.cpp
 
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_builder.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_builder
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_concrete.cpp.o: CMakeFiles/SERVER.dir/flags.make
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_concrete.cpp.o: /mnt/d/education/institute/gitreps/CP/logger/logger_concrete.cpp
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_concrete.cpp.o: CMakeFiles/SERVER.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_concrete.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_concrete.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_concrete.cpp.o -MF CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_concrete.cpp.o.d -o CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_concrete.cpp.o -c /mnt/d/education/institute/gitreps/CP/logger/logger_concrete.cpp
 
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_concrete.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_concret
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_holder.cpp.o: CMakeFiles/SERVER.dir/flags.make
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_holder.cpp.o: /mnt/d/education/institute/gitreps/CP/logger/logger_holder.cpp
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_holder.cpp.o: CMakeFiles/SERVER.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_holder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_holder.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_holder.cpp.o -MF CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_holder.cpp.o.d -o CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_holder.cpp.o -c /mnt/d/education/institute/gitreps/CP/logger/logger_holder.cpp
 
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_holder.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_holder.
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger.cpp.o: CMakeFiles/SERVER.dir/flags.make
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger.cpp.o: /mnt/d/education/institute/gitreps/CP/logger/logger.cpp
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger.cpp.o: CMakeFiles/SERVER.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger.cpp.o -MF CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger.cpp.o.d -o CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger.cpp.o -c /mnt/d/education/institute/gitreps/CP/logger/logger.cpp
 
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger.cpp.s: 
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp.o: CMakeFiles/SERVER.dir/flags.make
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp.o: /mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp.o: CMakeFiles/SERVER.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp.o -MF CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp.o.d -o CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp.o -c /mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp
 
 CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/memory/memory_holder.
 CMakeFiles/SERVER.dir/server.cpp.o: CMakeFiles/SERVER.dir/flags.make
 CMakeFiles/SERVER.dir/server.cpp.o: ../server.cpp
 CMakeFiles/SERVER.dir/server.cpp.o: CMakeFiles/SERVER.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SERVER.dir/server.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SERVER.dir/server.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SERVER.dir/server.cpp.o -MF CMakeFiles/SERVER.dir/server.cpp.o.d -o CMakeFiles/SERVER.dir/server.cpp.o -c /mnt/d/education/institute/gitreps/CP/server/server.cpp
 
 CMakeFiles/SERVER.dir/server.cpp.i: cmake_force
@@ -209,9 +223,24 @@ CMakeFiles/SERVER.dir/server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SERVER.dir/server.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/education/institute/gitreps/CP/server/server.cpp -o CMakeFiles/SERVER.dir/server.cpp.s
 
+CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.o: CMakeFiles/SERVER.dir/flags.make
+CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.o: ../schemafor_shared_memory.cpp
+CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.o: CMakeFiles/SERVER.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.o -MF CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.o.d -o CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.o -c /mnt/d/education/institute/gitreps/CP/server/schemafor_shared_memory.cpp
+
+CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/education/institute/gitreps/CP/server/schemafor_shared_memory.cpp > CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.i
+
+CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/education/institute/gitreps/CP/server/schemafor_shared_memory.cpp -o CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.s
+
 # Object files for target SERVER
 SERVER_OBJECTS = \
 "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/boundery_tags/boundery_tags.cpp.o" \
+"CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp.o" \
 "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.cpp.o" \
 "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/memory_list/memory_list.cpp.o" \
 "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_builder_concrete.cpp.o" \
@@ -220,12 +249,14 @@ SERVER_OBJECTS = \
 "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_holder.cpp.o" \
 "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger.cpp.o" \
 "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp.o" \
-"CMakeFiles/SERVER.dir/server.cpp.o"
+"CMakeFiles/SERVER.dir/server.cpp.o" \
+"CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.o"
 
 # External object files for target SERVER
 SERVER_EXTERNAL_OBJECTS =
 
 SERVER: CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/boundery_tags/boundery_tags.cpp.o
+SERVER: CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp.o
 SERVER: CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.cpp.o
 SERVER: CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/memory_list/memory_list.cpp.o
 SERVER: CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_builder_concrete.cpp.o
@@ -235,9 +266,10 @@ SERVER: CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger
 SERVER: CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger.cpp.o
 SERVER: CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp.o
 SERVER: CMakeFiles/SERVER.dir/server.cpp.o
+SERVER: CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.o
 SERVER: CMakeFiles/SERVER.dir/build.make
 SERVER: CMakeFiles/SERVER.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable SERVER"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/d/education/institute/gitreps/CP/server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable SERVER"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SERVER.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -27,7 +27,8 @@ bool command_remove_pool::can_execute(std::string const& request)
 		if (result.size() != 2)
 			return false;
 
-		_pool_name = empty_check(result[1]);
+		std::string pool_name = empty_check(result[1]);
+		_pool_name = std::move(pool_name.substr(0, pool_name.find("\r")));
 
 		return true;
 	}

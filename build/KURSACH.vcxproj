@@ -311,6 +311,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   <ItemGroup>
     <ClInclude Include="D:\education\institute\gitreps\CP\allocators\boundery_tags\boundery_tags.h" />
     <ClCompile Include="D:\education\institute\gitreps\CP\allocators\boundery_tags\boundery_tags.cpp" />
+    <ClInclude Include="D:\education\institute\gitreps\CP\allocators\buddy_system\buddy_system.h" />
+    <ClCompile Include="D:\education\institute\gitreps\CP\allocators\buddy_system\buddy_system.cpp" />
     <ClCompile Include="D:\education\institute\gitreps\CP\allocators\global_heap\memory_global_heap.cpp" />
     <ClInclude Include="D:\education\institute\gitreps\CP\allocators\global_heap\memory_global_heap.h" />
     <ClCompile Include="D:\education\institute\gitreps\CP\allocators\memory_list\memory_list.cpp" />

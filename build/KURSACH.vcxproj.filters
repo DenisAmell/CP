@@ -4,6 +4,9 @@
     <ClCompile Include="D:\education\institute\gitreps\CP\allocators\boundery_tags\boundery_tags.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\education\institute\gitreps\CP\allocators\buddy_system\buddy_system.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="D:\education\institute\gitreps\CP\allocators\global_heap\memory_global_heap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -34,6 +37,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D:\education\institute\gitreps\CP\allocators\boundery_tags\boundery_tags.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\education\institute\gitreps\CP\allocators\buddy_system\buddy_system.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="D:\education\institute\gitreps\CP\allocators\global_heap\memory_global_heap.h">

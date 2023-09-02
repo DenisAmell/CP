@@ -13,6 +13,8 @@ include_directories(.)
 add_executable(KURSACH
         allocators/boundery_tags/boundery_tags.h
         allocators/boundery_tags/boundery_tags.cpp
+        allocators/buddy_system/buddy_system.h
+        allocators/buddy_system/buddy_system.cpp
         allocators/global_heap/memory_global_heap.cpp
         allocators/global_heap/memory_global_heap.h
         allocators/memory_list/memory_list.cpp

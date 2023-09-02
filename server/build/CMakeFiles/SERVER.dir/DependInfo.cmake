@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/d/education/institute/gitreps/CP/allocators/boundery_tags/boundery_tags.cpp" "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/boundery_tags/boundery_tags.cpp.o" "gcc" "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/boundery_tags/boundery_tags.cpp.o.d"
+  "/mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp" "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp.o" "gcc" "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp.o.d"
   "/mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.cpp" "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.cpp.o" "gcc" "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.cpp.o.d"
   "/mnt/d/education/institute/gitreps/CP/allocators/memory_list/memory_list.cpp" "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/memory_list/memory_list.cpp.o" "gcc" "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/memory_list/memory_list.cpp.o.d"
   "/mnt/d/education/institute/gitreps/CP/logger/logger.cpp" "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger.cpp.o" "gcc" "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger.cpp.o.d"
@@ -17,6 +18,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/d/education/institute/gitreps/CP/logger/logger_concrete.cpp" "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_concrete.cpp.o" "gcc" "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_concrete.cpp.o.d"
   "/mnt/d/education/institute/gitreps/CP/logger/logger_holder.cpp" "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_holder.cpp.o" "gcc" "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_holder.cpp.o.d"
   "/mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp" "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp.o" "gcc" "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp.o.d"
+  "/mnt/d/education/institute/gitreps/CP/server/schemafor_shared_memory.cpp" "CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.o" "gcc" "CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.o.d"
   "/mnt/d/education/institute/gitreps/CP/server/server.cpp" "CMakeFiles/SERVER.dir/server.cpp.o" "gcc" "CMakeFiles/SERVER.dir/server.cpp.o.d"
   )
 

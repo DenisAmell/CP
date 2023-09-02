@@ -1,9 +1,6 @@
-CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.cpp.o: \
- /mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.cpp \
- /usr/include/stdc-predef.h \
- /mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.h \
- /mnt/d/education/institute/gitreps/CP/allocators/global_heap/../../memory/memory.h \
- /usr/include/c++/11/iostream \
+CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp.o: \
+ /mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp \
+ /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -158,11 +155,44 @@ CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/global_hea
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc \
- /mnt/d/education/institute/gitreps/CP/allocators/global_heap/../../memory/../logger/logger.h \
- /mnt/d/education/institute/gitreps/CP/allocators/global_heap/../../memory/../logger/logger_concrete.h \
- /mnt/d/education/institute/gitreps/CP/allocators/global_heap/../../memory/../logger/logger.h \
- /mnt/d/education/institute/gitreps/CP/allocators/global_heap/../../memory/../logger/logger_builder_concrete.h \
+ /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/cmath \
+ /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/11/bits/specfun.h /usr/include/c++/11/limits \
+ /usr/include/c++/11/tr1/gamma.tcc \
+ /usr/include/c++/11/tr1/special_function_util.h \
+ /usr/include/c++/11/tr1/bessel_function.tcc \
+ /usr/include/c++/11/tr1/beta_function.tcc \
+ /usr/include/c++/11/tr1/ell_integral.tcc \
+ /usr/include/c++/11/tr1/exp_integral.tcc \
+ /usr/include/c++/11/tr1/hypergeometric.tcc \
+ /usr/include/c++/11/tr1/legendre_function.tcc \
+ /usr/include/c++/11/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/11/tr1/poly_hermite.tcc \
+ /usr/include/c++/11/tr1/poly_laguerre.tcc \
+ /usr/include/c++/11/tr1/riemann_zeta.tcc /usr/include/c++/11/cstring \
+ /usr/include/string.h /usr/include/strings.h /usr/include/c++/11/climits \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/c++/11/bitset \
+ /mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.h \
+ /mnt/d/education/institute/gitreps/CP/allocators/buddy_system/../../memory/memory.h \
+ /mnt/d/education/institute/gitreps/CP/allocators/buddy_system/../../memory/../logger/logger.h \
+ /mnt/d/education/institute/gitreps/CP/allocators/buddy_system/../../memory/../logger/logger_concrete.h \
+ /mnt/d/education/institute/gitreps/CP/allocators/buddy_system/../../memory/../logger/logger.h \
+ /mnt/d/education/institute/gitreps/CP/allocators/buddy_system/../../memory/../logger/logger_builder_concrete.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/node_handle.h \
@@ -172,7 +202,10 @@ CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/global_hea
  /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h \
- /mnt/d/education/institute/gitreps/CP/allocators/global_heap/../../memory/../logger/logger_builder.h \
- /mnt/d/education/institute/gitreps/CP/allocators/global_heap/../../memory/../logger/logger_builder.h \
- /mnt/d/education/institute/gitreps/CP/allocators/global_heap/../../memory/../logger/logger_builder_concrete.h \
- /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h
+ /mnt/d/education/institute/gitreps/CP/allocators/buddy_system/../../memory/../logger/logger_builder.h \
+ /mnt/d/education/institute/gitreps/CP/allocators/buddy_system/../../memory/../logger/logger_builder.h \
+ /mnt/d/education/institute/gitreps/CP/allocators/buddy_system/../../memory/../logger/logger_builder_concrete.h \
+ /mnt/d/education/institute/gitreps/CP/allocators/buddy_system/../../logger/logger.h \
+ /mnt/d/education/institute/gitreps/CP/allocators/buddy_system/../../logger/logger_concrete.h \
+ /mnt/d/education/institute/gitreps/CP/allocators/buddy_system/../../logger/logger_holder.h \
+ /mnt/d/education/institute/gitreps/CP/allocators/buddy_system/../../logger/logger.h

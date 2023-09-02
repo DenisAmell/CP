@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/boundery_tags/boundery_tags.cpp.o"
   "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/boundery_tags/boundery_tags.cpp.o.d"
+  "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp.o"
+  "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/buddy_system/buddy_system.cpp.o.d"
   "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.cpp.o"
   "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/global_heap/memory_global_heap.cpp.o.d"
   "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/allocators/memory_list/memory_list.cpp.o"
@@ -17,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_holder.cpp.o.d"
   "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp.o"
   "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp.o.d"
+  "CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.o"
+  "CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.o.d"
   "CMakeFiles/SERVER.dir/server.cpp.o"
   "CMakeFiles/SERVER.dir/server.cpp.o.d"
   "SERVER"

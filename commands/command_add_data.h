@@ -50,7 +50,9 @@ bool command_add_data::can_execute(std::string const& request)
 		_data_value._data = data_convert(result[12]);
 		_data_value._time = time_convert(result[13]);
 		_data_value._duration_of_meeting = is_unsigned_convert(result[14]);
-		_data_value._list_invitees = result[15];
+
+		std::string list_invites = result[15];
+		_data_value._list_invitees = std::move(list_invites.substr(0, list_invites.find("\r")));
 
 		return true;
 	}
