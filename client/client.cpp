@@ -40,7 +40,7 @@ using namespace std;
 // Client side
 
 
-void shared_memory_semaphores() {
+void blyat() {
 	// Получаем идентификатор shared memory
 	int shmId = shmget(SHARED_MEMORY_KEY, SHARED_MEMORY_SIZE, IPC_CREAT | 0666);
 	if (shmId == -1) {
@@ -124,11 +124,37 @@ void client_shered_memory() {
 		std::cout << "Enter: ";
 		std::cin >> number_menu;
 		if (number_menu == 1) {
+			//send(shmId, "Command", strlen("Command"), 0);
+			/*std::cout << "Command" << std::endl;
+			sharedData->command = "Command";
+			semOps[0].sem_op = -1;
+			semop(semId, semOps, 1);*/
 			while (true) {
+				/*std::getline(std::cin, command);
+				sharedData->command = command;
+				semOps[0].sem_op = -1;
+				semop(semId, semOps, 1);*/
+				//cout << "Awaiting server response..." << endl;
+				//memset(&msg, 0, sizeof(msg)); // clear the buffer
+				//bytesRead += recv(clientSd, (char*)&msg, sizeof(msg), 0);
+				//if (!strcmp(msg, "exit"))
+				//{
+				//	cout << "Server has quit the session" << endl;
+				//	break;
+				//}
+				//cout << "Server: " << msg << endl;
+				/*if (command.starts_with("-1")) break;
+
+				if (!chain.handle(command) && command != "")
+				{
+					std::cout << "[DATA BASE] command can't be executed" << std::endl
+						<< std::endl;
+				}*/
 
 			}
 		}
 		else if (number_menu == 2) {
+			//send(shmId, "File", strlen("File"), 0);
 			memset(&(sharedData->msg), 0, sizeof(sharedData->msg)); // clear the buffer
 			strcpy(sharedData->msg, "File");
 			semOps[0].sem_op = 1;
@@ -244,6 +270,23 @@ int soket(int argc, char* argv[], int port_tmp) {
 					memset(&msg, 0, sizeof(msg)); // clear the buffer
 					strcpy(msg, command.c_str());
 					bytesWritten += send(clientSd, (char*)&msg, strlen(msg), 0);
+					//cout << "Awaiting server response..." << endl;
+					//memset(&msg, 0, sizeof(msg)); // clear the buffer
+					//bytesRead += recv(clientSd, (char*)&msg, sizeof(msg), 0);
+					//if (!strcmp(msg, "exit"))
+					//{
+					//	cout << "Server has quit the session" << endl;
+					//	break;
+					//}
+					//cout << "Server: " << msg << endl;
+					/*if (command.starts_with("-1")) break;
+
+					if (!chain.handle(command) && command != "")
+					{
+						std::cout << "[DATA BASE] command can't be executed" << std::endl
+							<< std::endl;
+					}*/
+
 				}
 			}
 			else if (number_menu == 2) {

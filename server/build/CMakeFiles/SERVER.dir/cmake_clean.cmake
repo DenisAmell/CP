@@ -19,8 +19,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_holder.cpp.o.d"
   "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp.o"
   "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp.o.d"
-  "CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.o"
-  "CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.o.d"
   "CMakeFiles/SERVER.dir/server.cpp.o"
   "CMakeFiles/SERVER.dir/server.cpp.o.d"
   "SERVER"

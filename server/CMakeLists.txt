@@ -62,6 +62,5 @@ add_executable(SERVER
         ../pars.h     
         ../request_handler_with_command.h
         ../request_handler_with_command_chain.h
-        server.cpp
-        schemafor_shared_memory.cpp)
+        server.cpp)
 target_link_libraries(SERVER)

@@ -296,6 +296,26 @@ void soket(int argc, char* argv[], int port_tmp) {
 			}
 
 		}
+
+		//if (!strcmp(msg, "exit"))
+		//{
+		//	cout << "Client has quit the session" << endl;
+		//	break;
+		//}
+		//cout << "Client: " << msg << endl;
+		//cout << ">";
+		//string data;
+		//getline(cin, data);
+		//memset(&msg, 0, sizeof(msg)); // clear the buffer
+		//strcpy(msg, data.c_str());
+		//if (data == "exit")
+		//{
+		//	// send to the client that server has closed the connection
+		//	send(newSd, (char*)&msg, strlen(msg), 0);
+		//	break;
+		//}
+		//// send the message to client
+		//bytesWritten += send(newSd, (char*)&msg, strlen(msg), 0);
 	}
 	// we need to close the socket descriptors after we're all done
 	gettimeofday(&end1, NULL);

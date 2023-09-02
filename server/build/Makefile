@@ -369,30 +369,6 @@ mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SERVER.dir/build.make CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp.s
 .PHONY : mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp.s
 
-schemafor_shared_memory.o: schemafor_shared_memory.cpp.o
-.PHONY : schemafor_shared_memory.o
-
-# target to build an object file
-schemafor_shared_memory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SERVER.dir/build.make CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.o
-.PHONY : schemafor_shared_memory.cpp.o
-
-schemafor_shared_memory.i: schemafor_shared_memory.cpp.i
-.PHONY : schemafor_shared_memory.i
-
-# target to preprocess a source file
-schemafor_shared_memory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SERVER.dir/build.make CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.i
-.PHONY : schemafor_shared_memory.cpp.i
-
-schemafor_shared_memory.s: schemafor_shared_memory.cpp.s
-.PHONY : schemafor_shared_memory.s
-
-# target to generate assembly for a file
-schemafor_shared_memory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SERVER.dir/build.make CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.s
-.PHONY : schemafor_shared_memory.cpp.s
-
 server.o: server.cpp.o
 .PHONY : server.o
 
@@ -456,9 +432,6 @@ help:
 	@echo "... mnt/d/education/institute/gitreps/CP/memory/memory_holder.o"
 	@echo "... mnt/d/education/institute/gitreps/CP/memory/memory_holder.i"
 	@echo "... mnt/d/education/institute/gitreps/CP/memory/memory_holder.s"
-	@echo "... schemafor_shared_memory.o"
-	@echo "... schemafor_shared_memory.i"
-	@echo "... schemafor_shared_memory.s"
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"

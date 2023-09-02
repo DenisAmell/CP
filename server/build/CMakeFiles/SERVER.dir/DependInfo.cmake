@@ -18,7 +18,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/d/education/institute/gitreps/CP/logger/logger_concrete.cpp" "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_concrete.cpp.o" "gcc" "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_concrete.cpp.o.d"
   "/mnt/d/education/institute/gitreps/CP/logger/logger_holder.cpp" "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_holder.cpp.o" "gcc" "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/logger/logger_holder.cpp.o.d"
   "/mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp" "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp.o" "gcc" "CMakeFiles/SERVER.dir/mnt/d/education/institute/gitreps/CP/memory/memory_holder.cpp.o.d"
-  "/mnt/d/education/institute/gitreps/CP/server/schemafor_shared_memory.cpp" "CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.o" "gcc" "CMakeFiles/SERVER.dir/schemafor_shared_memory.cpp.o.d"
   "/mnt/d/education/institute/gitreps/CP/server/server.cpp" "CMakeFiles/SERVER.dir/server.cpp.o" "gcc" "CMakeFiles/SERVER.dir/server.cpp.o.d"
   )
 
