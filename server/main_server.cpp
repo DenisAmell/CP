@@ -62,7 +62,6 @@ void shered_memory_semaphore() {
 
 	// Получаем идентификатор shared memory
 	int shmId = shmget(SHARED_MEMORY_KEY, SHARED_MEMORY_SIZE, 0666);
-	std::cout << shmId << std::endl;
 	if (shmId == -1) {
 		perror("shmget");
 		exit(1);
@@ -110,34 +109,35 @@ void shered_memory_semaphore() {
 		semOps[0].sem_op = -1; // Операция увеличения
 		semop(semId, semOps, 1);
 
-
-
-		std::cout << sharedData->msg << std::endl;
-
 		std::string tmp = sharedData->msg;
 
 		if (tmp == "Exit") break;
 
-		if (sharedData->msg == "Command") {
+		if (tmp == "Command") {
 			while (true) {
-				semOps[0].sem_op = -1; // Операция ожидания
+				semOps[0].sem_op = 1;
+				semop(semId, semOps, 1);
+				semOps[0].sem_op = -1;
 				semop(semId, semOps, 1);
 
-				std::cout << msg << std::endl;
+				command = sharedData->msg;
 
-				if (!chain.handle(sharedData->msg))
+				if (command == "Exit") break;
+
+				if (!chain.handle(command))
 				{
 					std::cout << "[DATA BASE] command can't be executed" << std::endl
 						<< std::endl;
 				}
+
 			}
 		}
 		else if (tmp == "File") {
 
-			std::cout << "gg " << std::endl;
+
 			semOps[0].sem_op = 1; // Операция увеличения
 			semop(semId, semOps, 1);
-
+			std::cout << "gg " << std::endl;
 			semOps[0].sem_op = -1;
 			semop(semId, semOps, 1);
 			std::string file_name = sharedData->msg;
@@ -146,7 +146,6 @@ void shered_memory_semaphore() {
 
 			if (file.is_open())
 			{
-				std::cout << "blyat" << std::endl;
 				while (std::getline(file, command))
 				{
 					if (!chain.handle(command))
@@ -180,7 +179,7 @@ void soket(int argc, char* argv[], int port_tmp) {
 		exit(0);
 	}
 	// grab the port number
-	int port = 12347;
+	int port = 1234;
 	// buffer to send and receive messages with
 	char msg[1500];
 
@@ -251,18 +250,15 @@ void soket(int argc, char* argv[], int port_tmp) {
 		memset(&msg, 0, sizeof(msg)); // clear the buffer
 		bytesRead += recv(newSd, (char*)&msg, sizeof(msg), 0);
 
-		std::cout << msg << std::endl;
-
 		if (strcmp(msg, "Exit") == 0) break;
 
 		if (strcmp(msg, "Command") == 0) {
-			while (true) {
+
+			while (1) {
 				memset(&msg, 0, sizeof(msg));
 				bytesRead += recv(newSd, (char*)&msg, sizeof(msg), 0);
 
-				std::cout << msg << std::endl;
-
-				if (strcmp(msg, "Exit")) break;
+				if (!strcmp(msg, "Exit")) break;
 
 				if (!chain.handle(msg))
 				{
@@ -296,26 +292,6 @@ void soket(int argc, char* argv[], int port_tmp) {
 			}
 
 		}
-
-		//if (!strcmp(msg, "exit"))
-		//{
-		//	cout << "Client has quit the session" << endl;
-		//	break;
-		//}
-		//cout << "Client: " << msg << endl;
-		//cout << ">";
-		//string data;
-		//getline(cin, data);
-		//memset(&msg, 0, sizeof(msg)); // clear the buffer
-		//strcpy(msg, data.c_str());
-		//if (data == "exit")
-		//{
-		//	// send to the client that server has closed the connection
-		//	send(newSd, (char*)&msg, strlen(msg), 0);
-		//	break;
-		//}
-		//// send the message to client
-		//bytesWritten += send(newSd, (char*)&msg, strlen(msg), 0);
 	}
 	// we need to close the socket descriptors after we're all done
 	gettimeofday(&end1, NULL);
@@ -327,6 +303,136 @@ void soket(int argc, char* argv[], int port_tmp) {
 		<< " secs" << endl;
 	cout << "Connection closed..." << endl;
 }
+
+
+void message_queues()
+{
+	key_t msg_queue_key;
+	int qid;
+	struct message message;
+
+	if ((msg_queue_key = ftok(SERVER_KEY_PATHNAME, PROJECT_ID)) == -1)
+	{
+		perror("ftok");
+		exit(1);
+	}
+
+	if ((qid = msgget(msg_queue_key, IPC_CREAT | QUEUE_PERMISSIONS)) == -1)
+	{
+		perror("msgget");
+		exit(1);
+	}
+
+	database_singleton* db = new database_singleton();
+
+	std::string command;
+
+	request_handler_with_command_chain<std::string> chain;
+	chain.add_handler(new command_add_pool())
+		.add_handler(new command_add_scheme())
+		.add_handler(new command_add_collection())
+		.add_handler(new command_add_data())
+		.add_handler(new command_get_data())
+		.add_handler(new command_remove_pool())
+		.add_handler(new command_remove_scheme())
+		.add_handler(new command_remove_collection())
+		.add_handler(new command_remove_data())
+		.add_handler(new command_update_data())
+		.add_handler(new command_get_data_between());
+
+	printf("Server: Hello, World!\n");
+
+	while (1)
+	{
+		// read an incoming message
+		if (msgrcv(qid, &message, sizeof(struct message_text), 0, 0) == -1)
+		{
+			perror("msgrcv");
+			exit(1);
+		}
+
+		std::cout << message.message_text.buf << std::endl;
+		if (strcmp(message.message_text.buf, "Exit") == 0)
+			break;
+
+		if (strcmp(message.message_text.buf, "Command") == 0)
+		{
+			while (1)
+			{
+				std::cout << "gg" << std::endl;
+				if (msgrcv(qid, &message, sizeof(struct message_text), 0, 0) == -1)
+				{
+					perror("msgrcv");
+					exit(1);
+				}
+
+				if (strlen(message.message_text.buf) == 0)
+					continue;
+				std::cout << message.message_text.buf << std::endl;
+				if (strcmp(message.message_text.buf, "Exit"))
+					break;
+
+				if (!chain.handle(message.message_text.buf))
+				{
+					std::cout << "[DATA BASE] command can't be executed" << std::endl
+						<< std::endl;
+				}
+			}
+		}
+		if (strcmp(message.message_text.buf, "File") == 0)
+		{
+			if (msgrcv(qid, &message, sizeof(struct message_text), 0, 0) == -1)
+			{
+				perror("msgrcv");
+				exit(1);
+			}
+
+			std::cout << message.message_text.buf << std::endl;
+			std::string command;
+			std::ifstream file(message.message_text.buf);
+			if (file.is_open())
+			{
+				while (std::getline(file, command))
+				{
+					if (!chain.handle(command))
+					{
+						std::cout << "[DATA BASE] command can't be executed" << std::endl
+							<< std::endl;
+					}
+				}
+			}
+			else
+			{
+				std::cout << "File with name:" << message.message_text.buf << " can't be opened" << std::endl;
+				continue;
+			}
+		}
+
+		printf("Server: message received.\n");
+
+		// if (message.message_text.buf == '')
+
+		//	// process message
+		//	int length = strlen(message.message_text.buf);
+		// char buf[20];
+		// sprintf(buf, " %d", length);
+		// strcat(message.message_text.buf, buf);
+
+		// int client_qid = message.message_text.qid;
+		// message.message_text.qid = qid;
+
+		//// send reply message to client
+		// if (msgsnd(client_qid, &message, sizeof(struct message_text), 0) == -1) {
+		//	perror("msgget");
+		//	exit(1);
+		// }
+
+		// printf("Server: response sent to client.\n");
+	}
+}
+
+
+
 // Server side
 int main(int argc, char* argv[])
 {
@@ -392,8 +498,6 @@ int main(int argc, char* argv[])
 
 	//memset(&msg, 0, sizeof(msg)); // clear the buffer
 	bytesRead += recv(newSd, (char*)&msg, sizeof(msg), 0);
-
-	std::cout << msg << std::endl;
 
 	int mode_ipc = atoi(msg);
 

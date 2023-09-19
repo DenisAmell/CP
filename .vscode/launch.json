@@ -4,7 +4,7 @@
             "name": "GG",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/cp",
+            "program": "${workspaceFolder}/server/server",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

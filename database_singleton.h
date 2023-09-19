@@ -19,6 +19,7 @@
 #include "pool.h"
 #include "request_handler_with_command_chain.h"
 #include "tree/tree_type.h"
+#include "string_pool/string_pool.h"
 // #include "commands/command_add_pool.h"
 
 // class command_add_pool;

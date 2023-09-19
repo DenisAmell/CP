@@ -39,52 +39,6 @@ struct SharedData {
 using namespace std;
 // Client side
 
-
-void blyat() {
-	// Получаем идентификатор shared memory
-	int shmId = shmget(SHARED_MEMORY_KEY, SHARED_MEMORY_SIZE, IPC_CREAT | 0666);
-	if (shmId == -1) {
-		perror("shmget");
-		exit(1);
-	}
-
-	// Присоединяем shared memory к адресному пространству процесса сервера
-	SharedData* sharedData = (SharedData*)shmat(shmId, nullptr, 0);
-	if (sharedData == (SharedData*)(-1)) {
-		perror("shmat");
-		exit(1);
-	}
-
-	// Получаем идентификатор семафора
-	int semId = semget(SEMAPHORE_KEY, SEMAPHORE_COUNT, IPC_CREAT | 0666);
-	if (semId == -1) {
-		perror("semget");
-		exit(1);
-	}
-
-	while (sharedData->count < 10) {
-		// Ждем, пока клиент будет готов
-		struct sembuf semOps[1] = { 0, -1, 0 }; // Операция ожидания
-		semop(semId, semOps, 1);
-
-		// Увеличиваем count на 1
-		sharedData->count++;
-
-		// Оповещаем клиента
-		semOps[0].sem_op = 1; // Операция увеличения
-		semop(semId, semOps, 1);
-	}
-
-	// Отсоединяем shared memory
-	shmdt(sharedData);
-
-	// Удаляем shared memory
-	shmctl(shmId, IPC_RMID, nullptr);
-
-	// Удаляем семафор
-	semctl(semId, 0, IPC_RMID);
-}
-
 void client_shered_memory() {
 
 	char msg[1500];
@@ -114,7 +68,7 @@ void client_shered_memory() {
 	while (sharedData->count < 10) {
 		struct sembuf semOps[1] = { 0, -1, 0 }; // Операция ожидания
 		semop(semId, semOps, 1);
-
+		memset(&(sharedData->msg), 0, sizeof(sharedData->msg));
 		size_t number_menu = 0;
 		std::cout << "\tMENU" << std::endl;
 		std::cout << "=================================" << std::endl;
@@ -125,31 +79,25 @@ void client_shered_memory() {
 		std::cin >> number_menu;
 		if (number_menu == 1) {
 			//send(shmId, "Command", strlen("Command"), 0);
-			/*std::cout << "Command" << std::endl;
-			sharedData->command = "Command";
-			semOps[0].sem_op = -1;
-			semop(semId, semOps, 1);*/
-			while (true) {
-				/*std::getline(std::cin, command);
-				sharedData->command = command;
-				semOps[0].sem_op = -1;
-				semop(semId, semOps, 1);*/
-				//cout << "Awaiting server response..." << endl;
-				//memset(&msg, 0, sizeof(msg)); // clear the buffer
-				//bytesRead += recv(clientSd, (char*)&msg, sizeof(msg), 0);
-				//if (!strcmp(msg, "exit"))
-				//{
-				//	cout << "Server has quit the session" << endl;
-				//	break;
-				//}
-				//cout << "Server: " << msg << endl;
-				/*if (command.starts_with("-1")) break;
+			std::cout << "Command" << std::endl;
+			memset(&(sharedData->msg), 0, sizeof(sharedData->msg)); // clear the buffer
+			strcpy(sharedData->msg, "Command");
+			semOps[0].sem_op = 1;
+			semop(semId, semOps, 1);
 
-				if (!chain.handle(command) && command != "")
-				{
-					std::cout << "[DATA BASE] command can't be executed" << std::endl
-						<< std::endl;
-				}*/
+
+			while (true) {
+
+				semOps[0].sem_op = -1;
+				semop(semId, semOps, 1);
+
+				std::getline(std::cin, command);
+				memset(&(sharedData->msg), 0, sizeof(sharedData->msg)); // clear the buffer
+				strcpy(sharedData->msg, command.c_str());
+				if (command == "Exit") break;
+				semOps[0].sem_op = 1;
+				semop(semId, semOps, 1);
+
 
 			}
 		}
@@ -212,7 +160,7 @@ int soket(int argc, char* argv[], int port_tmp) {
 		exit(0);
 	} // grab the IP address and port number
 	char* serverIp = argv[1];
-	int port = 12347;
+	int port = 1234;
 	std::cout << port << std::endl;
 	// create a message buffer
 	char msg[1500];
@@ -260,6 +208,8 @@ int soket(int argc, char* argv[], int port_tmp) {
 
 					std::getline(std::cin, command);
 
+					//if (command.length() == 0) continue;
+
 					if (command == "Exit") {
 						memset(&msg, 0, sizeof(msg)); // clear the buffer
 						strcpy(msg, command.c_str());
@@ -270,22 +220,6 @@ int soket(int argc, char* argv[], int port_tmp) {
 					memset(&msg, 0, sizeof(msg)); // clear the buffer
 					strcpy(msg, command.c_str());
 					bytesWritten += send(clientSd, (char*)&msg, strlen(msg), 0);
-					//cout << "Awaiting server response..." << endl;
-					//memset(&msg, 0, sizeof(msg)); // clear the buffer
-					//bytesRead += recv(clientSd, (char*)&msg, sizeof(msg), 0);
-					//if (!strcmp(msg, "exit"))
-					//{
-					//	cout << "Server has quit the session" << endl;
-					//	break;
-					//}
-					//cout << "Server: " << msg << endl;
-					/*if (command.starts_with("-1")) break;
-
-					if (!chain.handle(command) && command != "")
-					{
-						std::cout << "[DATA BASE] command can't be executed" << std::endl
-							<< std::endl;
-					}*/
 
 				}
 			}
@@ -370,9 +304,10 @@ int main(int argc, char* argv[]) {
 
 	std::cout << number_menu << std::endl;
 	if (number_menu == "1") {
-		bytesWritten += send(clientSd, (number_menu.substr(0, number_menu.find("\r"))).c_str(), strlen(number_menu.c_str()), 0);
 
+		bytesWritten += send(clientSd, (number_menu.substr(0, number_menu.find("\r"))).c_str(), strlen(number_menu.c_str()), 0);
 		client_shered_memory();
+
 	}
 	if (number_menu == "2") {
 

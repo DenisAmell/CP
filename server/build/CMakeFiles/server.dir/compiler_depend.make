@@ -357,6 +357,12 @@ CMakeFiles/server.dir/main_server.cpp.o: ../main_server.cpp \
   /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/student_definition.h \
   /usr/include/c++/11/sstream \
   /usr/include/c++/11/bits/sstream.tcc \
+  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/string_pool/string_pool.h \
+  /usr/include/c++/11/unordered_map \
+  /usr/include/c++/11/bits/hashtable.h \
+  /usr/include/c++/11/bits/hashtable_policy.h \
+  /usr/include/c++/11/bits/enable_special_members.h \
+  /usr/include/c++/11/bits/unordered_map.h \
   /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/commands/command_add_pool.h \
   /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/commands/command.h \
   /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/database_singleton.h \
@@ -2542,6 +2548,14 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memo
 
 /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/commands/command_add_scheme.h:
 
+/usr/include/c++/11/bits/unordered_map.h:
+
+/usr/include/c++/11/bits/hashtable.h:
+
+/usr/include/c++/11/unordered_map:
+
+/mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/string_pool/string_pool.h:
+
 /usr/include/c++/11/sstream:
 
 /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/exception/doesnt_exist.h:
@@ -2587,6 +2601,8 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memo
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
 /usr/include/c++/11/vector:
+
+/usr/include/c++/11/bits/hashtable_policy.h:
 
 /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/allocator_type.h:
 
@@ -3131,6 +3147,8 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memo
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/c++/11/bits/locale_facets.tcc:
+
+/usr/include/c++/11/bits/enable_special_members.h:
 
 /usr/include/c++/11/bits/codecvt.h:
 
