@@ -230,6 +230,10 @@ CMakeFiles/server.dir/main_server.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/sem.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_semid_ds.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_semid64_ds.h \
+ /usr/include/x86_64-linux-gnu/sys/msg.h \
+ /usr/include/x86_64-linux-gnu/bits/msq.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_msqid_ds.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_msqid64_ds.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../database_singleton.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../memory/memory.h \
  /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../memory/../logger/logger.h \

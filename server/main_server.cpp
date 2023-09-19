@@ -21,6 +21,7 @@
 #include <sys/shm.h>
 #include <sys/sem.h>
 #include <unistd.h>
+#include <sys/msg.h>
 
 
 #include "../database_singleton.h"
@@ -48,6 +49,10 @@
 #define SHARED_MEMORY_SIZE 4096
 #define SEMAPHORE_COUNT 1
 
+#define SERVER_KEY_PATHNAME "/tmp/mqueue_server_key"
+#define PROJECT_ID 'M'
+#define QUEUE_PERMISSIONS 0660
+
 
 using namespace std;
 
@@ -55,6 +60,18 @@ struct SharedData {
 	int count;
 	char msg[999];
 	// Другие данные, необходимые для взаимодействия
+};
+
+struct message_text
+{
+	int qid;
+	char buf[200];
+};
+
+struct message
+{
+	long message_type;
+	struct message_text message_text;
 };
 
 
@@ -351,7 +368,6 @@ void message_queues()
 			exit(1);
 		}
 
-		std::cout << message.message_text.buf << std::endl;
 		if (strcmp(message.message_text.buf, "Exit") == 0)
 			break;
 
@@ -369,7 +385,7 @@ void message_queues()
 				if (strlen(message.message_text.buf) == 0)
 					continue;
 				std::cout << message.message_text.buf << std::endl;
-				if (strcmp(message.message_text.buf, "Exit"))
+				if (!strcmp(message.message_text.buf, "Exit"))
 					break;
 
 				if (!chain.handle(message.message_text.buf))
@@ -409,36 +425,12 @@ void message_queues()
 		}
 
 		printf("Server: message received.\n");
-
-		// if (message.message_text.buf == '')
-
-		//	// process message
-		//	int length = strlen(message.message_text.buf);
-		// char buf[20];
-		// sprintf(buf, " %d", length);
-		// strcat(message.message_text.buf, buf);
-
-		// int client_qid = message.message_text.qid;
-		// message.message_text.qid = qid;
-
-		//// send reply message to client
-		// if (msgsnd(client_qid, &message, sizeof(struct message_text), 0) == -1) {
-		//	perror("msgget");
-		//	exit(1);
-		// }
-
-		// printf("Server: response sent to client.\n");
 	}
 }
 
-
-
-// Server side
 int main(int argc, char* argv[])
 {
 
-
-	//shered_memory_semaphore();
 
 	if (argc != 2)
 	{
@@ -508,6 +500,9 @@ int main(int argc, char* argv[])
 		break;
 	case 2:
 		soket(argc, argv, port);
+		break;
+	case 3:
+		message_queues();
 		break;
 	default:
 		break;

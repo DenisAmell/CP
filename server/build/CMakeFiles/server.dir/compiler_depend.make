@@ -278,6 +278,10 @@ CMakeFiles/server.dir/main_server.cpp.o: ../main_server.cpp \
   /usr/include/x86_64-linux-gnu/bits/sem.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_semid_ds.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_semid64_ds.h \
+  /usr/include/x86_64-linux-gnu/sys/msg.h \
+  /usr/include/x86_64-linux-gnu/bits/msq.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_msqid_ds.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_msqid64_ds.h \
   /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/database_singleton.h \
   /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/memory/memory.h \
   /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/logger/logger.h \
@@ -2640,6 +2644,10 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memo
 
 /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/memory/memory.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_msqid64_ds.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_msqid_ds.h:
+
 /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/commands/command_update_data.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_semid_ds.h:
@@ -2653,6 +2661,8 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memo
 /usr/include/x86_64-linux-gnu/bits/types/struct_shmid_ds.h:
 
 /usr/include/x86_64-linux-gnu/bits/shmlba.h:
+
+/usr/include/x86_64-linux-gnu/bits/msq.h:
 
 /usr/include/x86_64-linux-gnu/bits/shm.h:
 
@@ -2729,6 +2739,8 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memo
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/x86_64-linux-gnu/sys/msg.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 

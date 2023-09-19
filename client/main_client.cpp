@@ -21,12 +21,28 @@
 #include <sys/shm.h>
 #include <sys/sem.h>
 #include <unistd.h>
+#include <sys/msg.h>
 
 #define SHARED_MEMORY_KEY 12345
 #define SEMAPHORE_KEY 54321
 
 #define SHARED_MEMORY_SIZE 4096
 #define SEMAPHORE_COUNT 1
+
+#define SERVER_KEY_PATHNAME "/tmp/mqueue_server_key"
+#define PROJECT_ID 'M'
+
+struct message_text
+{
+	int qid;
+	char buf[200];
+};
+
+struct message
+{
+	long message_type;
+	struct message_text message_text;
+};
 
 // Структура данных, которая будет храниться в shared memory
 struct SharedData {
@@ -258,6 +274,123 @@ int soket(int argc, char* argv[], int port_tmp) {
 	return 0;
 }
 
+void message_queues()
+{
+	key_t server_queue_key;
+	int server_qid, myqid;
+	struct message my_message, return_message;
+
+	// create my client queue for receiving messages from server
+	if ((myqid = msgget(IPC_PRIVATE, 0660)) == -1)
+	{
+		perror("msgget: myqid");
+		exit(1);
+	}
+
+	if ((server_queue_key = ftok(SERVER_KEY_PATHNAME, PROJECT_ID)) == -1)
+	{
+		perror("ftok");
+		exit(1);
+	}
+
+	if ((server_qid = msgget(server_queue_key, 0)) == -1)
+	{
+		perror("msgget: server_qid");
+		exit(1);
+	}
+
+	my_message.message_type = 1;
+	my_message.message_text.qid = myqid;
+
+	printf("Please type a message: ");
+
+	std::string command;
+
+	while (1)
+	{
+		size_t number_menu = 0;
+		std::cout << "\tMENU" << std::endl;
+		std::cout << "=================================" << std::endl;
+		std::cout << "1. From read to console" << std::endl;
+		std::cout << "2. From read to file" << std::endl;
+		std::cout << "3. Exit" << std::endl;
+		std::cout << "Enter: ";
+		std::cin >> number_menu;
+
+		if (number_menu == 1)
+		{
+			strcpy(my_message.message_text.buf, "Command");
+			if (msgsnd(server_qid, &my_message, sizeof(struct message_text), 0) == -1)
+			{
+				perror("client: msgsnd");
+				exit(1);
+			}
+			while (1)
+			{
+
+				std::getline(std::cin, command);
+
+				if (command == "Exit")
+				{
+					strcpy(my_message.message_text.buf, "Exit");
+					if (msgsnd(server_qid, &my_message, sizeof(struct message_text), 0) == -1)
+					{
+						perror("client: msgsnd");
+						exit(1);
+					}
+					break;
+				}
+
+				strcpy(my_message.message_text.buf, command.c_str());
+				if (msgsnd(server_qid, &my_message, sizeof(struct message_text), 0) == -1)
+				{
+					perror("client: msgsnd");
+					exit(1);
+				}
+			}
+		}
+		if (number_menu == 2)
+		{
+			std::string file_name;
+			strcpy(my_message.message_text.buf, "File");
+			std::cout << my_message.message_text.buf << std::endl;
+			if (msgsnd(server_qid, &my_message, sizeof(struct message_text), 0) == -1)
+			{
+				perror("client: msgsnd");
+				exit(1);
+			}
+			std::cout << "Enter name file ";
+			std::cin >> file_name;
+
+			strcpy(my_message.message_text.buf, file_name.c_str());
+
+			if (msgsnd(server_qid, &my_message, sizeof(struct message_text), 0) == -1)
+			{
+				perror("client: msgsnd");
+				exit(1);
+			}
+		}
+		if (number_menu == 3) {
+			strcpy(my_message.message_text.buf, "Exit");
+			if (msgsnd(server_qid, &my_message, sizeof(struct message_text), 0) == -1)
+			{
+				perror("client: msgsnd");
+				exit(1);
+			}
+			break;
+		}
+
+	}
+	// remove message queue
+	if (msgctl(myqid, IPC_RMID, NULL) == -1)
+	{
+		perror("client: msgctl");
+		exit(1);
+	}
+
+	printf("Client: bye\n");
+}
+
 int main(int argc, char* argv[]) {
 
 	if (argc != 3)
@@ -297,7 +430,8 @@ int main(int argc, char* argv[]) {
 	std::cout << "=================================" << std::endl;
 	std::cout << "1. Shared memory" << std::endl;
 	std::cout << "2. Soket" << std::endl;
-	std::cout << "3. Exit" << std::endl;
+	std::cout << "3. Message queues" << std::endl;
+	std::cout << "4. Exit" << std::endl;
 	std::cout << "Enter: ";
 	std::cin >> number_menu;
 
@@ -313,6 +447,10 @@ int main(int argc, char* argv[]) {
 
 		bytesWritten += send(clientSd, (number_menu.substr(0, number_menu.find("\r"))).c_str(), strlen(number_menu.c_str()), 0);
 		soket(argc, argv, port);
+	}
+	if (number_menu == "3") {
+		bytesWritten += send(clientSd, (number_menu.substr(0, number_menu.find("\r"))).c_str(), strlen(number_menu.c_str()), 0);
+		message_queues();
 	}
 
 
