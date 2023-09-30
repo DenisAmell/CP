@@ -192,7 +192,7 @@ cp_BINARY_DIR:STATIC=C:/Users/Denis/OneDrive/Рабочий стол/CP/build
 cp_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-cp_SOURCE_DIR:STATIC=C:/Users/Denis/OneDrive/Рабочий стол/CP
+cp_SOURCE_DIR:STATIC=C:/Users/Denis/OneDrive/Рабочий стол/CP/src
 
 
 ########################
@@ -263,7 +263,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=C:/Users/Denis/OneDrive/Рабочий стол/CP
+CMAKE_HOME_DIRECTORY:INTERNAL=C:/Users/Denis/OneDrive/Рабочий стол/CP/src
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS
