@@ -30,13 +30,13 @@ add_executable(server
         ../allocators/boundary_tags_allocator.h
         ../allocators/memory_buddy_system.cpp
         ../allocators/memory_buddy_system.h
+        ../allocators/allocator_type.h
         ../tree/associative_container.h
         ../tree/binary_search_tree.h
         ../tree/red_black_tree.h
         ../tree/avl_tree.h
         ../tree/splay_tree.h
         ../tree/tree_type.h
-        ../database_singleton.h
         ../commands/command_add_collection.h
         ../commands/command_add_data.h
         ../commands/command_add_pool.h
@@ -50,16 +50,16 @@ add_executable(server
         ../commands/command_update_data.h
         ../exception/doesnt_exist.h
         ../commands/command.h
-        ../abstract_handler.h
-        ../allocator_type.h
-        ../comparers.h
-        ../logger_singleton.h
-        ../parse.h
-        ../request_handler_with_command_chain.h
-        ../request_handler_with_command.h
-        ../student_definition.h
-        ../pool.h
-        ../scheme.h
-        ../collection.h
+        ../comparer/comparers.h
+        ../validation/parse.h
+        ../conteiners/pool.h
+        ../conteiners/scheme.h
+        ../conteiners/collection.h
+        ../singleton/database_singleton.h
+        ../singleton/logger_singleton.h
+        ../request_handler/request_handler_with_command_chain.h
+        ../request_handler/request_handler_with_command.h
+        ../request_handler/abstract_handler.h
+        ../type_data/student_definition.h
         main_server.cpp)
 target_link_libraries(server)

@@ -1,7 +1,7 @@
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/boundary_tags_allocator.cpp.o: \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/allocators/boundary_tags_allocator.cpp \
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/boundary_tags_allocator.cpp.o: \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/allocators/boundary_tags_allocator.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/allocators/boundary_tags_allocator.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/allocators/boundary_tags_allocator.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -158,10 +158,10 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allo
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/allocators/../logger/logger.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/allocators/../logger/logger_concrete.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/allocators/../logger/logger.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/allocators/../logger/logger_builder_concrete.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/allocators/../logger/logger.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/allocators/../logger/logger_concrete.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/allocators/../logger/logger.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/allocators/../logger/logger_builder_concrete.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/node_handle.h \
@@ -171,9 +171,9 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allo
  /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/allocators/../logger/logger_builder.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/allocators/../logger/logger_holder.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/allocators/../logger/logger_builder.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/allocators/../logger/logger_holder.h \
  /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/allocators/../memory/memory.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/allocators/../memory/../logger/logger.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/allocators/../memory/../not_implemented/not_implemented.h
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/allocators/../memory/memory.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/allocators/../memory/../logger/logger.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/allocators/../memory/../not_implemented/not_implemented.h

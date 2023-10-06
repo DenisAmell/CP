@@ -27,7 +27,7 @@
 #include <sys/mman.h>
 
 
-#include "../database_singleton.h"
+#include "../singleton/database_singleton.h"
 // #include "abstract_handler.h"
 // #include "commands/command.h"
 #include "../commands/command_add_pool.h"
@@ -42,7 +42,7 @@
 #include "../commands/command_update_data.h"
 #include "../commands/command_get_data_between.h"
 #include <fstream>
-#include "../request_handler_with_command_chain.h"
+#include "../request_handler/request_handler_with_command_chain.h"
 #include "../tree/tree_type.h"
 
 

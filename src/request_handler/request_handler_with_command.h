@@ -3,7 +3,7 @@
 #define FUNDAMENTAL_ALGO_REQUEST_HANDLER_WITH_COMMAND_H
 
 #include "abstract_handler.h"
-#include "commands/command.h"
+#include "../commands/command.h"
 
 template <typename trequest>
 class request_handler_with_command : public abstract_handler<trequest>

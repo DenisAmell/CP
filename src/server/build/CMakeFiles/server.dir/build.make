@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/server"
+CMAKE_SOURCE_DIR = "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/server/build"
+CMAKE_BINARY_DIR = "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/server.dir/depend.make
@@ -69,191 +69,191 @@ include CMakeFiles/server.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/server.dir/flags.make
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger.cpp.o: /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/logger/logger.cpp
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger.cpp.o -MF CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger.cpp.o.d -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger.cpp.o -c "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/logger/logger.cpp"
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger.cpp.o: /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/logger/logger.cpp
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger.cpp.o -MF CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger.cpp.o.d -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger.cpp.o -c "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/logger/logger.cpp"
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/logger/logger.cpp" > CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger.cpp.i
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/logger/logger.cpp" > CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger.cpp.i
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/logger/logger.cpp" -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger.cpp.s
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/logger/logger.cpp" -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger.cpp.s
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_holder.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_holder.cpp.o: /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/logger/logger_holder.cpp
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_holder.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_holder.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_holder.cpp.o -MF CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_holder.cpp.o.d -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_holder.cpp.o -c "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/logger/logger_holder.cpp"
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_holder.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_holder.cpp.o: /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/logger/logger_holder.cpp
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_holder.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_holder.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_holder.cpp.o -MF CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_holder.cpp.o.d -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_holder.cpp.o -c "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/logger/logger_holder.cpp"
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_holder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_holder.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/logger/logger_holder.cpp" > CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_holder.cpp.i
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_holder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_holder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/logger/logger_holder.cpp" > CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_holder.cpp.i
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_holder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_holder.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/logger/logger_holder.cpp" -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_holder.cpp.s
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_holder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_holder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/logger/logger_holder.cpp" -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_holder.cpp.s
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder.cpp.o: /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/logger/logger_builder.cpp
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder.cpp.o -MF CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder.cpp.o.d -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder.cpp.o -c "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/logger/logger_builder.cpp"
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder.cpp.o: /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/logger/logger_builder.cpp
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder.cpp.o -MF CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder.cpp.o.d -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder.cpp.o -c "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/logger/logger_builder.cpp"
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/logger/logger_builder.cpp" > CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder.cpp.i
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/logger/logger_builder.cpp" > CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder.cpp.i
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/logger/logger_builder.cpp" -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder.cpp.s
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/logger/logger_builder.cpp" -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder.cpp.s
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder_concrete.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder_concrete.cpp.o: /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/logger/logger_builder_concrete.cpp
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder_concrete.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder_concrete.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder_concrete.cpp.o -MF CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder_concrete.cpp.o.d -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder_concrete.cpp.o -c "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/logger/logger_builder_concrete.cpp"
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder_concrete.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder_concrete.cpp.o: /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/logger/logger_builder_concrete.cpp
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder_concrete.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder_concrete.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder_concrete.cpp.o -MF CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder_concrete.cpp.o.d -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder_concrete.cpp.o -c "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/logger/logger_builder_concrete.cpp"
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder_concrete.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder_concrete.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/logger/logger_builder_concrete.cpp" > CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder_concrete.cpp.i
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder_concrete.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder_concrete.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/logger/logger_builder_concrete.cpp" > CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder_concrete.cpp.i
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder_concrete.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder_concrete.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/logger/logger_builder_concrete.cpp" -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder_concrete.cpp.s
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder_concrete.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder_concrete.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/logger/logger_builder_concrete.cpp" -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder_concrete.cpp.s
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_concrete.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_concrete.cpp.o: /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/logger/logger_concrete.cpp
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_concrete.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_concrete.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_concrete.cpp.o -MF CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_concrete.cpp.o.d -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_concrete.cpp.o -c "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/logger/logger_concrete.cpp"
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_concrete.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_concrete.cpp.o: /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/logger/logger_concrete.cpp
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_concrete.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_concrete.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_concrete.cpp.o -MF CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_concrete.cpp.o.d -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_concrete.cpp.o -c "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/logger/logger_concrete.cpp"
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_concrete.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_concrete.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/logger/logger_concrete.cpp" > CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_concrete.cpp.i
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_concrete.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_concrete.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/logger/logger_concrete.cpp" > CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_concrete.cpp.i
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_concrete.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_concrete.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/logger/logger_concrete.cpp" -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_concrete.cpp.s
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_concrete.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_concrete.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/logger/logger_concrete.cpp" -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_concrete.cpp.s
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory_holder.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory_holder.cpp.o: /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/memory/memory_holder.cpp
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory_holder.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory_holder.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory_holder.cpp.o -MF CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory_holder.cpp.o.d -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory_holder.cpp.o -c "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/memory/memory_holder.cpp"
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory_holder.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory_holder.cpp.o: /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/memory/memory_holder.cpp
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory_holder.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory_holder.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory_holder.cpp.o -MF CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory_holder.cpp.o.d -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory_holder.cpp.o -c "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/memory/memory_holder.cpp"
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory_holder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory_holder.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/memory/memory_holder.cpp" > CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory_holder.cpp.i
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory_holder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory_holder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/memory/memory_holder.cpp" > CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory_holder.cpp.i
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory_holder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory_holder.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/memory/memory_holder.cpp" -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory_holder.cpp.s
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory_holder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory_holder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/memory/memory_holder.cpp" -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory_holder.cpp.s
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory.cpp.o: /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/memory/memory.cpp
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory.cpp.o -MF CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory.cpp.o.d -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory.cpp.o -c "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/memory/memory.cpp"
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory.cpp.o: /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/memory/memory.cpp
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory.cpp.o -MF CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory.cpp.o.d -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory.cpp.o -c "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/memory/memory.cpp"
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/memory/memory.cpp" > CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory.cpp.i
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/memory/memory.cpp" > CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory.cpp.i
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/memory/memory.cpp" -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory.cpp.s
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/memory/memory.cpp" -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory.cpp.s
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/list_memory.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/list_memory.cpp.o: /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/allocators/list_memory.cpp
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/list_memory.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/list_memory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/list_memory.cpp.o -MF CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/list_memory.cpp.o.d -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/list_memory.cpp.o -c "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/allocators/list_memory.cpp"
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/list_memory.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/list_memory.cpp.o: /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/allocators/list_memory.cpp
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/list_memory.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/list_memory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/list_memory.cpp.o -MF CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/list_memory.cpp.o.d -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/list_memory.cpp.o -c "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/allocators/list_memory.cpp"
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/list_memory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/list_memory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/allocators/list_memory.cpp" > CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/list_memory.cpp.i
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/list_memory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/list_memory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/allocators/list_memory.cpp" > CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/list_memory.cpp.i
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/list_memory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/list_memory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/allocators/list_memory.cpp" -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/list_memory.cpp.s
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/list_memory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/list_memory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/allocators/list_memory.cpp" -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/list_memory.cpp.s
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/boundary_tags_allocator.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/boundary_tags_allocator.cpp.o: /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/allocators/boundary_tags_allocator.cpp
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/boundary_tags_allocator.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/boundary_tags_allocator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/boundary_tags_allocator.cpp.o -MF CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/boundary_tags_allocator.cpp.o.d -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/boundary_tags_allocator.cpp.o -c "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/allocators/boundary_tags_allocator.cpp"
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/boundary_tags_allocator.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/boundary_tags_allocator.cpp.o: /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/allocators/boundary_tags_allocator.cpp
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/boundary_tags_allocator.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/boundary_tags_allocator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/boundary_tags_allocator.cpp.o -MF CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/boundary_tags_allocator.cpp.o.d -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/boundary_tags_allocator.cpp.o -c "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/allocators/boundary_tags_allocator.cpp"
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/boundary_tags_allocator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/boundary_tags_allocator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/allocators/boundary_tags_allocator.cpp" > CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/boundary_tags_allocator.cpp.i
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/boundary_tags_allocator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/boundary_tags_allocator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/allocators/boundary_tags_allocator.cpp" > CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/boundary_tags_allocator.cpp.i
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/boundary_tags_allocator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/boundary_tags_allocator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/allocators/boundary_tags_allocator.cpp" -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/boundary_tags_allocator.cpp.s
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/boundary_tags_allocator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/boundary_tags_allocator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/allocators/boundary_tags_allocator.cpp" -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/boundary_tags_allocator.cpp.s
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/memory_buddy_system.cpp.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/memory_buddy_system.cpp.o: /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/allocators/memory_buddy_system.cpp
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/memory_buddy_system.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/memory_buddy_system.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/memory_buddy_system.cpp.o -MF CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/memory_buddy_system.cpp.o.d -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/memory_buddy_system.cpp.o -c "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/allocators/memory_buddy_system.cpp"
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/memory_buddy_system.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/memory_buddy_system.cpp.o: /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/allocators/memory_buddy_system.cpp
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/memory_buddy_system.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/memory_buddy_system.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/memory_buddy_system.cpp.o -MF CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/memory_buddy_system.cpp.o.d -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/memory_buddy_system.cpp.o -c "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/allocators/memory_buddy_system.cpp"
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/memory_buddy_system.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/memory_buddy_system.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/allocators/memory_buddy_system.cpp" > CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/memory_buddy_system.cpp.i
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/memory_buddy_system.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/memory_buddy_system.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/allocators/memory_buddy_system.cpp" > CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/memory_buddy_system.cpp.i
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/memory_buddy_system.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/memory_buddy_system.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/allocators/memory_buddy_system.cpp" -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/memory_buddy_system.cpp.s
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/memory_buddy_system.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/memory_buddy_system.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/allocators/memory_buddy_system.cpp" -o CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/memory_buddy_system.cpp.s
 
 CMakeFiles/server.dir/main_server.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/main_server.cpp.o: ../main_server.cpp
 CMakeFiles/server.dir/main_server.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/server.dir/main_server.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/main_server.cpp.o -MF CMakeFiles/server.dir/main_server.cpp.o.d -o CMakeFiles/server.dir/main_server.cpp.o -c "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/server/main_server.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/server.dir/main_server.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/main_server.cpp.o -MF CMakeFiles/server.dir/main_server.cpp.o.d -o CMakeFiles/server.dir/main_server.cpp.o -c "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/main_server.cpp"
 
 CMakeFiles/server.dir/main_server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/main_server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/server/main_server.cpp" > CMakeFiles/server.dir/main_server.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/main_server.cpp" > CMakeFiles/server.dir/main_server.cpp.i
 
 CMakeFiles/server.dir/main_server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/main_server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/server/main_server.cpp" -o CMakeFiles/server.dir/main_server.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/main_server.cpp" -o CMakeFiles/server.dir/main_server.cpp.s
 
 # Object files for target server
 server_OBJECTS = \
-"CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger.cpp.o" \
-"CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_holder.cpp.o" \
-"CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder.cpp.o" \
-"CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder_concrete.cpp.o" \
-"CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_concrete.cpp.o" \
-"CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory_holder.cpp.o" \
-"CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory.cpp.o" \
-"CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/list_memory.cpp.o" \
-"CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/boundary_tags_allocator.cpp.o" \
-"CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/memory_buddy_system.cpp.o" \
+"CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger.cpp.o" \
+"CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_holder.cpp.o" \
+"CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder.cpp.o" \
+"CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder_concrete.cpp.o" \
+"CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_concrete.cpp.o" \
+"CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory_holder.cpp.o" \
+"CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory.cpp.o" \
+"CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/list_memory.cpp.o" \
+"CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/boundary_tags_allocator.cpp.o" \
+"CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/memory_buddy_system.cpp.o" \
 "CMakeFiles/server.dir/main_server.cpp.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
 
-server: CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger.cpp.o
-server: CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_holder.cpp.o
-server: CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder.cpp.o
-server: CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_builder_concrete.cpp.o
-server: CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger_concrete.cpp.o
-server: CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory_holder.cpp.o
-server: CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/memory/memory.cpp.o
-server: CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/list_memory.cpp.o
-server: CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/boundary_tags_allocator.cpp.o
-server: CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/allocators/memory_buddy_system.cpp.o
+server: CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger.cpp.o
+server: CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_holder.cpp.o
+server: CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder.cpp.o
+server: CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_builder_concrete.cpp.o
+server: CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger_concrete.cpp.o
+server: CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory_holder.cpp.o
+server: CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/memory/memory.cpp.o
+server: CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/list_memory.cpp.o
+server: CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/boundary_tags_allocator.cpp.o
+server: CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/allocators/memory_buddy_system.cpp.o
 server: CMakeFiles/server.dir/main_server.cpp.o
 server: CMakeFiles/server.dir/build.make
 server: CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -265,6 +265,6 @@ CMakeFiles/server.dir/clean:
 .PHONY : CMakeFiles/server.dir/clean
 
 CMakeFiles/server.dir/depend:
-	cd "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/server/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/server" "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/server" "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/server/build" "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/server/build" "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/server/build/CMakeFiles/server.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server" "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server" "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/build" "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/build" "/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/build/CMakeFiles/server.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/server.dir/depend
 

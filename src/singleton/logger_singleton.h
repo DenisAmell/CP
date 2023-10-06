@@ -1,8 +1,8 @@
 #ifndef FUNDAMENTAL_ALGO_LOGGER_SINGLETON_H
 #define FUNDAMENTAL_ALGO_LOGGER_SINGLETON_H
 
-#include "logger/logger_holder.h"
-#include "logger/logger_builder_concrete.h"
+#include "../logger/logger_holder.h"
+#include "../logger/logger_builder_concrete.h"
 
 class logger_singleton : public logger_holder
 {

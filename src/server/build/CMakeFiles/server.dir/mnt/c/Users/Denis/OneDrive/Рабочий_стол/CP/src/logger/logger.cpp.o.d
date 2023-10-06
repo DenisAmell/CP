@@ -1,7 +1,7 @@
-CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/logger/logger.cpp.o: \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/logger/logger.cpp \
+CMakeFiles/server.dir/mnt/c/Users/Denis/OneDrive/Рабочий_стол/CP/src/logger/logger.cpp.o: \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/logger/logger.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/logger/logger.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/logger/logger.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

@@ -1,5 +1,5 @@
 CMakeFiles/server.dir/main_server.cpp.o: \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/main_server.cpp \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/main_server.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -246,16 +246,16 @@ CMakeFiles/server.dir/main_server.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h \
  /usr/include/x86_64-linux-gnu/bits/mman-linux.h \
  /usr/include/x86_64-linux-gnu/bits/mman-shared.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../database_singleton.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../memory/memory.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../memory/../logger/logger.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../memory/../not_implemented/not_implemented.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../memory/memory_holder.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../memory/../memory/memory.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../logger_singleton.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../logger/logger_holder.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../logger/logger.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../logger/logger_builder_concrete.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/database_singleton.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../memory/memory.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../memory/../logger/logger.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../memory/../not_implemented/not_implemented.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../memory/memory_holder.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../memory/../memory/memory.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../singleton/logger_singleton.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../singleton/../logger/logger_holder.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../singleton/../logger/logger.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../singleton/../logger/logger_builder_concrete.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/node_handle.h \
@@ -265,79 +265,99 @@ CMakeFiles/server.dir/main_server.cpp.o: \
  /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../logger/logger_builder.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../logger/logger.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../comparers.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../student_definition.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../allocator_type.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../tree/tree_type.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../tree/associative_container.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../singleton/../logger/logger_builder.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../logger/logger.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../comparer/comparers.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../comparer/../type_data/student_definition.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../allocators/allocator_type.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../tree/tree_type.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../type_data/student_definition.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../tree/associative_container.h \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../tree/avl_tree.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../tree/binary_search_tree.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../tree/avl_tree.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../tree/binary_search_tree.h \
  /usr/include/c++/11/stack /usr/include/c++/11/deque \
  /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
  /usr/include/c++/11/bits/stl_stack.h /usr/include/c++/11/list \
  /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/bits/list.tcc \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../tree/associative_container.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../tree/../logger/logger.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../tree/../logger/logger_holder.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../tree/../logger/logger_concrete.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../tree/../logger/logger.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../tree/../logger/logger_builder_concrete.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../tree/../memory/memory.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../tree/../memory/memory_holder.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../tree/binary_search_tree.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../tree/splay_tree.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../tree/red_black_tree.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../allocators/boundary_tags_allocator.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../allocators/../logger/logger.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../allocators/../logger/logger_concrete.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../allocators/../logger/logger_holder.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../tree/associative_container.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../tree/../logger/logger.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../tree/../logger/logger_holder.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../tree/../logger/logger_concrete.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../tree/../logger/logger.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../tree/../logger/logger_builder_concrete.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../tree/../memory/memory.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../tree/../memory/memory_holder.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../tree/binary_search_tree.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../tree/splay_tree.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../tree/red_black_tree.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../allocators/boundary_tags_allocator.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../allocators/../logger/logger.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../allocators/../logger/logger_concrete.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../allocators/../logger/logger_holder.h \
  /usr/include/c++/11/cstring \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../allocators/../memory/memory.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../allocators/memory_buddy_system.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../allocators/list_memory.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../pool.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../scheme.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../collection.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../request_handler_with_command_chain.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../request_handler_with_command.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../abstract_handler.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/command.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/../parse.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/../allocator_type.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/../memory/memory.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/../exception/doesnt_exist.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/../student_definition.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../allocators/../memory/memory.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../allocators/memory_buddy_system.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../allocators/list_memory.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../conteiners/pool.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../conteiners/../conteiners/scheme.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../conteiners/../conteiners/../tree/tree_type.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../conteiners/../conteiners/../tree/avl_tree.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../conteiners/../conteiners/../tree/binary_search_tree.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../conteiners/../conteiners/../tree/red_black_tree.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../conteiners/../conteiners/../comparer/comparers.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../conteiners/../conteiners/../conteiners/collection.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../conteiners/../conteiners/../conteiners/../type_data/student_definition.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../conteiners/../conteiners/../conteiners/../memory/memory_holder.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../conteiners/../conteiners/../conteiners/../tree/tree_type.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../conteiners/../conteiners/../conteiners/../tree/avl_tree.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../conteiners/../conteiners/../conteiners/../tree/binary_search_tree.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../conteiners/../conteiners/../conteiners/../tree/red_black_tree.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../conteiners/../conteiners/../conteiners/../comparer/comparers.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../conteiners/../tree/tree_type.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../conteiners/../tree/avl_tree.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../conteiners/../tree/binary_search_tree.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../conteiners/../tree/red_black_tree.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../conteiners/../tree/associative_container.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../conteiners/../comparer/comparers.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../request_handler/request_handler_with_command_chain.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../request_handler/request_handler_with_command.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../request_handler/abstract_handler.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../request_handler/../commands/command.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../request_handler/../commands/../validation/parse.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../request_handler/../commands/../validation/../allocators/allocator_type.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../request_handler/../commands/../validation/../memory/memory.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../request_handler/../commands/../validation/../exception/doesnt_exist.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../request_handler/../commands/../validation/../type_data/student_definition.h \
  /usr/include/c++/11/sstream /usr/include/c++/11/bits/sstream.tcc \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../string_pool/string_pool.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../singleton/../string_pool/string_pool.h \
  /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
  /usr/include/c++/11/bits/hashtable_policy.h \
  /usr/include/c++/11/bits/enable_special_members.h \
  /usr/include/c++/11/bits/unordered_map.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/command_add_pool.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/command.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/../database_singleton.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/../memory/memory.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/../tree/tree_type.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/command_add_scheme.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/../logger_singleton.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/command_add_collection.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/command_add_data.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/../student_definition.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/command_get_data.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/command_remove_pool.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/../logger/logger.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/command_remove_scheme.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/command_remove_collection.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/command_remove_data.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/command_update_data.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../commands/command_get_data_between.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../request_handler_with_command_chain.h \
- /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/server/../tree/tree_type.h
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../commands/command_add_pool.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../commands/command.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../commands/../singleton/database_singleton.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../commands/../memory/memory.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../commands/../validation/parse.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../commands/../tree/tree_type.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../commands/command_add_scheme.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../commands/../singleton/logger_singleton.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../commands/command_add_collection.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../commands/command_add_data.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../commands/../type_data/student_definition.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../commands/command_get_data.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../commands/command_remove_pool.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../commands/../logger/logger.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../commands/command_remove_scheme.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../commands/command_remove_collection.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../commands/command_remove_data.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../commands/command_update_data.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../commands/command_get_data_between.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../request_handler/request_handler_with_command_chain.h \
+ /mnt/c/Users/Denis/OneDrive/Рабочий\ стол/CP/src/server/../tree/tree_type.h
