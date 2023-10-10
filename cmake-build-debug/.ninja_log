@@ -1,0 +1,13 @@
+# ninja log v5
+12	2345	7180732843264834	CMakeFiles/cp.dir/src/logger/logger_holder.cpp.obj	76f7fd7fcb9f1f31
+5534	8496	7180733549705295	cp.exe	88773921b2a51d47
+1	2359	7180732843344833	CMakeFiles/cp.dir/src/logger/logger.cpp.obj	e212f8b28e10faf7
+37	2686	7180732846904842	CMakeFiles/cp.dir/src/logger/logger_builder_concrete.cpp.obj	89c360a144c1a085
+113	2692	7180732847014856	CMakeFiles/cp.dir/src/allocators/list_memory.cpp.obj	43785e66e19a68b
+20	2895	7180732849135301	CMakeFiles/cp.dir/src/memory/memory_holder.cpp.obj	bbc3f889acfd2de6
+77	2972	7180732849925309	CMakeFiles/cp.dir/src/logger/logger_builder.cpp.obj	292c38d58ebe021c
+87	3091	7180732851095308	CMakeFiles/cp.dir/src/allocators/memory_buddy_system.cpp.obj	ed37288b39719d16
+223	3047	7180732850675302	CMakeFiles/cp.dir/src/memory/memory.cpp.obj	58d22e5f6a523b8
+274	3198	7180732852175324	CMakeFiles/cp.dir/src/allocators/boundary_tags_allocator.cpp.obj	1bb2f2282c203659
+67	3283	7180732853025302	CMakeFiles/cp.dir/src/logger/logger_concrete.cpp.obj	c863ad2f2f6655b4
+13	5532	7180733520005314	CMakeFiles/cp.dir/src/main.cpp.obj	53fd4b6fb067d48

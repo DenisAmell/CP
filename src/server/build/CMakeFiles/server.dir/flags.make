@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/."
+CXX_INCLUDES = -I/mnt/c/Users/Denis/Course_work/src/server/.
 
 CXX_FLAGS = -std=gnu++20
 

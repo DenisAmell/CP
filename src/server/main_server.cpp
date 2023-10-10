@@ -2,29 +2,22 @@
 #include <string>
 #include <stdio.h>
 #include <sys/types.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
-#include <netdb.h>
-#include <sys/uio.h>
 #include <sys/time.h>
-#include <sys/wait.h>
+
 #include <fcntl.h>
 #include <fstream>
 
 #include <iostream>
 #include <sys/types.h>
-#include <sys/ipc.h>
-#include <sys/shm.h>
-#include <sys/sem.h>
+
 #include <unistd.h>
-#include <sys/msg.h>
+
 #include <sys/stat.h>
 #include <fcntl.h>
-#include <sys/mman.h>
+
 
 
 #include "../singleton/database_singleton.h"
@@ -58,6 +51,20 @@
 
 
 using namespace std;
+
+#ifdef __linux__
+
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <netdb.h>
+#include <sys/uio.h>
+#include <sys/wait.h>
+#include <sys/ipc.h>
+#include <sys/shm.h>
+#include <sys/sem.h>
+#include <sys/msg.h>
+#include <sys/mman.h>
 
 struct SharedData {
 	int count;
@@ -118,10 +125,13 @@ void shered_memory_semaphore() {
 		.add_handler(new command_remove_data())
 		.add_handler(new command_update_data())
 		.add_handler(new command_get_data_between());
+    std::string tmp;
 
 	while (sharedData->count < 10) {
-		struct sembuf semOps[1] = { 0, 1, 0 }; // Операция ожидания
-		semop(semId, semOps, 1);
+
+         struct sembuf semOps[1] = { 0, 1, 0 };
+         semop(semId, semOps, 1);
+
 
 		// Увеличиваем count на 1
 		//sharedData->count++;
@@ -129,11 +139,10 @@ void shered_memory_semaphore() {
 		semOps[0].sem_op = -1; // Операция увеличения
 		semop(semId, semOps, 1);
 
-		std::string tmp = sharedData->msg;
-
+		 tmp = sharedData->msg;
+         std::cout << tmp << std::endl;
 		if (tmp == "Exit") break;
-
-		if (tmp == "Command") {
+		else if (tmp == "Command") {
 			while (true) {
 				semOps[0].sem_op = 1;
 				semop(semId, semOps, 1);
@@ -157,7 +166,7 @@ void shered_memory_semaphore() {
 
 			semOps[0].sem_op = 1; // Операция увеличения
 			semop(semId, semOps, 1);
-			std::cout << "gg " << std::endl;
+
 			semOps[0].sem_op = -1;
 			semop(semId, semOps, 1);
 			std::string file_name = sharedData->msg;
@@ -180,8 +189,6 @@ void shered_memory_semaphore() {
 				std::cout << "File with name:" << sharedData->msg << " can't be opened" << std::endl;
 				continue;
 			}
-
-
 		}
 	}
 
@@ -191,7 +198,8 @@ void shered_memory_semaphore() {
 
 }
 
-void soket(int argc, char* argv[], int port_tmp) {
+void soket(int argc, char* argv[])
+{
 	//// for the server, we only need to specify a port number
 	if (argc != 2)
 	{
@@ -359,9 +367,6 @@ void message_queues()
 		.add_handler(new command_remove_data())
 		.add_handler(new command_update_data())
 		.add_handler(new command_get_data_between());
-
-	printf("Server: Hello, World!\n");
-
 	while (1)
 	{
 		// read an incoming message
@@ -431,7 +436,7 @@ void message_queues()
 	}
 }
 
-int file_mapping() {
+void file_mapping() {
 	int shm_fd;
 	void* shm_region;
 
@@ -441,7 +446,7 @@ int file_mapping() {
 	int fd = open(file_path, O_CREAT | O_RDWR, S_IRUSR | S_IWUSR);
 	if (fd == -1) {
 		perror("Ошибка при открытии файла");
-		return 1;
+        exit(1);
 	}
 
 	// Установка размера файла
@@ -453,7 +458,7 @@ int file_mapping() {
 	if (addr == MAP_FAILED) {
 		perror("Ошибка при отображении файла в память");
 		close(fd);
-		return 1;
+        exit(1);
 	}
 
 	close(fd);
@@ -557,101 +562,51 @@ int file_mapping() {
 	//close(shm_fd);
 }
 
+#endif
+
 int main(int argc, char* argv[])
 {
+#ifdef __linux__
+    key_t msg_queue_key;
+    int qid;
+    struct message message;
 
+    if ((msg_queue_key = ftok(SERVER_KEY_PATHNAME, PROJECT_ID)) == -1)
+    {
+        perror("ftok");
+        exit(1);
+    }
 
-	if (argc != 2)
-	{
-		cerr << "Usage: port" << endl;
-		exit(0);
-	}
-	// grab the port number
-	int port = atoi(argv[1]);
-	// buffer to send and receive messages with
-	char msg[1500];
+    if ((qid = msgget(msg_queue_key, IPC_CREAT | QUEUE_PERMISSIONS)) == -1)
+    {
+        perror("msgget");
+        exit(1);
+    }
 
-	// setup a socket and connection tools
-	sockaddr_in servAddr;
-	bzero((char*)&servAddr, sizeof(servAddr));
-	servAddr.sin_family = AF_INET;
-	servAddr.sin_addr.s_addr = htonl(INADDR_ANY);
-	servAddr.sin_port = htons(port);
-
-	// open stream oriented socket with internet address
-	// also keep track of the socket descriptor
-	int serverSd = socket(AF_INET, SOCK_STREAM, 0);
-	if (serverSd < 0)
-	{
-		cerr << "Error establishing the server socket" << endl;
-		exit(0);
-	}
-	// bind the socket to its local address
-	int bindStatus = bind(serverSd, (struct sockaddr*)&servAddr,
-		sizeof(servAddr));
-	if (bindStatus < 0)
-	{
-		cerr << "Error binding socket to local address" << endl;
-		exit(0);
-	}
-	cout << "Waiting for a client to connect..." << endl;
-	// listen for up to 5 requests at a time
-	listen(serverSd, 5);
-	// receive a request from client using accept
-	// we need a new address to connect with the client
-	sockaddr_in newSockAddr;
-	socklen_t newSockAddrSize = sizeof(newSockAddr);
-	// accept, create a new socket descriptor to
-	// handle the new connection with client
-	int newSd = accept(serverSd, (sockaddr*)&newSockAddr, &newSockAddrSize);
-	if (newSd < 0)
-	{
-		cerr << "Error accepting request from client!" << endl;
-		exit(1);
-	}
 	cout << "Connected with client!" << endl;
-	// lets keep track of the session time
-	struct timeval start1, end1;
-	gettimeofday(&start1, NULL);
-	int bytesRead, bytesWritten = 0;
+    while (1) {
+        if (msgrcv(qid, &message, sizeof(struct message_text), 0, 0) == -1)
+        {
+            perror("msgrcv");
+            exit(1);
+        }
 
 
+	    int mode_ipc = atoi(message.message_text.buf);
 
-	//memset(&msg, 0, sizeof(msg)); // clear the buffer
-	bytesRead += recv(newSd, (char*)&msg, sizeof(msg), 0);
+        if (mode_ipc == 1) {
+            shered_memory_semaphore();
+        } else if (mode_ipc == 2) {
+            soket(argc, argv);
+        } else if (mode_ipc == 3) {
+            message_queues();
+        } else if (mode_ipc == 4) {
+            file_mapping();
+        } else break;
 
-	int mode_ipc = atoi(msg);
-
-	std::cout << mode_ipc << std::endl;
-	switch (mode_ipc) {
-	case 1:
-		shered_memory_semaphore();
-		break;
-	case 2:
-		soket(argc, argv, port);
-		break;
-	case 3:
-		message_queues();
-		break;
-	case 4:
-		file_mapping();
-		break;
-	default:
-		break;
 	}
 
-
-
-	// also keep track of the amount of data sent as wel
-	// we need to close the socket descriptors after we're all done
-	gettimeofday(&end1, NULL);
-	close(newSd);
-	close(serverSd);
-	cout << "********Session********" << endl;
-	cout << "Bytes written: " << bytesWritten << " Bytes read: " << bytesRead << endl;
-	cout << "Elapsed time: " << (end1.tv_sec - start1.tv_sec)
-		<< " secs" << endl;
-	cout << "Connection closed..." << endl;
+#endif
 
 
 	return 0;

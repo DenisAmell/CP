@@ -1,3 +1,3 @@
-/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/build/CMakeFiles/server.dir
-/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/Denis/OneDrive/Рабочий стол/CP/src/server/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Denis/Course_work/src/server/build/CMakeFiles/server.dir
+/mnt/c/Users/Denis/Course_work/src/server/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Denis/Course_work/src/server/build/CMakeFiles/rebuild_cache.dir

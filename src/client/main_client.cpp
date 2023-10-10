@@ -2,31 +2,18 @@
 #include <string>
 #include <stdio.h>
 #include <sys/types.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
-#include <netdb.h>
-#include <sys/uio.h>
 #include <sys/time.h>
-#include <sys/wait.h>
 #include <fcntl.h>
 #include <fcntl.h>
-#include <sys/mman.h>
 #include <unistd.h>
-#include <sys/sem.h>
-
 #include <fstream>
-
 #include <iostream>
 #include <sys/types.h>
-#include <sys/ipc.h>
-#include <sys/shm.h>
-#include <sys/sem.h>
 #include <unistd.h>
-#include <sys/msg.h>
+
 
 #define SHARED_MEMORY_KEY 12345
 #define SEMAPHORE_KEY 54321
@@ -36,6 +23,24 @@
 
 #define SERVER_KEY_PATHNAME "/tmp/mqueue_server_key"
 #define PROJECT_ID 'M'
+
+
+using namespace std;
+
+#ifdef __linux__
+
+#include <sys/ipc.h>
+#include <sys/shm.h>
+#include <sys/sem.h>
+#include <sys/msg.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <netdb.h>
+#include <sys/uio.h>
+#include <sys/wait.h>
+#include <sys/mman.h>
+#include <sys/sem.h>
 
 struct message_text
 {
@@ -57,16 +62,13 @@ struct SharedData {
 	// Другие данные, необходимые для взаимодействия
 };
 
-using namespace std;
-// Client side
-
 void client_shered_memory() {
 
 	char msg[1500];
 	std::string command;
 	// Получаем идентификатор shared memory
 	int shmId = shmget(SHARED_MEMORY_KEY, SHARED_MEMORY_SIZE, IPC_CREAT | 0666);
-	std::cout << shmId << std::endl;
+
 	if (shmId == -1) {
 		perror("shmget");
 		exit(1);
@@ -90,7 +92,7 @@ void client_shered_memory() {
 		struct sembuf semOps[1] = { 0, -1, 0 }; // Операция ожидания
 		semop(semId, semOps, 1);
 		memset(&(sharedData->msg), 0, sizeof(sharedData->msg));
-		size_t number_menu = 0;
+		std::string number_menu;
 		std::cout << "\tMENU" << std::endl;
 		std::cout << "=================================" << std::endl;
 		std::cout << "1. From read to console" << std::endl;
@@ -98,7 +100,8 @@ void client_shered_memory() {
 		std::cout << "3. Exit" << std::endl;
 		std::cout << "Enter: ";
 		std::cin >> number_menu;
-		if (number_menu == 1) {
+
+		if (number_menu == "1") {
 			//send(shmId, "Command", strlen("Command"), 0);
 			std::cout << "Command" << std::endl;
 			memset(&(sharedData->msg), 0, sizeof(sharedData->msg)); // clear the buffer
@@ -122,7 +125,7 @@ void client_shered_memory() {
 
 			}
 		}
-		else if (number_menu == 2) {
+		else if (number_menu == "2") {
 			//send(shmId, "File", strlen("File"), 0);
 			memset(&(sharedData->msg), 0, sizeof(sharedData->msg)); // clear the buffer
 			strcpy(sharedData->msg, "File");
@@ -141,7 +144,7 @@ void client_shered_memory() {
 
 
 		}
-		else if (number_menu == 3) {
+		else if (number_menu == "3") {
 			memset(&(sharedData->msg), 0, sizeof(msg)); // clear the buffer
 			strcpy(sharedData->msg, "Exit");
 			//send(semId, (char*)&msg, strlen(msg), 0);
@@ -151,7 +154,9 @@ void client_shered_memory() {
 			semOps[0].sem_op = 1; // Операция увеличения
 			semop(semId, semOps, 1);
 			break;
-		}
+		} else {
+            std::cout << "Input error!" << std::endl;
+        }
 
 		sharedData->count++;
 
@@ -172,7 +177,7 @@ void client_shered_memory() {
 	semctl(semId, 0, IPC_RMID);
 }
 
-int soket(int argc, char* argv[], int port_tmp) {
+int soket(int argc, char* argv[]) {
 	// we need 2 things: ip address and port number, in that order
 	if (argc != 3)
 	{
@@ -312,7 +317,7 @@ void message_queues()
 
 	while (1)
 	{
-		size_t number_menu = 0;
+		std::string number_menu;
 		std::cout << "\tMENU" << std::endl;
 		std::cout << "=================================" << std::endl;
 		std::cout << "1. From read to console" << std::endl;
@@ -321,7 +326,7 @@ void message_queues()
 		std::cout << "Enter: ";
 		std::cin >> number_menu;
 
-		if (number_menu == 1)
+		if (number_menu == "1")
 		{
 			strcpy(my_message.message_text.buf, "Command");
 			if (msgsnd(server_qid, &my_message, sizeof(struct message_text), 0) == -1)
@@ -352,8 +357,7 @@ void message_queues()
 					exit(1);
 				}
 			}
-		}
-		if (number_menu == 2)
+		} else if (number_menu == "2")
 		{
 			std::string file_name;
 			strcpy(my_message.message_text.buf, "File");
@@ -373,8 +377,7 @@ void message_queues()
 				perror("client: msgsnd");
 				exit(1);
 			}
-		}
-		if (number_menu == 3) {
+		} else if (number_menu == "3") {
 			strcpy(my_message.message_text.buf, "Exit");
 			if (msgsnd(server_qid, &my_message, sizeof(struct message_text), 0) == -1)
 			{
@@ -382,7 +385,9 @@ void message_queues()
 				exit(1);
 			}
 			break;
-		}
+		} else {
+        std::cout << "Input error!" << std::endl;
+    }
 
 	}
 	// remove message queue
@@ -391,11 +396,9 @@ void message_queues()
 		perror("client: msgctl");
 		exit(1);
 	}
-
-	printf("Client: bye\n");
 }
 
-int file_mapping() {
+void file_mapping() {
 	int shm_fd;
 	void* shm_region;
 
@@ -405,7 +408,7 @@ int file_mapping() {
 	int fd = open(file_path, O_CREAT | O_RDWR);
 	if (fd == -1) {
 		perror("Ошибка при открытии файла");
-		return 1;
+        exit(1);
 	}
 
 	// Отображаем файл в память
@@ -413,7 +416,7 @@ int file_mapping() {
 	if (addr == MAP_FAILED) {
 		perror("Ошибка при отображении файла в память");
 		close(fd);
-		return 1;
+        exit(1);
 	}
 
 	close(fd);  // Файл больше не нужен
@@ -430,7 +433,7 @@ int file_mapping() {
 	{
 		struct sembuf semOps[1] = { 0, -1, 0 }; // Операция ожидания
 		semop(semId, semOps, 1);
-		size_t number_menu = 0;
+		std::string number_menu;
 		std::cout << "\tMENU" << std::endl;
 		std::cout << "=================================" << std::endl;
 		std::cout << "1. From read to console" << std::endl;
@@ -440,7 +443,7 @@ int file_mapping() {
 		std::cin >> number_menu;
 
 		
-		if (number_menu == 1) {
+		if (number_menu == "1") {
 			//send(shmId, "Command", strlen("Command"), 0);
 			std::cout << "Command" << std::endl;
 			sprintf(addr, "%s", "Command");
@@ -468,7 +471,7 @@ int file_mapping() {
 
 			}
 		} 
-		else if (number_menu == 2) {
+		else if (number_menu == "2") {
 			std::cout << "gg" << std::endl;
 
 			std::string tmp = "File";
@@ -490,51 +493,52 @@ int file_mapping() {
 			semOps[0].sem_op = 1;
 			semop(semId, semOps, 1);
 
-		}else if (number_menu == 3) {
+		}else if (number_menu == "3") {
 			sprintf(addr, "%s", "Exit");
 			semOps[0].sem_op = 1;
 			semop(semId, semOps, 1);
 			break;
-		}
+		} else {
+            std::cout << "Input error!" << std::endl;
+            semOps[0].sem_op = 1;
+			semop(semId, semOps, 1);
+        }
 	}
 	munmap(addr, file_size);
 
 
 }
+#endif
 
 int main(int argc, char* argv[]) {
 
-	if (argc != 3)
-	{
-		cerr << "Usage: ip_address port" << endl;
-		exit(0);
-	} // grab the IP address and port number
-	char* serverIp = argv[1];
-	int port = atoi(argv[2]);
-	// create a message buffer
-	char msg[1500];
-	// setup a socket and connection tools
-	struct hostent* host = gethostbyname(serverIp);
-	sockaddr_in sendSockAddr;
-	bzero((char*)&sendSockAddr, sizeof(sendSockAddr));
-	sendSockAddr.sin_family = AF_INET;
-	sendSockAddr.sin_addr.s_addr =
-		inet_addr(inet_ntoa(*(struct in_addr*)*host->h_addr_list));
-	sendSockAddr.sin_port = htons(port);
-	int clientSd = socket(AF_INET, SOCK_STREAM, 0);
-	// try to connect...
-	int status = connect(clientSd,
-		(sockaddr*)&sendSockAddr, sizeof(sendSockAddr));
-	if (status < 0)
-	{
-		cout << "Error connecting to socket!" << endl;
-		return -1;
-	}
-	cout << "Connected to the server!" << endl;
-	int bytesRead, bytesWritten = 0;
-	struct timeval start1, end1;
-	gettimeofday(&start1, NULL);
+#ifdef __linux__
+    key_t server_queue_key;
+    int server_qid, myqid;
+    struct message my_message, return_message;
 
+    // create my client queue for receiving messages from server
+    if ((myqid = msgget(IPC_PRIVATE, 0660)) == -1)
+    {
+        perror("msgget: myqid");
+        exit(1);
+    }
+
+    if ((server_queue_key = ftok(SERVER_KEY_PATHNAME, PROJECT_ID)) == -1)
+    {
+        perror("ftok");
+        exit(1);
+    }
+ while (1) {
+    if ((server_qid = msgget(server_queue_key, 0)) == -1)
+    {
+        perror("msgget: server_qid");
+        exit(1);
+    }
+
+    my_message.message_type = 1;
+    my_message.message_text.qid = myqid;
+	cout << "Connected to the server!" << endl;
 
 	std::string number_menu;
 	std::cout << "\tMENU IPC" << std::endl;
@@ -549,36 +553,62 @@ int main(int argc, char* argv[]) {
 
 
 	std::cout << number_menu << std::endl;
+
+
+
 	if (number_menu == "1") {
 
-		bytesWritten += send(clientSd, (number_menu.substr(0, number_menu.find("\r"))).c_str(), strlen(number_menu.c_str()), 0);
+		//bytesWritten += send(clientSd, (number_menu.substr(0, number_menu.find("\r"))).c_str(), strlen(number_menu.c_str()), 0);
+        strcpy(my_message.message_text.buf, "1");
+        if (msgsnd(server_qid, &my_message, sizeof(struct message_text), 0) == -1)
+			{
+				perror("client: msgsnd");
+				exit(1);
+			}
 		client_shered_memory();
 
-	}
-	if (number_menu == "2") {
+	}else if (number_menu == "2") {
 
-		bytesWritten += send(clientSd, (number_menu.substr(0, number_menu.find("\r"))).c_str(), strlen(number_menu.c_str()), 0);
-		soket(argc, argv, port);
-	}
-	if (number_menu == "3") {
-		bytesWritten += send(clientSd, (number_menu.substr(0, number_menu.find("\r"))).c_str(), strlen(number_menu.c_str()), 0);
+        strcpy(my_message.message_text.buf, "2");
+			if (msgsnd(server_qid, &my_message, sizeof(struct message_text), 0) == -1)
+			{
+				perror("client: msgsnd");
+				exit(1);
+			}
+            soket(argc, argv);
+	} else if (number_menu == "3") {
+        strcpy(my_message.message_text.buf, "3");
+			if (msgsnd(server_qid, &my_message, sizeof(struct message_text), 0) == -1)
+			{
+				perror("client: msgsnd");
+				exit(1);
+			}
 		message_queues();
-	}
-	if (number_menu == "4") {
-		bytesWritten += send(clientSd, (number_menu.substr(0, number_menu.find("\r"))).c_str(), strlen(number_menu.c_str()), 0);
+	}else if (number_menu == "4") {
+		//bytesWritten += send(clientSd, (number_menu.substr(0, number_menu.find("\r"))).c_str(), strlen(number_menu.c_str()), 0);
+        strcpy(my_message.message_text.buf, "4");
+			if (msgsnd(server_qid, &my_message, sizeof(struct message_text), 0) == -1)
+			{
+				perror("client: msgsnd");
+				exit(1);
+			}
 		file_mapping();
+	} else if (number_menu == "5") {
+        break;
+    }
+    else {
+        std::cout << "Input Error!" << std::endl;
+    }
+}
+    if (msgctl(myqid, IPC_RMID, NULL) == -1)
+	{
+		perror("client: msgctl");
+		exit(1);
 	}
 
 
 
-	gettimeofday(&end1, NULL);
-	close(clientSd);
-	cout << "********Session********" << endl;
-	cout << "Bytes written: " << bytesWritten << " Bytes read: " << bytesRead << endl;
-	cout << "Elapsed time: " << (end1.tv_sec - start1.tv_sec)
-		<< " secs" << endl;
-	cout << "Connection closed" << endl;
-
+#endif
 
 	return 0;
 }
