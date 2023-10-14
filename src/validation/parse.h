@@ -7,6 +7,7 @@
 #include "../memory/memory.h"
 #include "../exception/doesnt_exist.h"
 #include "../type_data/student_definition.h"
+#include "../tree/tree_type.h"
 #include <string>
 #include <sstream>
 //
@@ -67,6 +68,63 @@ std::vector<std::string> validation(std::string const& prefix, char delim)
 		result.push_back(token);
 	}
 	return result;
+}
+
+std::string convert_allocator_type_to_string(allocator_type allocator_type) {
+    std::string allocator_type_string;
+    switch(allocator_type) {
+        case allocator_type::list_memory:
+            allocator_type_string = "list_memory";
+            break;
+        case allocator_type::global_heap:
+            allocator_type_string = "global_heap";
+            break;
+        case allocator_type::border_descriptors:
+            allocator_type_string = "border_descriptors";
+            break;
+        case allocator_type::buddy_allocator:
+            allocator_type_string = "buddy_allocator";
+            break;
+
+    }
+    return allocator_type_string;
+}
+
+std::string convert_allocator_mode_to_string(memory::allocate_mode allocate_mode) {
+    std::string allocate_mode_string;
+    switch(allocate_mode) {
+        case memory::allocate_mode::best_fit:
+            allocate_mode_string = "best_fit";
+            break;
+        case memory::allocate_mode::first_fit:
+            allocate_mode_string = "first_fit";
+            break;
+        case memory::allocate_mode::worst_fit:
+            allocate_mode_string = "worst_fit";
+            break;
+    }
+    return allocate_mode_string;
+
+}
+
+std::string convert_tree_type_to_string(tree_type treetype) {
+    std::string tree_type_string;
+    switch(treetype) {
+        case tree_type::RED_BLACK_TREE:
+            tree_type_string = "red_black_tree";
+            break;
+        case tree_type::BINARY_SEARCH_TREE:
+            tree_type_string = "binary_search_tree";
+            break;
+        case tree_type::AVL_TREE:
+            tree_type_string = "avl_tree";
+            break;
+        case tree_type::SPALY_TREE:
+            tree_type_string = "splay_tree";
+            break;
+    }
+    return tree_type_string;
+
 }
 
 allocator_type string_to_allocator_type(std::string const& string_allocator_type)

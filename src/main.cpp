@@ -21,9 +21,9 @@ int main(int argc, char *argv[])
 	database_singleton *db = new database_singleton();
 
 	std::string command;
-
+    char file_name[] = "file_save.txt";
 	request_handler_with_command_chain<std::string> chain;
-	chain.add_handler(new command_add_pool())
+	chain.add_handler(new command_add_pool(file_name))
 		.add_handler(new command_add_scheme())
 		.add_handler(new command_add_collection())
 		.add_handler(new command_add_data())

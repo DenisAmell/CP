@@ -32,6 +32,7 @@ private:
 	private:
 		int_comparer _int_comparer;
 
+
 	public:
 		int operator()(std::pair<int, int> const& left, std::pair<int, int> const& right)
 		{
