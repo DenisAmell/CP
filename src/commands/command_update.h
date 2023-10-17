@@ -53,17 +53,17 @@ bool command_update::can_execute(std::string const& request)
 
 		_data_value._type_of_meeting = type_of_meeting_convert(result[5]);
 		_data_value._format = format_convert(result[6]);
-		_data_value._meeting_description = result[7];
-		_data_value._link_to_meeting = result[8];
-		_data_value._first_name = name_surname_convert(result[9]);
-		_data_value._last_name = name_surname_convert(result[10]);
-		_data_value._middle_name = middle_name_convert(result[11]);
-		_data_value._data = data_convert(result[12]);
-		_data_value._time = time_convert(result[13]);
-		_data_value._duration_of_meeting = is_unsigned_convert(result[14]);
+		_data_value._meeting_description = string_flyweight_factory::get_instance().get_string_flyweight(result[7])->get_value();
+		_data_value._link_to_meeting = string_flyweight_factory::get_instance().get_string_flyweight(result[8])->get_value();
+        _data_value._first_name = string_flyweight_factory::get_instance().get_string_flyweight(result[9])->get_value();
+        _data_value._last_name = string_flyweight_factory::get_instance().get_string_flyweight(result[10])->get_value();
+        _data_value._middle_name = string_flyweight_factory::get_instance().get_string_flyweight(result[11])->get_value();
+        _data_value._data = string_flyweight_factory::get_instance().get_string_flyweight(result[12])->get_value();
+        _data_value._time = string_flyweight_factory::get_instance().get_string_flyweight(result[13])->get_value();
+        _data_value._duration_of_meeting = is_unsigned_convert(result[14]);
 
 		std::string list_invites = result[15];
-		_data_value._list_invitees = std::move(list_invites.substr(0, list_invites.find("\r")));
+		_data_value._list_invitees = string_flyweight_factory::get_instance().get_string_flyweight(list_invites.substr(0, list_invites.find("\r")))->get_value();
 
 		return true;
 	}
@@ -83,15 +83,15 @@ void command_update::execute(std::string const&)
 			+ std::to_string(_data_key._id)
 			+ type_of_meeting_convert_to_string(_data_value._type_of_meeting)
 			+ format_convert_to_string(_data_value._format)
-			+ _data_value._meeting_description
-			+ _data_value._link_to_meeting
-			+ _data_value._first_name
-			+ _data_value._last_name
-			+ _data_value._middle_name
-			+ _data_value._data
-			+ _data_value._time
-			+ std::to_string(_data_value._duration_of_meeting)
-			+ _data_value._list_invitees << std::endl;
+              + *(_data_value._meeting_description)
+              + *(_data_value._link_to_meeting )
+              + *(_data_value._first_name )
+              + *(_data_value._last_name)
+              + *(_data_value._middle_name)
+              + *(_data_value._data )
+              + *(_data_value._time)
+              + std::to_string(_data_value._duration_of_meeting)
+              + *(_data_value._list_invitees) << std::endl;
 	}
 
 	logger_singleton::get_instance()

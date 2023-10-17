@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = D$:/education/institute/gitreps/kursach_pupu/cmake-build-debug/
+cmake_ninja_workdir = D$:/education/institute/gitreps/CP/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target KURSACH
 
@@ -49,80 +49,80 @@ cmake_ninja_workdir = D$:/education/institute/gitreps/kursach_pupu/cmake-build-d
 
 build cmake_object_order_depends_target_KURSACH: phony || CMakeFiles/KURSACH.dir
 
-build CMakeFiles/KURSACH.dir/src/allocators/boundery_tags/boundery_tags.cpp.obj: CXX_COMPILER__KURSACH_unscanned_Debug D$:/education/institute/gitreps/kursach_pupu/src/allocators/boundery_tags/boundery_tags.cpp || cmake_object_order_depends_target_KURSACH
+build CMakeFiles/KURSACH.dir/src/allocators/boundery_tags/boundery_tags.cpp.obj: CXX_COMPILER__KURSACH_unscanned_Debug D$:/education/institute/gitreps/CP/src/allocators/boundery_tags/boundery_tags.cpp || cmake_object_order_depends_target_KURSACH
   DEP_FILE = CMakeFiles\KURSACH.dir\src\allocators\boundery_tags\boundery_tags.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -ID:/education/institute/gitreps/kursach_pupu/.
+  INCLUDES = -ID:/education/institute/gitreps/CP/.
   OBJECT_DIR = CMakeFiles\KURSACH.dir
   OBJECT_FILE_DIR = CMakeFiles\KURSACH.dir\src\allocators\boundery_tags
 
-build CMakeFiles/KURSACH.dir/src/allocators/buddy_system/buddy_system.cpp.obj: CXX_COMPILER__KURSACH_unscanned_Debug D$:/education/institute/gitreps/kursach_pupu/src/allocators/buddy_system/buddy_system.cpp || cmake_object_order_depends_target_KURSACH
+build CMakeFiles/KURSACH.dir/src/allocators/buddy_system/buddy_system.cpp.obj: CXX_COMPILER__KURSACH_unscanned_Debug D$:/education/institute/gitreps/CP/src/allocators/buddy_system/buddy_system.cpp || cmake_object_order_depends_target_KURSACH
   DEP_FILE = CMakeFiles\KURSACH.dir\src\allocators\buddy_system\buddy_system.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -ID:/education/institute/gitreps/kursach_pupu/.
+  INCLUDES = -ID:/education/institute/gitreps/CP/.
   OBJECT_DIR = CMakeFiles\KURSACH.dir
   OBJECT_FILE_DIR = CMakeFiles\KURSACH.dir\src\allocators\buddy_system
 
-build CMakeFiles/KURSACH.dir/src/allocators/global_heap/memory_global_heap.cpp.obj: CXX_COMPILER__KURSACH_unscanned_Debug D$:/education/institute/gitreps/kursach_pupu/src/allocators/global_heap/memory_global_heap.cpp || cmake_object_order_depends_target_KURSACH
+build CMakeFiles/KURSACH.dir/src/allocators/global_heap/memory_global_heap.cpp.obj: CXX_COMPILER__KURSACH_unscanned_Debug D$:/education/institute/gitreps/CP/src/allocators/global_heap/memory_global_heap.cpp || cmake_object_order_depends_target_KURSACH
   DEP_FILE = CMakeFiles\KURSACH.dir\src\allocators\global_heap\memory_global_heap.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -ID:/education/institute/gitreps/kursach_pupu/.
+  INCLUDES = -ID:/education/institute/gitreps/CP/.
   OBJECT_DIR = CMakeFiles\KURSACH.dir
   OBJECT_FILE_DIR = CMakeFiles\KURSACH.dir\src\allocators\global_heap
 
-build CMakeFiles/KURSACH.dir/src/allocators/memory_list/memory_list.cpp.obj: CXX_COMPILER__KURSACH_unscanned_Debug D$:/education/institute/gitreps/kursach_pupu/src/allocators/memory_list/memory_list.cpp || cmake_object_order_depends_target_KURSACH
+build CMakeFiles/KURSACH.dir/src/allocators/memory_list/memory_list.cpp.obj: CXX_COMPILER__KURSACH_unscanned_Debug D$:/education/institute/gitreps/CP/src/allocators/memory_list/memory_list.cpp || cmake_object_order_depends_target_KURSACH
   DEP_FILE = CMakeFiles\KURSACH.dir\src\allocators\memory_list\memory_list.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -ID:/education/institute/gitreps/kursach_pupu/.
+  INCLUDES = -ID:/education/institute/gitreps/CP/.
   OBJECT_DIR = CMakeFiles\KURSACH.dir
   OBJECT_FILE_DIR = CMakeFiles\KURSACH.dir\src\allocators\memory_list
 
-build CMakeFiles/KURSACH.dir/src/logger/logger_builder_concrete.cpp.obj: CXX_COMPILER__KURSACH_unscanned_Debug D$:/education/institute/gitreps/kursach_pupu/src/logger/logger_builder_concrete.cpp || cmake_object_order_depends_target_KURSACH
+build CMakeFiles/KURSACH.dir/src/logger/logger_builder_concrete.cpp.obj: CXX_COMPILER__KURSACH_unscanned_Debug D$:/education/institute/gitreps/CP/src/logger/logger_builder_concrete.cpp || cmake_object_order_depends_target_KURSACH
   DEP_FILE = CMakeFiles\KURSACH.dir\src\logger\logger_builder_concrete.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -ID:/education/institute/gitreps/kursach_pupu/.
+  INCLUDES = -ID:/education/institute/gitreps/CP/.
   OBJECT_DIR = CMakeFiles\KURSACH.dir
   OBJECT_FILE_DIR = CMakeFiles\KURSACH.dir\src\logger
 
-build CMakeFiles/KURSACH.dir/src/logger/logger_builder.cpp.obj: CXX_COMPILER__KURSACH_unscanned_Debug D$:/education/institute/gitreps/kursach_pupu/src/logger/logger_builder.cpp || cmake_object_order_depends_target_KURSACH
+build CMakeFiles/KURSACH.dir/src/logger/logger_builder.cpp.obj: CXX_COMPILER__KURSACH_unscanned_Debug D$:/education/institute/gitreps/CP/src/logger/logger_builder.cpp || cmake_object_order_depends_target_KURSACH
   DEP_FILE = CMakeFiles\KURSACH.dir\src\logger\logger_builder.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -ID:/education/institute/gitreps/kursach_pupu/.
+  INCLUDES = -ID:/education/institute/gitreps/CP/.
   OBJECT_DIR = CMakeFiles\KURSACH.dir
   OBJECT_FILE_DIR = CMakeFiles\KURSACH.dir\src\logger
 
-build CMakeFiles/KURSACH.dir/src/logger/logger_concrete.cpp.obj: CXX_COMPILER__KURSACH_unscanned_Debug D$:/education/institute/gitreps/kursach_pupu/src/logger/logger_concrete.cpp || cmake_object_order_depends_target_KURSACH
+build CMakeFiles/KURSACH.dir/src/logger/logger_concrete.cpp.obj: CXX_COMPILER__KURSACH_unscanned_Debug D$:/education/institute/gitreps/CP/src/logger/logger_concrete.cpp || cmake_object_order_depends_target_KURSACH
   DEP_FILE = CMakeFiles\KURSACH.dir\src\logger\logger_concrete.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -ID:/education/institute/gitreps/kursach_pupu/.
+  INCLUDES = -ID:/education/institute/gitreps/CP/.
   OBJECT_DIR = CMakeFiles\KURSACH.dir
   OBJECT_FILE_DIR = CMakeFiles\KURSACH.dir\src\logger
 
-build CMakeFiles/KURSACH.dir/src/logger/logger_holder.cpp.obj: CXX_COMPILER__KURSACH_unscanned_Debug D$:/education/institute/gitreps/kursach_pupu/src/logger/logger_holder.cpp || cmake_object_order_depends_target_KURSACH
+build CMakeFiles/KURSACH.dir/src/logger/logger_holder.cpp.obj: CXX_COMPILER__KURSACH_unscanned_Debug D$:/education/institute/gitreps/CP/src/logger/logger_holder.cpp || cmake_object_order_depends_target_KURSACH
   DEP_FILE = CMakeFiles\KURSACH.dir\src\logger\logger_holder.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -ID:/education/institute/gitreps/kursach_pupu/.
+  INCLUDES = -ID:/education/institute/gitreps/CP/.
   OBJECT_DIR = CMakeFiles\KURSACH.dir
   OBJECT_FILE_DIR = CMakeFiles\KURSACH.dir\src\logger
 
-build CMakeFiles/KURSACH.dir/src/logger/logger.cpp.obj: CXX_COMPILER__KURSACH_unscanned_Debug D$:/education/institute/gitreps/kursach_pupu/src/logger/logger.cpp || cmake_object_order_depends_target_KURSACH
+build CMakeFiles/KURSACH.dir/src/logger/logger.cpp.obj: CXX_COMPILER__KURSACH_unscanned_Debug D$:/education/institute/gitreps/CP/src/logger/logger.cpp || cmake_object_order_depends_target_KURSACH
   DEP_FILE = CMakeFiles\KURSACH.dir\src\logger\logger.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -ID:/education/institute/gitreps/kursach_pupu/.
+  INCLUDES = -ID:/education/institute/gitreps/CP/.
   OBJECT_DIR = CMakeFiles\KURSACH.dir
   OBJECT_FILE_DIR = CMakeFiles\KURSACH.dir\src\logger
 
-build CMakeFiles/KURSACH.dir/src/memory/memory_holder.cpp.obj: CXX_COMPILER__KURSACH_unscanned_Debug D$:/education/institute/gitreps/kursach_pupu/src/memory/memory_holder.cpp || cmake_object_order_depends_target_KURSACH
+build CMakeFiles/KURSACH.dir/src/memory/memory_holder.cpp.obj: CXX_COMPILER__KURSACH_unscanned_Debug D$:/education/institute/gitreps/CP/src/memory/memory_holder.cpp || cmake_object_order_depends_target_KURSACH
   DEP_FILE = CMakeFiles\KURSACH.dir\src\memory\memory_holder.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -ID:/education/institute/gitreps/kursach_pupu/.
+  INCLUDES = -ID:/education/institute/gitreps/CP/.
   OBJECT_DIR = CMakeFiles\KURSACH.dir
   OBJECT_FILE_DIR = CMakeFiles\KURSACH.dir\src\memory
 
-build CMakeFiles/KURSACH.dir/src/main.cpp.obj: CXX_COMPILER__KURSACH_unscanned_Debug D$:/education/institute/gitreps/kursach_pupu/src/main.cpp || cmake_object_order_depends_target_KURSACH
+build CMakeFiles/KURSACH.dir/src/main.cpp.obj: CXX_COMPILER__KURSACH_unscanned_Debug D$:/education/institute/gitreps/CP/src/main.cpp || cmake_object_order_depends_target_KURSACH
   DEP_FILE = CMakeFiles\KURSACH.dir\src\main.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
-  INCLUDES = -ID:/education/institute/gitreps/kursach_pupu/.
+  INCLUDES = -ID:/education/institute/gitreps/CP/.
   OBJECT_DIR = CMakeFiles\KURSACH.dir
   OBJECT_FILE_DIR = CMakeFiles\KURSACH.dir\src
 
@@ -149,7 +149,7 @@ build KURSACH.exe: CXX_EXECUTABLE_LINKER__KURSACH_Debug CMakeFiles/KURSACH.dir/s
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\education\institute\gitreps\kursach_pupu\cmake-build-debug && "D:\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D D:\education\institute\gitreps\CP\cmake-build-debug && "D:\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -160,7 +160,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\education\institute\gitreps\kursach_pupu\cmake-build-debug && "D:\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SD:\education\institute\gitreps\kursach_pupu -BD:\education\institute\gitreps\kursach_pupu\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D D:\education\institute\gitreps\CP\cmake-build-debug && "D:\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SD:\education\institute\gitreps\CP -BD:\education\institute\gitreps\CP\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -178,7 +178,7 @@ build KURSACH: phony KURSACH.exe
 # =============================================================================
 
 #############################################
-# Folder: D:/education/institute/gitreps/kursach_pupu/cmake-build-debug
+# Folder: D:/education/institute/gitreps/CP/cmake-build-debug
 
 build all: phony KURSACH.exe
 
@@ -189,14 +189,14 @@ build all: phony KURSACH.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake D$:/education/institute/gitreps/kursach_pupu/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake D$:/education/institute/gitreps/CP/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake D$:/education/institute/gitreps/kursach_pupu/CMakeLists.txt: phony
+build CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake D$:/education/institute/gitreps/CP/CMakeLists.txt: phony
 
 
 #############################################

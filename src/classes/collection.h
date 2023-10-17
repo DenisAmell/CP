@@ -13,6 +13,7 @@
 #include "../trees/RB/red_black_tree.h"
 #include "../trees/SPLAY/splay_tree.h"
 #include "../logger_singleton.h"
+#include "../flyweight/string_flyweight_factory.h"
 
 class collection : public memory_holder
 {
@@ -135,15 +136,15 @@ void collection::add(key* target_key, value* target_value)
 
 	data_value->_type_of_meeting = target_value->_type_of_meeting;
 	data_value->_format = target_value->_format;
-	data_value->_meeting_description = target_value->_meeting_description;
-	data_value->_link_to_meeting = target_value->_link_to_meeting;
-	data_value->_first_name = target_value->_first_name;
-	data_value->_last_name = target_value->_last_name;
-	data_value->_middle_name = target_value->_middle_name;
-	data_value->_data = target_value->_data;
-	data_value->_time = target_value->_time;
+	data_value->_meeting_description = string_flyweight_factory::get_instance().get_string_flyweight((*target_value->_meeting_description))->get_value();
+	data_value->_link_to_meeting = string_flyweight_factory::get_instance().get_string_flyweight((*target_value->_link_to_meeting))->get_value();
+	data_value->_first_name = string_flyweight_factory::get_instance().get_string_flyweight((*target_value->_first_name))->get_value();
+	data_value->_last_name = string_flyweight_factory::get_instance().get_string_flyweight((*target_value->_last_name))->get_value();
+	data_value->_middle_name = string_flyweight_factory::get_instance().get_string_flyweight((*target_value->_middle_name))->get_value();
+	data_value->_data = string_flyweight_factory::get_instance().get_string_flyweight((*target_value->_data))->get_value();
+	data_value->_time = string_flyweight_factory::get_instance().get_string_flyweight((*target_value->_time))->get_value();
 	data_value->_duration_of_meeting = target_value->_duration_of_meeting;
-	data_value->_list_invitees = target_value->_list_invitees;
+	data_value->_list_invitees = string_flyweight_factory::get_instance().get_string_flyweight((*target_value->_list_invitees))->get_value();
 
 	_data->insert(data_key, std::move(data_value));
 }
@@ -183,17 +184,17 @@ void collection::update(key* data_key, value* target_value)
 	value* data_value = reinterpret_cast<value*>(allocate_with_guard(sizeof(value)));
 	new (data_value) value;
 
-	data_value->_type_of_meeting = target_value->_type_of_meeting;
-	data_value->_format = target_value->_format;
-	data_value->_meeting_description = target_value->_meeting_description;
-	data_value->_link_to_meeting = target_value->_link_to_meeting;
-	data_value->_first_name = target_value->_first_name;
-	data_value->_last_name = target_value->_last_name;
-	data_value->_middle_name = target_value->_middle_name;
-	data_value->_data = target_value->_data;
-	data_value->_time = target_value->_time;
-	data_value->_duration_of_meeting = target_value->_duration_of_meeting;
-	data_value->_list_invitees = target_value->_list_invitees;
+    data_value->_type_of_meeting = target_value->_type_of_meeting;
+    data_value->_format = target_value->_format;
+    data_value->_meeting_description = string_flyweight_factory::get_instance().get_string_flyweight((*target_value->_meeting_description))->get_value();
+    data_value->_link_to_meeting = string_flyweight_factory::get_instance().get_string_flyweight((*target_value->_link_to_meeting))->get_value();
+    data_value->_first_name = string_flyweight_factory::get_instance().get_string_flyweight((*target_value->_first_name))->get_value();
+    data_value->_last_name = string_flyweight_factory::get_instance().get_string_flyweight((*target_value->_last_name))->get_value();
+    data_value->_middle_name = string_flyweight_factory::get_instance().get_string_flyweight((*target_value->_middle_name))->get_value();
+    data_value->_data = string_flyweight_factory::get_instance().get_string_flyweight((*target_value->_data))->get_value();
+    data_value->_time = string_flyweight_factory::get_instance().get_string_flyweight((*target_value->_time))->get_value();
+    data_value->_duration_of_meeting = target_value->_duration_of_meeting;
+    data_value->_list_invitees = string_flyweight_factory::get_instance().get_string_flyweight((*target_value->_list_invitees))->get_value();
 
 	_data->update(data_key, std::move(data_value));
 }

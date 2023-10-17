@@ -1,8 +1,8 @@
-# Install script for directory: D:/education/institute/gitreps/kursach_pupu
+# Install script for directory: D:/education/institute/gitreps/CP
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/kursach_pupu")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/KURSACH")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/education/institute/gitreps/kursach_pupu/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/education/institute/gitreps/CP/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

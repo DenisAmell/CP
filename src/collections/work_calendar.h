@@ -28,15 +28,15 @@ struct value
 	type_of_meeting _type_of_meeting;
 	format _format;
 
-	std::string _meeting_description;
-	std::string _link_to_meeting;
-	std::string _first_name;
-	std::string _last_name;
-	std::string _middle_name;
-	std::string _data;
-	std::string _time;
+	std::string *_meeting_description;
+	std::string *_link_to_meeting;
+	std::string *_first_name;
+	std::string *_last_name;
+	std::string *_middle_name;
+	std::string *_data;
+	std::string *_time;
 	unsigned int _duration_of_meeting;
-	std::string _list_invitees;
+	std::string *_list_invitees;
 };
 
 #endif // WORK_CALENDAR_H

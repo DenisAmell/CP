@@ -222,15 +222,15 @@ void database_singleton::get_data(std::string const& name_pool, std::string cons
 					if (current_collection.find_in(data_key))
 					{
 						value* data = current_collection.get(data_key);
-						std::cout << data->_meeting_description << std::endl;
-						std::cout << data->_link_to_meeting << std::endl;
-						std::cout << data->_first_name << std::endl;
-						std::cout << data->_last_name << std::endl;
-						std::cout << data->_middle_name << std::endl;
-						std::cout << data->_data << std::endl;
-						std::cout << data->_time << std::endl;
+						std::cout << *(data->_meeting_description) << std::endl;
+						std::cout << *(data->_link_to_meeting) << std::endl;
+						std::cout << *(data->_first_name) << std::endl;
+						std::cout << *(data->_last_name) << std::endl;
+						std::cout << *(data->_middle_name) << std::endl;
+						std::cout << *(data->_data) << std::endl;
+						std::cout << *(data->_time) << std::endl;
 						std::cout << data->_duration_of_meeting << std::endl;
-						std::cout << data->_list_invitees << std::endl;
+						std::cout << *(data->_list_invitees) << std::endl;
 						std::cout << std::endl;
 					}
 					else
@@ -284,15 +284,15 @@ void database_singleton::get_data_between(std::string const& name_pool, std::str
 					for (auto const& data_value : data)
 					{
 						std::cout << index << ':' << std::endl;
-						std::cout << data_value->_meeting_description << std::endl;
-						std::cout << data_value->_link_to_meeting << std::endl;
-						std::cout << data_value->_first_name << std::endl;
-						std::cout << data_value->_last_name << std::endl;
-						std::cout << data_value->_middle_name << std::endl;
-						std::cout << data_value->_data << std::endl;
-						std::cout << data_value->_time << std::endl;
-						std::cout << data_value->_duration_of_meeting << std::endl;
-						std::cout << data_value->_list_invitees << std::endl;
+                        std::cout << *(data_value->_meeting_description) << std::endl;
+                        std::cout << *(data_value->_link_to_meeting) << std::endl;
+                        std::cout << *(data_value->_first_name) << std::endl;
+                        std::cout << *(data_value->_last_name) << std::endl;
+                        std::cout << *(data_value->_middle_name) << std::endl;
+                        std::cout << *(data_value->_data) << std::endl;
+                        std::cout << *(data_value->_time) << std::endl;
+                        std::cout << data_value->_duration_of_meeting << std::endl;
+                        std::cout << *(data_value->_list_invitees) << std::endl;
 						std::cout << std::endl;
 						index++;
 					}
