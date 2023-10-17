@@ -1,0 +1,1 @@
+// TODO: DO IT pupupu. make class, then add to this class my exception from main.cpp: line 98

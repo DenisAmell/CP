@@ -1,0 +1,10 @@
+^D:\EDUCATION\INSTITUTE\KURSACH\TREES\AVL\BUILD\CMAKEFILES\53F58D162FE32E8AEB44128E1A6F1672\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/education/institute/kursach/trees/AVL -BD:/education/institute/kursach/trees/AVL/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/education/institute/kursach/trees/AVL/build/AVL.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,3 @@
+D:/education/institute/gitreps/kursach_pupu/cmake-build-debug/CMakeFiles/KURSACH.dir
+D:/education/institute/gitreps/kursach_pupu/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/education/institute/gitreps/kursach_pupu/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+ADD_POOL pool1 memory_list 100000 first_fit rb
+ADD_SCHEME pool1 scheme1 splay
+ADD_COLLECTION pool1 scheme1 collection1 bst

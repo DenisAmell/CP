@@ -1,0 +1,10 @@
+^D:\EDUCATION\INSTITUTE\GITREPS\CP\ALLOCATORS\BOUNDERY_TAGS\BUILD\CMAKEFILES\4474E574473C0C7D0F5A0CF91A49BC9D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/education/institute/gitreps/CP/allocators/boundery_tags -BD:/education/institute/gitreps/CP/allocators/boundery_tags/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/education/institute/gitreps/CP/allocators/boundery_tags/build/bt.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

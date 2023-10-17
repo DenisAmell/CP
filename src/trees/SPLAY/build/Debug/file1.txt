@@ -1,0 +1,21 @@
+[trace][22.08.2023 19:56:08] List system allocator initialized
+[trace][22.08.2023 19:56:08] Memory state after allocation operation: |occpd 72|avlbl 99904|
+[trace][22.08.2023 19:56:08] Memory state after allocation operation: |occpd 72|occpd 72|avlbl 99824|
+[trace][22.08.2023 19:56:08] Memory state after allocation operation: |occpd 72|occpd 72|occpd 72|avlbl 99744|
+[trace][22.08.2023 19:56:08] Memory state after allocation operation: |occpd 72|occpd 72|occpd 72|occpd 72|avlbl 99664|
+[trace][22.08.2023 19:56:08] Memory state after allocation operation: |occpd 72|occpd 72|occpd 72|occpd 72|occpd 72|avlbl 99584|
+[information][22.08.2023 19:56:08] Block at address 000001F30B684464 state before deallocation: 
+ [72 0 0 0 0 0 0 0 8 214 52 131 246 127 0 0 15 0 0 0 205 205 205 205 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 0 0 0 0 0 0 12 69 104 11 243 1 0 0 ]
+[trace][22.08.2023 19:56:08] Memory state after deallocation operation: |occpd 72|occpd 72|avlbl 64|occpd 72|occpd 72|avlbl 99584|
+[information][22.08.2023 19:56:08] Block at address 000001F30B6843C4 state before deallocation: 
+ [72 0 0 0 0 0 0 0 8 214 52 131 246 127 0 0 1 0 0 0 205 205 205 205 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+[trace][22.08.2023 19:56:08] Memory state after deallocation operation: |avlbl 64|occpd 72|avlbl 64|occpd 72|occpd 72|avlbl 99584|
+[information][22.08.2023 19:56:08] Block at address 000001F30B684414 state before deallocation: 
+ [72 0 0 0 0 0 0 0 8 214 52 131 246 127 0 0 2 0 0 0 205 205 205 205 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 0 0 0 0 0 0 204 67 104 11 243 1 0 0 ]
+[trace][22.08.2023 19:56:08] Memory state after deallocation operation: |avlbl 224|occpd 72|occpd 72|avlbl 99584|
+[information][22.08.2023 19:56:08] Block at address 000001F30B6844B4 state before deallocation: 
+ [72 0 0 0 0 0 0 0 8 214 52 131 246 127 0 0 3 0 0 0 205 205 205 205 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 0 0 0 0 0 0 28 68 104 11 243 1 0 0 ]
+[trace][22.08.2023 19:56:08] Memory state after deallocation operation: |avlbl 304|occpd 72|avlbl 99584|
+[information][22.08.2023 19:56:08] Block at address 000001F30B684504 state before deallocation: 
+ [72 0 0 0 0 0 0 0 8 214 52 131 246 127 0 0 4 0 0 0 205 205 205 205 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 0 0 0 0 0 0 188 68 104 11 243 1 0 0 ]
+[trace][22.08.2023 19:56:08] Memory state after deallocation operation: |avlbl 99984|

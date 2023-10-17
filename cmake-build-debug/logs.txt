@@ -1,0 +1,134 @@
+[trace][17.10.2023 16:05:22] Database constructor
+[trace][17.10.2023 16:05:40] command_add_pool::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_pool::execute(std::string const &request) called
+[trace][17.10.2023 16:05:40] List system allocator initialized
+[trace][17.10.2023 16:05:40] Pool constructor
+[trace][17.10.2023 16:05:40] Pool distructor
+[trace][17.10.2023 16:05:40] In command ADD_POOL execute called
+[trace][17.10.2023 16:05:40] command_add_pool::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_scheme::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_scheme::execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] Scheme constructor
+[trace][17.10.2023 16:05:40] Memory state after allocation operation: |occpd 80|avlbl 99896|
+[trace][17.10.2023 16:05:40] Scheme distructor
+[trace][17.10.2023 16:05:40] In command ADD_SCHEME execute called
+[trace][17.10.2023 16:05:40] command_add_pool::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_scheme::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_collection::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_collection::execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] In command ADD_COLLECTION execute called
+[trace][17.10.2023 16:05:40] command_add_pool::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_scheme::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_collection::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_data::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_data::execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] Memory state after allocation operation: |occpd 80|occpd 8|avlbl 99880|
+[trace][17.10.2023 16:05:40] Memory state after allocation operation: |occpd 80|occpd 8|occpd 272|avlbl 99600|
+[trace][17.10.2023 16:05:40] Memory state after allocation operation: |occpd 80|occpd 8|occpd 272|occpd 40|avlbl 99552|
+[trace][17.10.2023 16:05:40] In command ADD_DATA execute called
+[trace][17.10.2023 16:05:40] command_add_pool::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_scheme::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_collection::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_data::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_data::execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] Memory state after allocation operation: |occpd 80|occpd 8|occpd 272|occpd 40|occpd 8|avlbl 99536|
+[trace][17.10.2023 16:05:40] Memory state after allocation operation: |occpd 80|occpd 8|occpd 272|occpd 40|occpd 8|occpd 272|avlbl 99256|
+[trace][17.10.2023 16:05:40] Memory state after allocation operation: |occpd 80|occpd 8|occpd 272|occpd 40|occpd 8|occpd 272|occpd 40|avlbl 99208|
+[trace][17.10.2023 16:05:40] In command ADD_DATA execute called
+[trace][17.10.2023 16:05:40] command_add_pool::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_scheme::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_collection::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_data::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_get_data::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_get_data::execute(std::string const&) called
+[trace][17.10.2023 16:05:40] In command GET_DATA execute called
+[trace][17.10.2023 16:05:40] command_add_pool::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_scheme::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_collection::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_data::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_get_data::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_get_data_between::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_get_data_between::execute(std::string const&) called
+[trace][17.10.2023 16:05:40] In command GET_DATA_BETWEEN execute called
+[trace][17.10.2023 16:05:40] command_add_pool::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_scheme::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_collection::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_data::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_get_data::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_get_data_between::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_remove_data::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_remove_data::execute(std::string const&) called
+[information][17.10.2023 16:05:40] Block at address 000001c8151b76e4 state before deallocation: 
+ [40 0 0 0 0 0 0 0 80 110 97 69 246 127 0 0 196 117 27 21 200 1 0 0 212 117 27 21 200 1 0 0 68 120 27 21 200 1 0 0 ]
+[trace][17.10.2023 16:05:40] Memory state after deallocation operation: |occpd 80|occpd 8|occpd 272|avlbl 32|occpd 8|occpd 272|occpd 40|avlbl 99208|
+[information][17.10.2023 16:05:40] Block at address 000001c8151b75bc state before deallocation: 
+ [8 0 0 0 0 0 0 0 ]
+[trace][17.10.2023 16:05:40] Memory state after deallocation operation: |occpd 80|avlbl 0|occpd 272|avlbl 32|occpd 8|occpd 272|occpd 40|avlbl 99208|
+[information][17.10.2023 16:05:40] Block at address 000001c8151b75cc state before deallocation: 
+ [16 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96 128 18 21 200 1 0 0 30 0 0 0 0 0 0 0 30 0 0 0 0 0 0 0 114 121 95 108 105 115 116 0 32 129 18 21 200 1 0 0 16 0 0 0 0 0 0 0 30 0 0 0 0 0 0 0 48 48 0 0 0 0 0 0 44 118 27 21 200 1 0 0 4 0 0 0 0 0 0 0 73 108 121 97 0 118 27 21 200 1 0 0 8 0 0 0 76 118 27 21 200 1 0 0 8 0 0 0 0 0 0 0 73 114 98 105 116 115 107 121 0 1 0 0 5 0 0 0 108 118 27 21 200 1 0 0 10 0 0 0 0 0 0 0 83 101 114 103 101 101 118 105 99 104 0 0 11 0 0 0 140 118 27 21 200 1 0 0 10 0 0 0 0 0 0 0 48 50 46 48 57 46 50 48 50 51 0 0 6 0 0 0 172 118 27 21 200 1 0 0 4 0 0 0 0 0 0 0 57 58 48 48 0 118 27 21 200 1 0 0 9 0 0 0 90 0 0 0 102 105 114 115 212 118 27 21 200 1 0 0 14 0 0 0 0 0 0 0 89 97 110 97 95 75 97 115 ]
+[trace][17.10.2023 16:05:40] Memory state after deallocation operation: |occpd 80|avlbl 328|occpd 8|occpd 272|occpd 40|avlbl 99208|
+[trace][17.10.2023 16:05:40] In command REMOVE_DATA execute called
+[trace][17.10.2023 16:05:40] command_add_pool::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_scheme::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_collection::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_data::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_get_data::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_get_data_between::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_remove_data::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_remove_collection::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_remove_scheme::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_remove_pool::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_update::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_update::execute(std::string const&) called
+[trace][17.10.2023 16:05:40] Memory state after allocation operation: |occpd 80|occpd 272|avlbl 48|occpd 8|occpd 272|occpd 40|avlbl 99208|
+[trace][17.10.2023 16:05:40] In command UPDATE execute called
+[trace][17.10.2023 16:05:40] command_add_pool::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_scheme::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_collection::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_data::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_get_data::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_get_data::execute(std::string const&) called
+[trace][17.10.2023 16:05:40] In command GET_DATA execute called
+[trace][17.10.2023 16:05:40] command_add_pool::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_scheme::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_collection::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_data::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_get_data::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_get_data_between::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_remove_data::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_remove_collection::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_remove_collection::execute(std::string const&) called
+[information][17.10.2023 16:05:40] Block at address 000001c8151b783c state before deallocation: 
+ [40 0 0 0 0 0 0 0 80 110 97 69 246 127 0 0 28 119 27 21 200 1 0 0 196 117 27 21 200 1 0 0 0 0 0 0 0 0 0 0 ]
+[trace][17.10.2023 16:05:40] Memory state after deallocation operation: |occpd 80|occpd 272|avlbl 48|occpd 8|occpd 272|avlbl 99256|
+[trace][17.10.2023 16:05:40] In command REMOVE_COLLECTION execute called
+[trace][17.10.2023 16:05:40] command_add_pool::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_scheme::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_collection::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_data::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_get_data::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_get_data_between::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_remove_data::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_remove_collection::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_remove_scheme::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_remove_scheme::execute(std::string const&) called
+[trace][17.10.2023 16:05:40] Scheme distructor
+[information][17.10.2023 16:05:40] Block at address 000001c8151b7564 state before deallocation: 
+ [80 0 0 0 0 0 0 0 208 108 97 69 246 127 0 0 132 117 27 21 200 1 0 0 7 0 0 0 0 0 0 0 115 99 104 101 109 101 49 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 176 117 27 21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+[trace][17.10.2023 16:05:40] Memory state after deallocation operation: |avlbl 72|occpd 272|avlbl 48|occpd 8|occpd 272|avlbl 99256|
+[trace][17.10.2023 16:05:40] Scheme distructor
+[trace][17.10.2023 16:05:40] In command REMOVE_SCHEME execute called
+[trace][17.10.2023 16:05:40] command_add_pool::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_scheme::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_collection::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_add_data::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_get_data::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_get_data_between::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_remove_data::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_remove_collection::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_remove_scheme::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_remove_pool::can_execute(std::string const& request) called
+[trace][17.10.2023 16:05:40] command_remove_pool::execute(std::string const&) called
+[trace][17.10.2023 16:05:40] Pool distructor
+[trace][17.10.2023 16:05:40] Pool distructor
+[trace][17.10.2023 16:05:40] In command REMOVE_POOL execute called

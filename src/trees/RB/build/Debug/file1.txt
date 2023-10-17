@@ -1,0 +1,9 @@
+[trace][20.08.2023 17:44:27] List system allocator initialized
+[trace][20.08.2023 17:44:27] Memory state after allocation operation: |occpd 80|avlbl 9896|
+[trace][20.08.2023 17:44:27] Memory state after allocation operation: |occpd 80|occpd 80|avlbl 9808|
+[trace][20.08.2023 17:44:27] Memory state after allocation operation: |occpd 80|occpd 80|occpd 80|avlbl 9720|
+[trace][20.08.2023 17:44:27] Memory state after allocation operation: |occpd 80|occpd 80|occpd 80|occpd 80|avlbl 9632|
+[trace][20.08.2023 17:44:27] Memory state after allocation operation: |occpd 80|occpd 80|occpd 80|occpd 80|occpd 80|avlbl 9544|
+[information][20.08.2023 17:44:27] Block at address 000002A2EE5744AC state before deallocation: 
+ [80 0 0 0 0 0 0 0 32 188 169 165 247 127 0 0 14 0 0 0 205 205 205 205 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ]
+[trace][20.08.2023 17:44:27] Memory state after deallocation operation: |occpd 80|occpd 80|occpd 80|avlbl 72|occpd 80|avlbl 9544|

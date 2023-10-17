@@ -1,0 +1,23 @@
+# ninja log v5
+97	4292	7191009890814303	CMakeFiles/KURSACH.dir/src/main.cpp.obj	e3d108befaa99d51
+0	204	7191514633912130	build.ninja	aa0490b6b7f5d2fa
+86	1058	7191009858457767	CMakeFiles/KURSACH.dir/src/logger/logger_builder.cpp.obj	7bd5d7197ca54a72
+1047	4698	7191009894872310	CMakeFiles/KURSACH.dir/src/server/server.cpp.obj	1717696ea3dc1c28
+1068	1784	7191009865877158	CMakeFiles/KURSACH.dir/src/logger/logger.cpp.obj	401051cb450bc174
+26	1306	7191009861045756	CMakeFiles/KURSACH.dir/src/allocators/boundery_tags/boundery_tags.cpp.obj	adc35c9d0c130081
+79	1046	7191009858375423	CMakeFiles/KURSACH.dir/src/logger/logger_holder.cpp.obj	904e2092aef82790
+1058	1843	7191009866466272	CMakeFiles/KURSACH.dir/src/memory/memory_holder.cpp.obj	c1b537b22d3f40f5
+31	1217	7191009860111721	CMakeFiles/KURSACH.dir/src/allocators/global_heap/memory_global_heap.cpp.obj	f7ddc4b67eeb192a
+36	1282	7191009860799140	CMakeFiles/KURSACH.dir/src/allocators/memory_list/memory_list.cpp.obj	613603444a01b409
+49	1068	7191009858509657	CMakeFiles/KURSACH.dir/src/client/client.cpp.obj	b5279080f16719f3
+21	1382	7191009861814795	CMakeFiles/KURSACH.dir/src/logger/logger_builder_concrete.cpp.obj	f730953921ce0c51
+3	1473	7191009862741384	CMakeFiles/KURSACH.dir/src/allocators/buddy_system/buddy_system.cpp.obj	be5f775085eefcd9
+70	1670	7191009864697490	CMakeFiles/KURSACH.dir/src/logger/logger_concrete.cpp.obj	e19a1d9f64c4f060
+0	36	0	clean	661cb67522774354
+4	1624	7191012138103185	KURSACH.exe	e0b2741eed758a82
+7	9302	7191707548642594	CMakeFiles/KURSACH.dir/src/main.cpp.obj	e3d108befaa99d51
+9303	13019	7191707585843271	KURSACH.exe	e0b2741eed758a82
+6	8087	7192503827054087	CMakeFiles/KURSACH.dir/src/main.cpp.obj	e3d108befaa99d51
+8088	11804	7192503864602457	KURSACH.exe	e0b2741eed758a82
+9	9421	7192511173422053	CMakeFiles/KURSACH.dir/src/main.cpp.obj	e3d108befaa99d51
+9423	12972	7192511208925909	KURSACH.exe	e0b2741eed758a82

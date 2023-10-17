@@ -1,3 +1,0 @@
-D:/education/institute/gitreps/CP/build/CMakeFiles/KURSACH.dir
-D:/education/institute/gitreps/CP/build/CMakeFiles/ALL_BUILD.dir
-D:/education/institute/gitreps/CP/build/CMakeFiles/ZERO_CHECK.dir
