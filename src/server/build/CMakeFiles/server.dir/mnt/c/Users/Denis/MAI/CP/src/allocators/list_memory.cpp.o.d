@@ -1,8 +1,8 @@
-CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/list_memory.cpp.o: \
- /mnt/c/Users/Denis/Course_work/src/allocators/list_memory.cpp \
+CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.cpp.o: \
+ /mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/Denis/Course_work/src/allocators/list_memory.h \
- /mnt/c/Users/Denis/Course_work/src/allocators/../memory/memory.h \
+ /mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.h \
+ /mnt/c/Users/Denis/MAI/CP/src/allocators/../memory/memory.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -141,7 +141,7 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/list_memory.c
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /mnt/c/Users/Denis/Course_work/src/allocators/../memory/../logger/logger.h \
+ /mnt/c/Users/Denis/MAI/CP/src/allocators/../memory/../logger/logger.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/exception \
  /usr/include/c++/11/bits/exception_ptr.h \
@@ -164,11 +164,11 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/list_memory.c
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /mnt/c/Users/Denis/Course_work/src/allocators/../memory/../not_implemented/not_implemented.h \
- /mnt/c/Users/Denis/Course_work/src/allocators/../logger/logger.h \
- /mnt/c/Users/Denis/Course_work/src/allocators/../logger/logger_concrete.h \
- /mnt/c/Users/Denis/Course_work/src/allocators/../logger/logger.h \
- /mnt/c/Users/Denis/Course_work/src/allocators/../logger/logger_builder_concrete.h \
+ /mnt/c/Users/Denis/MAI/CP/src/allocators/../memory/../not_implemented/not_implemented.h \
+ /mnt/c/Users/Denis/MAI/CP/src/allocators/../logger/logger.h \
+ /mnt/c/Users/Denis/MAI/CP/src/allocators/../logger/logger_concrete.h \
+ /mnt/c/Users/Denis/MAI/CP/src/allocators/../logger/logger.h \
+ /mnt/c/Users/Denis/MAI/CP/src/allocators/../logger/logger_builder_concrete.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/node_handle.h \
@@ -178,6 +178,6 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/list_memory.c
  /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h \
- /mnt/c/Users/Denis/Course_work/src/allocators/../logger/logger_builder.h \
- /mnt/c/Users/Denis/Course_work/src/allocators/../logger/logger_holder.h \
+ /mnt/c/Users/Denis/MAI/CP/src/allocators/../logger/logger_builder.h \
+ /mnt/c/Users/Denis/MAI/CP/src/allocators/../logger/logger_holder.h \
  /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h

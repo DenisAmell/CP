@@ -24,7 +24,7 @@ private:
 
 public:
 
-    command_add_pool(char* filename) : _filename_save(filename) {};
+    command_add_pool(char* filename = nullptr) : _filename_save(filename) {};
 
 	bool can_execute(std::string const& request) noexcept final
 	{
@@ -131,7 +131,7 @@ public:
         if (_filename_save != nullptr) {
             std::ofstream file_save(_filename_save, std::ios::app);
             file_save.is_open();
-            file_save << "ADD_POOL " + _pool_name + convert_allocator_type_to_string(_pool_allocator_type) + std::to_string(_pool_allocator_size) + convert_allocator_mode_to_string(_pool_allocator_allocation_mode) + convert_tree_type_to_string(_tree_type) << std::endl;
+            file_save << "ADD_POOL " + _pool_name + " " + convert_allocator_type_to_string(_pool_allocator_type) + " " + std::to_string(_pool_allocator_size) + " "  + convert_allocator_mode_to_string(_pool_allocator_allocation_mode) + " " + convert_tree_type_to_string(_tree_type) << std::endl;
         }
 
 		logger_singleton::get_instance()->get_logger()->log("command_add_pool::execute(std::string const &request) called", logger::severity::trace);

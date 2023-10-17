@@ -1,8 +1,6 @@
-CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.cpp.o: \
- /mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.cpp \
- /usr/include/stdc-predef.h \
- /mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.h \
- /mnt/c/Users/Denis/Course_work/src/logger/logger.h \
+CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/logger/logger.cpp.o: \
+ /mnt/c/Users/Denis/MAI/CP/src/logger/logger.cpp \
+ /usr/include/stdc-predef.h /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -158,19 +156,4 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.c
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc \
- /mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.h \
- /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
- /usr/include/c++/11/ext/aligned_buffer.h \
- /usr/include/c++/11/bits/node_handle.h \
- /usr/include/c++/11/bits/stl_map.h /usr/include/c++/11/tuple \
- /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
- /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
- /usr/include/c++/11/bits/invoke.h \
- /usr/include/c++/11/bits/stl_multimap.h \
- /usr/include/c++/11/bits/erase_if.h \
- /mnt/c/Users/Denis/Course_work/src/logger/logger_builder.h \
- /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/ctime
+ /usr/include/c++/11/bits/istream.tcc

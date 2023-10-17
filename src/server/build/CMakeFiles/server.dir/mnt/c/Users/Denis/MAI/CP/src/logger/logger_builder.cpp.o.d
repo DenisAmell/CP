@@ -1,7 +1,7 @@
-CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.cpp.o: \
- /mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.cpp \
+CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.cpp.o: \
+ /mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.h \
+ /mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -158,22 +158,4 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /mnt/c/Users/Denis/Course_work/src/allocators/../logger/logger.h \
- /mnt/c/Users/Denis/Course_work/src/allocators/../logger/logger_concrete.h \
- /mnt/c/Users/Denis/Course_work/src/allocators/../logger/logger.h \
- /mnt/c/Users/Denis/Course_work/src/allocators/../logger/logger_builder_concrete.h \
- /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
- /usr/include/c++/11/ext/aligned_buffer.h \
- /usr/include/c++/11/bits/node_handle.h \
- /usr/include/c++/11/bits/stl_map.h /usr/include/c++/11/tuple \
- /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
- /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
- /usr/include/c++/11/bits/invoke.h \
- /usr/include/c++/11/bits/stl_multimap.h \
- /usr/include/c++/11/bits/erase_if.h \
- /mnt/c/Users/Denis/Course_work/src/allocators/../logger/logger_builder.h \
- /mnt/c/Users/Denis/Course_work/src/allocators/../logger/logger_holder.h \
- /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
- /mnt/c/Users/Denis/Course_work/src/allocators/../memory/memory.h \
- /mnt/c/Users/Denis/Course_work/src/allocators/../memory/../logger/logger.h \
- /mnt/c/Users/Denis/Course_work/src/allocators/../memory/../not_implemented/not_implemented.h
+ /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h

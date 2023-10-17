@@ -73,7 +73,7 @@ public:
 		data_key->id_session = _id_session;
 		data_key->id_student = _id_student;
 		data_key->format = _format;
-		data_key->subject = _subject;
+		data_key->subject = string_flyweight_factory::get_instance().get_string_flyweight(_subject)->get_value();
 
 		/*values* data_value = new values();
 

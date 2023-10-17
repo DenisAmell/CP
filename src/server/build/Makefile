@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/Denis/Course_work/src/server
+CMAKE_SOURCE_DIR = /mnt/c/Users/Denis/MAI/CP/src/server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/Denis/Course_work/src/server/build
+CMAKE_BINARY_DIR = /mnt/c/Users/Denis/MAI/CP/src/server/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Denis/Course_work/src/server/build/CMakeFiles /mnt/c/Users/Denis/Course_work/src/server/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Denis/MAI/CP/src/server/build/CMakeFiles /mnt/c/Users/Denis/MAI/CP/src/server/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Denis/Course_work/src/server/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Denis/MAI/CP/src/server/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -153,245 +153,245 @@ main_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/main_server.cpp.s
 .PHONY : main_server.cpp.s
 
-mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.o: mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.cpp.o
-.PHONY : mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.o
+mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.o: mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.cpp.o
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.o
 
 # target to build an object file
-mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.cpp.o
-.PHONY : mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.cpp.o
+mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.cpp.o
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.cpp.o
 
-mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.i: mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.cpp.i
-.PHONY : mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.i
+mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.i: mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.cpp.i
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.i
 
 # target to preprocess a source file
-mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.cpp.i
-.PHONY : mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.cpp.i
+mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.cpp.i
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.cpp.i
 
-mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.s: mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.cpp.s
-.PHONY : mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.s
+mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.s: mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.cpp.s
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.s
 
 # target to generate assembly for a file
-mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.cpp.s
-.PHONY : mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.cpp.s
+mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.cpp.s
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.cpp.s
 
-mnt/c/Users/Denis/Course_work/src/allocators/list_memory.o: mnt/c/Users/Denis/Course_work/src/allocators/list_memory.cpp.o
-.PHONY : mnt/c/Users/Denis/Course_work/src/allocators/list_memory.o
+mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.o: mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.cpp.o
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.o
 
 # target to build an object file
-mnt/c/Users/Denis/Course_work/src/allocators/list_memory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/list_memory.cpp.o
-.PHONY : mnt/c/Users/Denis/Course_work/src/allocators/list_memory.cpp.o
+mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.cpp.o
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.cpp.o
 
-mnt/c/Users/Denis/Course_work/src/allocators/list_memory.i: mnt/c/Users/Denis/Course_work/src/allocators/list_memory.cpp.i
-.PHONY : mnt/c/Users/Denis/Course_work/src/allocators/list_memory.i
+mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.i: mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.cpp.i
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.i
 
 # target to preprocess a source file
-mnt/c/Users/Denis/Course_work/src/allocators/list_memory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/list_memory.cpp.i
-.PHONY : mnt/c/Users/Denis/Course_work/src/allocators/list_memory.cpp.i
+mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.cpp.i
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.cpp.i
 
-mnt/c/Users/Denis/Course_work/src/allocators/list_memory.s: mnt/c/Users/Denis/Course_work/src/allocators/list_memory.cpp.s
-.PHONY : mnt/c/Users/Denis/Course_work/src/allocators/list_memory.s
+mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.s: mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.cpp.s
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.s
 
 # target to generate assembly for a file
-mnt/c/Users/Denis/Course_work/src/allocators/list_memory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/list_memory.cpp.s
-.PHONY : mnt/c/Users/Denis/Course_work/src/allocators/list_memory.cpp.s
+mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.cpp.s
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.cpp.s
 
-mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.o: mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.cpp.o
-.PHONY : mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.o
+mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.o: mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.cpp.o
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.o
 
 # target to build an object file
-mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.cpp.o
-.PHONY : mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.cpp.o
+mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.cpp.o
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.cpp.o
 
-mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.i: mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.cpp.i
-.PHONY : mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.i
+mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.i: mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.cpp.i
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.i
 
 # target to preprocess a source file
-mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.cpp.i
-.PHONY : mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.cpp.i
+mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.cpp.i
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.cpp.i
 
-mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.s: mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.cpp.s
-.PHONY : mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.s
+mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.s: mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.cpp.s
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.s
 
 # target to generate assembly for a file
-mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.cpp.s
-.PHONY : mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.cpp.s
+mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.cpp.s
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.cpp.s
 
-mnt/c/Users/Denis/Course_work/src/logger/logger.o: mnt/c/Users/Denis/Course_work/src/logger/logger.cpp.o
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger.o
+mnt/c/Users/Denis/MAI/CP/src/logger/logger.o: mnt/c/Users/Denis/MAI/CP/src/logger/logger.cpp.o
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger.o
 
 # target to build an object file
-mnt/c/Users/Denis/Course_work/src/logger/logger.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger.cpp.o
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger.cpp.o
+mnt/c/Users/Denis/MAI/CP/src/logger/logger.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/logger/logger.cpp.o
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger.cpp.o
 
-mnt/c/Users/Denis/Course_work/src/logger/logger.i: mnt/c/Users/Denis/Course_work/src/logger/logger.cpp.i
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger.i
+mnt/c/Users/Denis/MAI/CP/src/logger/logger.i: mnt/c/Users/Denis/MAI/CP/src/logger/logger.cpp.i
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger.i
 
 # target to preprocess a source file
-mnt/c/Users/Denis/Course_work/src/logger/logger.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger.cpp.i
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger.cpp.i
+mnt/c/Users/Denis/MAI/CP/src/logger/logger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/logger/logger.cpp.i
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger.cpp.i
 
-mnt/c/Users/Denis/Course_work/src/logger/logger.s: mnt/c/Users/Denis/Course_work/src/logger/logger.cpp.s
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger.s
+mnt/c/Users/Denis/MAI/CP/src/logger/logger.s: mnt/c/Users/Denis/MAI/CP/src/logger/logger.cpp.s
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger.s
 
 # target to generate assembly for a file
-mnt/c/Users/Denis/Course_work/src/logger/logger.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger.cpp.s
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger.cpp.s
+mnt/c/Users/Denis/MAI/CP/src/logger/logger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/logger/logger.cpp.s
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger.cpp.s
 
-mnt/c/Users/Denis/Course_work/src/logger/logger_builder.o: mnt/c/Users/Denis/Course_work/src/logger/logger_builder.cpp.o
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_builder.o
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.o: mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.cpp.o
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.o
 
 # target to build an object file
-mnt/c/Users/Denis/Course_work/src/logger/logger_builder.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_builder.cpp.o
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_builder.cpp.o
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.cpp.o
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.cpp.o
 
-mnt/c/Users/Denis/Course_work/src/logger/logger_builder.i: mnt/c/Users/Denis/Course_work/src/logger/logger_builder.cpp.i
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_builder.i
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.i: mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.cpp.i
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.i
 
 # target to preprocess a source file
-mnt/c/Users/Denis/Course_work/src/logger/logger_builder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_builder.cpp.i
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_builder.cpp.i
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.cpp.i
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.cpp.i
 
-mnt/c/Users/Denis/Course_work/src/logger/logger_builder.s: mnt/c/Users/Denis/Course_work/src/logger/logger_builder.cpp.s
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_builder.s
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.s: mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.cpp.s
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.s
 
 # target to generate assembly for a file
-mnt/c/Users/Denis/Course_work/src/logger/logger_builder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_builder.cpp.s
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_builder.cpp.s
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.cpp.s
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.cpp.s
 
-mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.o: mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.cpp.o
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.o
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.o: mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.cpp.o
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.o
 
 # target to build an object file
-mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.cpp.o
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.cpp.o
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.cpp.o
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.cpp.o
 
-mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.i: mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.cpp.i
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.i
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.i: mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.cpp.i
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.i
 
 # target to preprocess a source file
-mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.cpp.i
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.cpp.i
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.cpp.i
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.cpp.i
 
-mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.s: mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.cpp.s
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.s
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.s: mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.cpp.s
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.s
 
 # target to generate assembly for a file
-mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.cpp.s
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.cpp.s
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.cpp.s
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.cpp.s
 
-mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.o: mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.cpp.o
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.o
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.o: mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.cpp.o
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.o
 
 # target to build an object file
-mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.cpp.o
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.cpp.o
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.cpp.o
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.cpp.o
 
-mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.i: mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.cpp.i
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.i
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.i: mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.cpp.i
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.i
 
 # target to preprocess a source file
-mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.cpp.i
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.cpp.i
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.cpp.i
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.cpp.i
 
-mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.s: mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.cpp.s
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.s
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.s: mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.cpp.s
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.s
 
 # target to generate assembly for a file
-mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.cpp.s
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.cpp.s
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.cpp.s
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.cpp.s
 
-mnt/c/Users/Denis/Course_work/src/logger/logger_holder.o: mnt/c/Users/Denis/Course_work/src/logger/logger_holder.cpp.o
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_holder.o
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.o: mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.cpp.o
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.o
 
 # target to build an object file
-mnt/c/Users/Denis/Course_work/src/logger/logger_holder.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_holder.cpp.o
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_holder.cpp.o
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.cpp.o
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.cpp.o
 
-mnt/c/Users/Denis/Course_work/src/logger/logger_holder.i: mnt/c/Users/Denis/Course_work/src/logger/logger_holder.cpp.i
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_holder.i
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.i: mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.cpp.i
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.i
 
 # target to preprocess a source file
-mnt/c/Users/Denis/Course_work/src/logger/logger_holder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_holder.cpp.i
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_holder.cpp.i
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.cpp.i
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.cpp.i
 
-mnt/c/Users/Denis/Course_work/src/logger/logger_holder.s: mnt/c/Users/Denis/Course_work/src/logger/logger_holder.cpp.s
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_holder.s
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.s: mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.cpp.s
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.s
 
 # target to generate assembly for a file
-mnt/c/Users/Denis/Course_work/src/logger/logger_holder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_holder.cpp.s
-.PHONY : mnt/c/Users/Denis/Course_work/src/logger/logger_holder.cpp.s
+mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.cpp.s
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.cpp.s
 
-mnt/c/Users/Denis/Course_work/src/memory/memory.o: mnt/c/Users/Denis/Course_work/src/memory/memory.cpp.o
-.PHONY : mnt/c/Users/Denis/Course_work/src/memory/memory.o
+mnt/c/Users/Denis/MAI/CP/src/memory/memory.o: mnt/c/Users/Denis/MAI/CP/src/memory/memory.cpp.o
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/memory/memory.o
 
 # target to build an object file
-mnt/c/Users/Denis/Course_work/src/memory/memory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory.cpp.o
-.PHONY : mnt/c/Users/Denis/Course_work/src/memory/memory.cpp.o
+mnt/c/Users/Denis/MAI/CP/src/memory/memory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/memory/memory.cpp.o
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/memory/memory.cpp.o
 
-mnt/c/Users/Denis/Course_work/src/memory/memory.i: mnt/c/Users/Denis/Course_work/src/memory/memory.cpp.i
-.PHONY : mnt/c/Users/Denis/Course_work/src/memory/memory.i
+mnt/c/Users/Denis/MAI/CP/src/memory/memory.i: mnt/c/Users/Denis/MAI/CP/src/memory/memory.cpp.i
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/memory/memory.i
 
 # target to preprocess a source file
-mnt/c/Users/Denis/Course_work/src/memory/memory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory.cpp.i
-.PHONY : mnt/c/Users/Denis/Course_work/src/memory/memory.cpp.i
+mnt/c/Users/Denis/MAI/CP/src/memory/memory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/memory/memory.cpp.i
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/memory/memory.cpp.i
 
-mnt/c/Users/Denis/Course_work/src/memory/memory.s: mnt/c/Users/Denis/Course_work/src/memory/memory.cpp.s
-.PHONY : mnt/c/Users/Denis/Course_work/src/memory/memory.s
+mnt/c/Users/Denis/MAI/CP/src/memory/memory.s: mnt/c/Users/Denis/MAI/CP/src/memory/memory.cpp.s
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/memory/memory.s
 
 # target to generate assembly for a file
-mnt/c/Users/Denis/Course_work/src/memory/memory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory.cpp.s
-.PHONY : mnt/c/Users/Denis/Course_work/src/memory/memory.cpp.s
+mnt/c/Users/Denis/MAI/CP/src/memory/memory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/memory/memory.cpp.s
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/memory/memory.cpp.s
 
-mnt/c/Users/Denis/Course_work/src/memory/memory_holder.o: mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp.o
-.PHONY : mnt/c/Users/Denis/Course_work/src/memory/memory_holder.o
+mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.o: mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.cpp.o
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.o
 
 # target to build an object file
-mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp.o
-.PHONY : mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp.o
+mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.cpp.o
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.cpp.o
 
-mnt/c/Users/Denis/Course_work/src/memory/memory_holder.i: mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp.i
-.PHONY : mnt/c/Users/Denis/Course_work/src/memory/memory_holder.i
+mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.i: mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.cpp.i
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.i
 
 # target to preprocess a source file
-mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp.i
-.PHONY : mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp.i
+mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.cpp.i
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.cpp.i
 
-mnt/c/Users/Denis/Course_work/src/memory/memory_holder.s: mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp.s
-.PHONY : mnt/c/Users/Denis/Course_work/src/memory/memory_holder.s
+mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.s: mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.cpp.s
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.s
 
 # target to generate assembly for a file
-mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp.s
-.PHONY : mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp.s
+mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.cpp.s
+.PHONY : mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.cpp.s
 
 # Help Target
 help:
@@ -405,36 +405,36 @@ help:
 	@echo "... main_server.o"
 	@echo "... main_server.i"
 	@echo "... main_server.s"
-	@echo "... mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.o"
-	@echo "... mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.i"
-	@echo "... mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.s"
-	@echo "... mnt/c/Users/Denis/Course_work/src/allocators/list_memory.o"
-	@echo "... mnt/c/Users/Denis/Course_work/src/allocators/list_memory.i"
-	@echo "... mnt/c/Users/Denis/Course_work/src/allocators/list_memory.s"
-	@echo "... mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.o"
-	@echo "... mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.i"
-	@echo "... mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.s"
-	@echo "... mnt/c/Users/Denis/Course_work/src/logger/logger.o"
-	@echo "... mnt/c/Users/Denis/Course_work/src/logger/logger.i"
-	@echo "... mnt/c/Users/Denis/Course_work/src/logger/logger.s"
-	@echo "... mnt/c/Users/Denis/Course_work/src/logger/logger_builder.o"
-	@echo "... mnt/c/Users/Denis/Course_work/src/logger/logger_builder.i"
-	@echo "... mnt/c/Users/Denis/Course_work/src/logger/logger_builder.s"
-	@echo "... mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.o"
-	@echo "... mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.i"
-	@echo "... mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.s"
-	@echo "... mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.o"
-	@echo "... mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.i"
-	@echo "... mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.s"
-	@echo "... mnt/c/Users/Denis/Course_work/src/logger/logger_holder.o"
-	@echo "... mnt/c/Users/Denis/Course_work/src/logger/logger_holder.i"
-	@echo "... mnt/c/Users/Denis/Course_work/src/logger/logger_holder.s"
-	@echo "... mnt/c/Users/Denis/Course_work/src/memory/memory.o"
-	@echo "... mnt/c/Users/Denis/Course_work/src/memory/memory.i"
-	@echo "... mnt/c/Users/Denis/Course_work/src/memory/memory.s"
-	@echo "... mnt/c/Users/Denis/Course_work/src/memory/memory_holder.o"
-	@echo "... mnt/c/Users/Denis/Course_work/src/memory/memory_holder.i"
-	@echo "... mnt/c/Users/Denis/Course_work/src/memory/memory_holder.s"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.o"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.i"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.s"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.o"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.i"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.s"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.o"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.i"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.s"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/logger/logger.o"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/logger/logger.i"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/logger/logger.s"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.o"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.i"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.s"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.o"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.i"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.s"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.o"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.i"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.s"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.o"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.i"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.s"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/memory/memory.o"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/memory/memory.i"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/memory/memory.s"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.o"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.i"
+	@echo "... mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.s"
 .PHONY : help
 
 

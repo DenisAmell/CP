@@ -12,6 +12,7 @@
 #include "../tree/red_black_tree.h"
 //#include "tree/associative_container.h"
 #include "../comparer/comparers.h"
+#include "../flyweight/string_flyweight_factory.h"
 
 class collection final : protected memory_holder
 {
@@ -63,16 +64,16 @@ public:
 		data_key->id_session = id_session;
 		data_key->id_student = id_student;
 		data_key->format = format;
-		data_key->subject = subject;
+		data_key->subject = string_flyweight_factory::get_instance().get_string_flyweight(subject)->get_value();
 
 		values* data_value = reinterpret_cast<values*>(allocate_with_guard(sizeof(values)));
 		new (data_value) values;
 
-		data_value->student_surname = surname;
-		data_value->student_name = name;
-		data_value->student_patronymic = patronymic;
-		data_value->event_date = date;
-		data_value->event_time = time;
+		data_value->student_surname = string_flyweight_factory::get_instance().get_string_flyweight(surname)->get_value();
+		data_value->student_name = string_flyweight_factory::get_instance().get_string_flyweight(name)->get_value();
+		data_value->student_patronymic = string_flyweight_factory::get_instance().get_string_flyweight(patronymic)->get_value();
+		data_value->event_date = string_flyweight_factory::get_instance().get_string_flyweight(date)->get_value();
+		data_value->event_time = string_flyweight_factory::get_instance().get_string_flyweight(time)->get_value();
 		data_value->mark = mark;
 
 		_data->insert(data_key, std::move(data_value));
@@ -120,11 +121,11 @@ public:
 		values* data_value = reinterpret_cast<values*>(allocate_with_guard(sizeof(values)));
 		new (data_value) values;
 
-		data_value->student_surname = surname;
-		data_value->student_name = name;
-		data_value->student_patronymic = patronymic;
-		data_value->event_date = date;
-		data_value->event_time = time;
+        data_value->student_surname = string_flyweight_factory::get_instance().get_string_flyweight(surname)->get_value();
+        data_value->student_name = string_flyweight_factory::get_instance().get_string_flyweight(name)->get_value();
+        data_value->student_patronymic = string_flyweight_factory::get_instance().get_string_flyweight(patronymic)->get_value();
+        data_value->event_date = string_flyweight_factory::get_instance().get_string_flyweight(date)->get_value();
+        data_value->event_time = string_flyweight_factory::get_instance().get_string_flyweight(time)->get_value();
 		data_value->mark = mark;
 
 		_data->update(data_key, std::move(data_value));

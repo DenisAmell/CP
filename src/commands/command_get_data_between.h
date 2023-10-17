@@ -7,6 +7,7 @@
 #include <iostream>
 #include "command.h"
 #include "../validation/parse.h"
+#include "../flyweight/string_flyweight_factory.h"
 
 class command_get_data_between final : public command<std::string>
 {
@@ -61,14 +62,14 @@ public:
 		min_key->id_session = _id_session_for_first_key;
 		min_key->id_student = _id_student_for_first_key;
 		min_key->format = _format_for_first_key;
-		min_key->subject = _subject_for_first_key;
+		min_key->subject = string_flyweight_factory::get_instance().get_string_flyweight(_subject_for_first_key)->get_value();
 
 		key* max_key = new key();
 
 		max_key->id_session = _id_session_for_second_key;
 		max_key->id_student = _id_student_for_second_key;
 		max_key->format = _format_for_second_key;
-		max_key->subject = _subject_for_second_key;
+		max_key->subject =  string_flyweight_factory::get_instance().get_string_flyweight(_subject_for_second_key)->get_value(); ;
 
 		database_singleton::get_instance()->get_data_between_keys(_pool_name, _scheme_name, _collection_name, min_key, max_key);
 		logger_singleton::get_instance()->get_logger()->log("command_get_data_between::execute(std::string const &request) called", logger::severity::trace);

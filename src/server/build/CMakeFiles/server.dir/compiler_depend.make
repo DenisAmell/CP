@@ -234,16 +234,16 @@ CMakeFiles/server.dir/main_server.cpp.o: ../main_server.cpp \
   /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
-  /mnt/c/Users/Denis/Course_work/src/singleton/database_singleton.h \
-  /mnt/c/Users/Denis/Course_work/src/memory/memory.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger.h \
-  /mnt/c/Users/Denis/Course_work/src/not_implemented/not_implemented.h \
-  /mnt/c/Users/Denis/Course_work/src/memory/memory_holder.h \
-  /mnt/c/Users/Denis/Course_work/src/memory/memory.h \
-  /mnt/c/Users/Denis/Course_work/src/singleton/logger_singleton.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_holder.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.h \
+  /mnt/c/Users/Denis/MAI/CP/src/singleton/database_singleton.h \
+  /mnt/c/Users/Denis/MAI/CP/src/memory/memory.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h \
+  /mnt/c/Users/Denis/MAI/CP/src/not_implemented/not_implemented.h \
+  /mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.h \
+  /mnt/c/Users/Denis/MAI/CP/src/memory/memory.h \
+  /mnt/c/Users/Denis/MAI/CP/src/singleton/logger_singleton.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.h \
   /usr/include/c++/11/map \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/ext/aligned_buffer.h \
@@ -257,21 +257,21 @@ CMakeFiles/server.dir/main_server.cpp.o: ../main_server.cpp \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/stl_multimap.h \
   /usr/include/c++/11/bits/erase_if.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_builder.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger.h \
-  /mnt/c/Users/Denis/Course_work/src/comparer/comparers.h \
-  /mnt/c/Users/Denis/Course_work/src/type_data/student_definition.h \
-  /mnt/c/Users/Denis/Course_work/src/allocators/allocator_type.h \
-  /mnt/c/Users/Denis/Course_work/src/tree/tree_type.h \
-  /mnt/c/Users/Denis/Course_work/src/type_data/student_definition.h \
-  /mnt/c/Users/Denis/Course_work/src/tree/associative_container.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h \
+  /mnt/c/Users/Denis/MAI/CP/src/comparer/comparers.h \
+  /mnt/c/Users/Denis/MAI/CP/src/type_data/student_definition.h \
+  /mnt/c/Users/Denis/MAI/CP/src/allocators/allocator_type.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/tree_type.h \
+  /mnt/c/Users/Denis/MAI/CP/src/type_data/student_definition.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/associative_container.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
-  /mnt/c/Users/Denis/Course_work/src/tree/avl_tree.h \
-  /mnt/c/Users/Denis/Course_work/src/tree/binary_search_tree.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/avl_tree.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/binary_search_tree.h \
   /usr/include/c++/11/stack \
   /usr/include/c++/11/deque \
   /usr/include/c++/11/bits/stl_deque.h \
@@ -281,84 +281,85 @@ CMakeFiles/server.dir/main_server.cpp.o: ../main_server.cpp \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
   /usr/include/c++/11/bits/list.tcc \
-  /mnt/c/Users/Denis/Course_work/src/tree/associative_container.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_holder.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.h \
-  /mnt/c/Users/Denis/Course_work/src/memory/memory.h \
-  /mnt/c/Users/Denis/Course_work/src/memory/memory_holder.h \
-  /mnt/c/Users/Denis/Course_work/src/tree/binary_search_tree.h \
-  /mnt/c/Users/Denis/Course_work/src/tree/splay_tree.h \
-  /mnt/c/Users/Denis/Course_work/src/tree/red_black_tree.h \
-  /mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_holder.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/associative_container.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.h \
+  /mnt/c/Users/Denis/MAI/CP/src/memory/memory.h \
+  /mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/binary_search_tree.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/splay_tree.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/red_black_tree.h \
+  /mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.h \
   /usr/include/c++/11/cstring \
-  /mnt/c/Users/Denis/Course_work/src/memory/memory.h \
-  /mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.h \
-  /mnt/c/Users/Denis/Course_work/src/allocators/list_memory.h \
-  /mnt/c/Users/Denis/Course_work/src/conteiners/pool.h \
-  /mnt/c/Users/Denis/Course_work/src/conteiners/scheme.h \
-  /mnt/c/Users/Denis/Course_work/src/tree/tree_type.h \
-  /mnt/c/Users/Denis/Course_work/src/tree/avl_tree.h \
-  /mnt/c/Users/Denis/Course_work/src/tree/binary_search_tree.h \
-  /mnt/c/Users/Denis/Course_work/src/tree/red_black_tree.h \
-  /mnt/c/Users/Denis/Course_work/src/comparer/comparers.h \
-  /mnt/c/Users/Denis/Course_work/src/conteiners/collection.h \
-  /mnt/c/Users/Denis/Course_work/src/type_data/student_definition.h \
-  /mnt/c/Users/Denis/Course_work/src/memory/memory_holder.h \
-  /mnt/c/Users/Denis/Course_work/src/tree/tree_type.h \
-  /mnt/c/Users/Denis/Course_work/src/tree/avl_tree.h \
-  /mnt/c/Users/Denis/Course_work/src/tree/binary_search_tree.h \
-  /mnt/c/Users/Denis/Course_work/src/tree/red_black_tree.h \
-  /mnt/c/Users/Denis/Course_work/src/comparer/comparers.h \
-  /mnt/c/Users/Denis/Course_work/src/tree/tree_type.h \
-  /mnt/c/Users/Denis/Course_work/src/tree/avl_tree.h \
-  /mnt/c/Users/Denis/Course_work/src/tree/binary_search_tree.h \
-  /mnt/c/Users/Denis/Course_work/src/tree/red_black_tree.h \
-  /mnt/c/Users/Denis/Course_work/src/tree/associative_container.h \
-  /mnt/c/Users/Denis/Course_work/src/comparer/comparers.h \
-  /mnt/c/Users/Denis/Course_work/src/request_handler/request_handler_with_command_chain.h \
-  /mnt/c/Users/Denis/Course_work/src/request_handler/request_handler_with_command.h \
-  /mnt/c/Users/Denis/Course_work/src/request_handler/abstract_handler.h \
-  /mnt/c/Users/Denis/Course_work/src/commands/command.h \
-  /mnt/c/Users/Denis/Course_work/src/validation/parse.h \
-  /mnt/c/Users/Denis/Course_work/src/allocators/allocator_type.h \
-  /mnt/c/Users/Denis/Course_work/src/memory/memory.h \
-  /mnt/c/Users/Denis/Course_work/src/exception/doesnt_exist.h \
-  /mnt/c/Users/Denis/Course_work/src/type_data/student_definition.h \
+  /mnt/c/Users/Denis/MAI/CP/src/memory/memory.h \
+  /mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.h \
+  /mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.h \
+  /mnt/c/Users/Denis/MAI/CP/src/conteiners/pool.h \
+  /mnt/c/Users/Denis/MAI/CP/src/conteiners/scheme.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/tree_type.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/avl_tree.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/binary_search_tree.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/red_black_tree.h \
+  /mnt/c/Users/Denis/MAI/CP/src/comparer/comparers.h \
+  /mnt/c/Users/Denis/MAI/CP/src/conteiners/collection.h \
+  /mnt/c/Users/Denis/MAI/CP/src/type_data/student_definition.h \
+  /mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/tree_type.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/avl_tree.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/binary_search_tree.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/red_black_tree.h \
+  /mnt/c/Users/Denis/MAI/CP/src/comparer/comparers.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/tree_type.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/avl_tree.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/binary_search_tree.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/red_black_tree.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/associative_container.h \
+  /mnt/c/Users/Denis/MAI/CP/src/comparer/comparers.h \
+  /mnt/c/Users/Denis/MAI/CP/src/request_handler/request_handler_with_command_chain.h \
+  /mnt/c/Users/Denis/MAI/CP/src/request_handler/request_handler_with_command.h \
+  /mnt/c/Users/Denis/MAI/CP/src/request_handler/abstract_handler.h \
+  /mnt/c/Users/Denis/MAI/CP/src/commands/command.h \
+  /mnt/c/Users/Denis/MAI/CP/src/validation/parse.h \
+  /mnt/c/Users/Denis/MAI/CP/src/allocators/allocator_type.h \
+  /mnt/c/Users/Denis/MAI/CP/src/memory/memory.h \
+  /mnt/c/Users/Denis/MAI/CP/src/exception/doesnt_exist.h \
+  /mnt/c/Users/Denis/MAI/CP/src/type_data/student_definition.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/tree_type.h \
   /usr/include/c++/11/sstream \
   /usr/include/c++/11/bits/sstream.tcc \
-  /mnt/c/Users/Denis/Course_work/src/string_pool/string_pool.h \
+  /mnt/c/Users/Denis/MAI/CP/src/string_pool/string_pool.h \
   /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/bits/hashtable.h \
   /usr/include/c++/11/bits/hashtable_policy.h \
   /usr/include/c++/11/bits/enable_special_members.h \
   /usr/include/c++/11/bits/unordered_map.h \
-  /mnt/c/Users/Denis/Course_work/src/commands/command_add_pool.h \
-  /mnt/c/Users/Denis/Course_work/src/commands/command.h \
-  /mnt/c/Users/Denis/Course_work/src/singleton/database_singleton.h \
-  /mnt/c/Users/Denis/Course_work/src/memory/memory.h \
-  /mnt/c/Users/Denis/Course_work/src/validation/parse.h \
-  /mnt/c/Users/Denis/Course_work/src/tree/tree_type.h \
-  /mnt/c/Users/Denis/Course_work/src/commands/command_add_scheme.h \
-  /mnt/c/Users/Denis/Course_work/src/singleton/logger_singleton.h \
-  /mnt/c/Users/Denis/Course_work/src/commands/command_add_collection.h \
-  /mnt/c/Users/Denis/Course_work/src/commands/command_add_data.h \
-  /mnt/c/Users/Denis/Course_work/src/type_data/student_definition.h \
-  /mnt/c/Users/Denis/Course_work/src/commands/command_get_data.h \
-  /mnt/c/Users/Denis/Course_work/src/commands/command_remove_pool.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger.h \
-  /mnt/c/Users/Denis/Course_work/src/commands/command_remove_scheme.h \
-  /mnt/c/Users/Denis/Course_work/src/commands/command_remove_collection.h \
-  /mnt/c/Users/Denis/Course_work/src/commands/command_remove_data.h \
-  /mnt/c/Users/Denis/Course_work/src/commands/command_update_data.h \
-  /mnt/c/Users/Denis/Course_work/src/commands/command_get_data_between.h \
-  /mnt/c/Users/Denis/Course_work/src/request_handler/request_handler_with_command_chain.h \
-  /mnt/c/Users/Denis/Course_work/src/tree/tree_type.h \
+  /mnt/c/Users/Denis/MAI/CP/src/commands/command_add_pool.h \
+  /mnt/c/Users/Denis/MAI/CP/src/commands/command.h \
+  /mnt/c/Users/Denis/MAI/CP/src/singleton/database_singleton.h \
+  /mnt/c/Users/Denis/MAI/CP/src/memory/memory.h \
+  /mnt/c/Users/Denis/MAI/CP/src/validation/parse.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/tree_type.h \
+  /mnt/c/Users/Denis/MAI/CP/src/commands/command_add_scheme.h \
+  /mnt/c/Users/Denis/MAI/CP/src/singleton/logger_singleton.h \
+  /mnt/c/Users/Denis/MAI/CP/src/commands/command_add_collection.h \
+  /mnt/c/Users/Denis/MAI/CP/src/commands/command_add_data.h \
+  /mnt/c/Users/Denis/MAI/CP/src/type_data/student_definition.h \
+  /mnt/c/Users/Denis/MAI/CP/src/commands/command_get_data.h \
+  /mnt/c/Users/Denis/MAI/CP/src/commands/command_remove_pool.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h \
+  /mnt/c/Users/Denis/MAI/CP/src/commands/command_remove_scheme.h \
+  /mnt/c/Users/Denis/MAI/CP/src/commands/command_remove_collection.h \
+  /mnt/c/Users/Denis/MAI/CP/src/commands/command_remove_data.h \
+  /mnt/c/Users/Denis/MAI/CP/src/commands/command_update_data.h \
+  /mnt/c/Users/Denis/MAI/CP/src/commands/command_get_data_between.h \
+  /mnt/c/Users/Denis/MAI/CP/src/request_handler/request_handler_with_command_chain.h \
+  /mnt/c/Users/Denis/MAI/CP/src/tree/tree_type.h \
   /usr/include/x86_64-linux-gnu/sys/socket.h \
   /usr/include/x86_64-linux-gnu/bits/socket.h \
   /usr/include/x86_64-linux-gnu/bits/socket_type.h \
@@ -423,9 +424,9 @@ CMakeFiles/server.dir/main_server.cpp.o: ../main_server.cpp \
   /usr/include/x86_64-linux-gnu/bits/mman-linux.h \
   /usr/include/x86_64-linux-gnu/bits/mman-shared.h
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.cpp.o: /mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.cpp \
+CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.cpp.o: /mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.cpp \
   /usr/include/stdc-predef.h \
-  /mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.h \
+  /mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.h \
   /usr/include/c++/11/iostream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -616,10 +617,10 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.h \
   /usr/include/c++/11/map \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/ext/aligned_buffer.h \
@@ -633,19 +634,19 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/stl_multimap.h \
   /usr/include/c++/11/bits/erase_if.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_builder.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_holder.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.h \
   /usr/include/c++/11/cstring \
   /usr/include/string.h \
   /usr/include/strings.h \
-  /mnt/c/Users/Denis/Course_work/src/memory/memory.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger.h \
-  /mnt/c/Users/Denis/Course_work/src/not_implemented/not_implemented.h
+  /mnt/c/Users/Denis/MAI/CP/src/memory/memory.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h \
+  /mnt/c/Users/Denis/MAI/CP/src/not_implemented/not_implemented.h
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/list_memory.cpp.o: /mnt/c/Users/Denis/Course_work/src/allocators/list_memory.cpp \
+CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.cpp.o: /mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.cpp \
   /usr/include/stdc-predef.h \
-  /mnt/c/Users/Denis/Course_work/src/allocators/list_memory.h \
-  /mnt/c/Users/Denis/Course_work/src/memory/memory.h \
+  /mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.h \
+  /mnt/c/Users/Denis/MAI/CP/src/memory/memory.h \
   /usr/include/c++/11/string \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -807,7 +808,7 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/list_memory.c
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -837,11 +838,11 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/list_memory.c
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  /mnt/c/Users/Denis/Course_work/src/not_implemented/not_implemented.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.h \
+  /mnt/c/Users/Denis/MAI/CP/src/not_implemented/not_implemented.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.h \
   /usr/include/c++/11/map \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/ext/aligned_buffer.h \
@@ -855,13 +856,13 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/list_memory.c
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/stl_multimap.h \
   /usr/include/c++/11/bits/erase_if.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_builder.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_holder.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.h \
   /usr/include/c++/11/cstring \
   /usr/include/string.h \
   /usr/include/strings.h
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.cpp.o: /mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.cpp \
+CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.cpp.o: /mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.cpp \
   /usr/include/stdc-predef.h \
   /usr/include/c++/11/iostream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -1092,14 +1093,14 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/c++/11/bitset \
-  /mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.h \
-  /mnt/c/Users/Denis/Course_work/src/memory/memory.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger.h \
-  /mnt/c/Users/Denis/Course_work/src/not_implemented/not_implemented.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.h \
+  /mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.h \
+  /mnt/c/Users/Denis/MAI/CP/src/memory/memory.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h \
+  /mnt/c/Users/Denis/MAI/CP/src/not_implemented/not_implemented.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.h \
   /usr/include/c++/11/map \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/ext/aligned_buffer.h \
@@ -1113,12 +1114,12 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/stl_multimap.h \
   /usr/include/c++/11/bits/erase_if.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_builder.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_holder.h
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.h
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger.cpp.o: /mnt/c/Users/Denis/Course_work/src/logger/logger.cpp \
+CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/logger/logger.cpp.o: /mnt/c/Users/Denis/MAI/CP/src/logger/logger.cpp \
   /usr/include/stdc-predef.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h \
   /usr/include/c++/11/iostream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -1310,9 +1311,9 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger.cpp.o: /mn
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_builder.cpp.o: /mnt/c/Users/Denis/Course_work/src/logger/logger_builder.cpp \
+CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.cpp.o: /mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.cpp \
   /usr/include/stdc-predef.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_builder.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.h \
   /usr/include/c++/11/iostream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -1503,11 +1504,11 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_builder.cp
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger.h
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.cpp.o: /mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.cpp \
+CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.cpp.o: /mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.cpp \
   /usr/include/stdc-predef.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.h \
   /usr/include/c++/11/map \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_algobase.h \
@@ -1567,7 +1568,7 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_builder_co
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/stl_multimap.h \
   /usr/include/c++/11/bits/erase_if.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_builder.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -1712,18 +1713,18 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_builder_co
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.h \
   /usr/include/c++/11/fstream \
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
   /usr/include/c++/11/bits/fstream.tcc
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.cpp.o: /mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.cpp \
+CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.cpp.o: /mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.cpp \
   /usr/include/stdc-predef.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h \
   /usr/include/c++/11/iostream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -1914,7 +1915,7 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.c
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.h \
   /usr/include/c++/11/map \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/ext/aligned_buffer.h \
@@ -1928,7 +1929,7 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.c
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/stl_multimap.h \
   /usr/include/c++/11/bits/erase_if.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_builder.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.h \
   /usr/include/c++/11/fstream \
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -1936,10 +1937,10 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.c
   /usr/include/c++/11/bits/fstream.tcc \
   /usr/include/c++/11/ctime
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_holder.cpp.o: /mnt/c/Users/Denis/Course_work/src/logger/logger_holder.cpp \
+CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.cpp.o: /mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.cpp \
   /usr/include/stdc-predef.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger_holder.h \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h \
   /usr/include/c++/11/iostream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -2131,9 +2132,9 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/logger/logger_holder.cpp
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory.cpp.o: /mnt/c/Users/Denis/Course_work/src/memory/memory.cpp \
+CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/memory/memory.cpp.o: /mnt/c/Users/Denis/MAI/CP/src/memory/memory.cpp \
   /usr/include/stdc-predef.h \
-  /mnt/c/Users/Denis/Course_work/src/memory/memory.h \
+  /mnt/c/Users/Denis/MAI/CP/src/memory/memory.h \
   /usr/include/c++/11/string \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -2295,7 +2296,7 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory.cpp.o: /mn
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -2325,12 +2326,12 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory.cpp.o: /mn
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  /mnt/c/Users/Denis/Course_work/src/not_implemented/not_implemented.h
+  /mnt/c/Users/Denis/MAI/CP/src/not_implemented/not_implemented.h
 
-CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp.o: /mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp \
+CMakeFiles/server.dir/mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.cpp.o: /mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.cpp \
   /usr/include/stdc-predef.h \
-  /mnt/c/Users/Denis/Course_work/src/memory/memory_holder.h \
-  /mnt/c/Users/Denis/Course_work/src/memory/memory.h \
+  /mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.h \
+  /mnt/c/Users/Denis/MAI/CP/src/memory/memory.h \
   /usr/include/c++/11/string \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -2492,7 +2493,7 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
-  /mnt/c/Users/Denis/Course_work/src/logger/logger.h \
+  /mnt/c/Users/Denis/MAI/CP/src/logger/logger.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -2522,20 +2523,18 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  /mnt/c/Users/Denis/Course_work/src/not_implemented/not_implemented.h
+  /mnt/c/Users/Denis/MAI/CP/src/not_implemented/not_implemented.h
 
 
-/mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.cpp:
-
-/mnt/c/Users/Denis/Course_work/src/logger/logger_builder.cpp:
+/mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.cpp:
 
 /usr/include/c++/11/ctime:
 
-/mnt/c/Users/Denis/Course_work/src/logger/logger.cpp:
+/mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.cpp:
+
+/mnt/c/Users/Denis/MAI/CP/src/logger/logger.cpp:
 
 /usr/include/c++/11/bitset:
-
-/mnt/c/Users/Denis/Course_work/src/logger/logger_holder.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
@@ -2559,15 +2558,11 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/c++/11/tr1/ell_integral.tcc:
 
-/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp:
-
 /usr/include/c++/11/tr1/bessel_function.tcc:
 
 /usr/include/c++/11/limits:
 
 /usr/include/c++/11/bits/specfun.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
@@ -2577,9 +2572,9 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
-/usr/include/x86_64-linux-gnu/bits/mman-shared.h:
+/mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.cpp:
 
-/usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h:
+/usr/include/x86_64-linux-gnu/bits/mman-shared.h:
 
 /usr/include/x86_64-linux-gnu/bits/mman.h:
 
@@ -2601,10 +2596,6 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/x86_64-linux-gnu/bits/shmlba.h:
 
-/usr/include/x86_64-linux-gnu/bits/msq.h:
-
-/usr/include/x86_64-linux-gnu/bits/shm.h:
-
 /usr/include/x86_64-linux-gnu/bits/ipc.h:
 
 /usr/include/x86_64-linux-gnu/bits/signal_ext.h:
@@ -2619,7 +2610,7 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/x86_64-linux-gnu/bits/sigaction.h:
 
-/mnt/c/Users/Denis/Course_work/src/allocators/list_memory.cpp:
+/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
 
@@ -2632,10 +2623,6 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
 
 /usr/include/x86_64-linux-gnu/bits/signum-generic.h:
-
-/usr/include/x86_64-linux-gnu/bits/uio-ext.h:
-
-/usr/include/x86_64-linux-gnu/sys/uio.h:
 
 /usr/include/x86_64-linux-gnu/bits/netdb.h:
 
@@ -2661,13 +2648,19 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/x86_64-linux-gnu/bits/socket.h:
 
-/mnt/c/Users/Denis/Course_work/src/commands/command_get_data_between.h:
+/mnt/c/Users/Denis/MAI/CP/src/commands/command_get_data_between.h:
 
-/mnt/c/Users/Denis/Course_work/src/commands/command_add_data.h:
+/usr/include/x86_64-linux-gnu/bits/uio-ext.h:
 
-/mnt/c/Users/Denis/Course_work/src/commands/command_add_collection.h:
+/mnt/c/Users/Denis/MAI/CP/src/commands/command_update_data.h:
 
-/mnt/c/Users/Denis/Course_work/src/commands/command_add_scheme.h:
+/mnt/c/Users/Denis/MAI/CP/src/commands/command_remove_collection.h:
+
+/mnt/c/Users/Denis/MAI/CP/src/commands/command_remove_scheme.h:
+
+/mnt/c/Users/Denis/MAI/CP/src/commands/command_add_scheme.h:
+
+/mnt/c/Users/Denis/MAI/CP/src/commands/command_add_pool.h:
 
 /usr/include/c++/11/bits/unordered_map.h:
 
@@ -2675,33 +2668,37 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/c++/11/unordered_map:
 
-/mnt/c/Users/Denis/Course_work/src/string_pool/string_pool.h:
+/mnt/c/Users/Denis/MAI/CP/src/string_pool/string_pool.h:
 
 /usr/include/c++/11/sstream:
 
-/mnt/c/Users/Denis/Course_work/src/validation/parse.h:
+/mnt/c/Users/Denis/MAI/CP/src/exception/doesnt_exist.h:
 
-/mnt/c/Users/Denis/Course_work/src/commands/command.h:
+/mnt/c/Users/Denis/MAI/CP/src/validation/parse.h:
 
-/mnt/c/Users/Denis/Course_work/src/request_handler/request_handler_with_command_chain.h:
+/mnt/c/Users/Denis/MAI/CP/src/request_handler/abstract_handler.h:
 
-/mnt/c/Users/Denis/Course_work/src/conteiners/collection.h:
+/mnt/c/Users/Denis/MAI/CP/src/request_handler/request_handler_with_command_chain.h:
 
-/mnt/c/Users/Denis/Course_work/src/commands/command_update_data.h:
+/mnt/c/Users/Denis/MAI/CP/src/conteiners/collection.h:
 
-/mnt/c/Users/Denis/Course_work/src/conteiners/scheme.h:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
-/mnt/c/Users/Denis/Course_work/src/conteiners/pool.h:
+/mnt/c/Users/Denis/MAI/CP/src/conteiners/scheme.h:
 
-/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
+/mnt/c/Users/Denis/MAI/CP/src/conteiners/pool.h:
 
-/mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.h:
+/mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.h:
 
-/mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.h:
+/mnt/c/Users/Denis/MAI/CP/src/allocators/memory_buddy_system.h:
 
-/mnt/c/Users/Denis/Course_work/src/tree/red_black_tree.h:
+/usr/include/x86_64-linux-gnu/sys/uio.h:
 
-/mnt/c/Users/Denis/Course_work/src/logger/logger_concrete.h:
+/mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.h:
+
+/mnt/c/Users/Denis/MAI/CP/src/commands/command.h:
+
+/mnt/c/Users/Denis/MAI/CP/src/tree/splay_tree.h:
 
 /usr/include/x86_64-linux-gnu/bits/ss_flags.h:
 
@@ -2709,25 +2706,21 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/c++/11/bits/list.tcc:
 
-/mnt/c/Users/Denis/Course_work/src/commands/command_remove_data.h:
-
 /usr/include/c++/11/bits/allocated_ptr.h:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
 /usr/include/c++/11/bits/stl_list.h:
 
-/usr/include/c++/11/list:
+/mnt/c/Users/Denis/MAI/CP/src/logger/logger_concrete.h:
 
-/usr/include/c++/11/bits/stl_stack.h:
+/usr/include/c++/11/list:
 
 /usr/include/c++/11/bits/deque.tcc:
 
 /usr/include/c++/11/stack:
 
-/mnt/c/Users/Denis/Course_work/src/tree/binary_search_tree.h:
-
-/mnt/c/Users/Denis/Course_work/src/tree/avl_tree.h:
+/mnt/c/Users/Denis/MAI/CP/src/tree/avl_tree.h:
 
 /usr/include/c++/11/bits/vector.tcc:
 
@@ -2737,11 +2730,13 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/c++/11/vector:
 
-/mnt/c/Users/Denis/Course_work/src/tree/tree_type.h:
+/mnt/c/Users/Denis/MAI/CP/src/tree/associative_container.h:
+
+/mnt/c/Users/Denis/MAI/CP/src/tree/tree_type.h:
+
+/mnt/c/Users/Denis/MAI/CP/src/allocators/allocator_type.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_stat.h:
-
-/mnt/c/Users/Denis/Course_work/src/commands/command_get_data.h:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
 
@@ -2765,13 +2760,15 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/c++/11/cstdlib:
 
+/mnt/c/Users/Denis/MAI/CP/src/tree/red_black_tree.h:
+
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
-/usr/include/c++/11/ext/new_allocator.h:
+/mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.cpp:
 
-/mnt/c/Users/Denis/Course_work/src/tree/associative_container.h:
+/usr/include/c++/11/ext/new_allocator.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
@@ -2799,7 +2796,7 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
-/mnt/c/Users/Denis/Course_work/src/memory/memory.h:
+/mnt/c/Users/Denis/MAI/CP/src/memory/memory.cpp:
 
 /usr/include/x86_64-linux-gnu/sys/msg.h:
 
@@ -2825,6 +2822,10 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/c++/11/bits/localefwd.h:
 
+/usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h:
+
+/mnt/c/Users/Denis/MAI/CP/src/comparer/comparers.h:
+
 /usr/include/x86_64-linux-gnu/asm/socket.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
@@ -2840,6 +2841,8 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 /usr/include/c++/11/ext/alloc_traits.h:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/mnt/c/Users/Denis/MAI/CP/src/singleton/logger_singleton.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
@@ -2873,6 +2876,8 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/wchar.h:
 
+/mnt/c/Users/Denis/MAI/CP/src/commands/command_get_data.h:
+
 /usr/include/c++/11/bits/cxxabi_init_exception.h:
 
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
@@ -2886,6 +2891,10 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 /usr/include/c++/11/tuple:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+
+/usr/include/c++/11/debug/assertions.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
@@ -2903,17 +2912,19 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
+/mnt/c/Users/Denis/MAI/CP/src/not_implemented/not_implemented.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
 
 /usr/include/linux/errno.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
 
-/mnt/c/Users/Denis/Course_work/src/commands/command_remove_scheme.h:
-
 /usr/include/c++/11/debug/debug.h:
 
 /usr/include/features-time64.h:
+
+/mnt/c/Users/Denis/MAI/CP/src/commands/command_remove_pool.h:
 
 /usr/include/c++/11/bits/stringfwd.h:
 
@@ -2923,8 +2934,6 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/c++/11/compare:
 
-/mnt/c/Users/Denis/Course_work/src/allocators/memory_buddy_system.cpp:
-
 /usr/include/x86_64-linux-gnu/bits/fcntl.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
@@ -2932,6 +2941,8 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 /usr/include/c++/11/bits/ostream_insert.h:
 
 /usr/include/c++/11/ostream:
+
+/mnt/c/Users/Denis/MAI/CP/src/memory/memory.h:
 
 /usr/include/c++/11/tr1/legendre_function.tcc:
 
@@ -2943,9 +2954,9 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/c++/11/tr1/gamma.tcc:
 
-/mnt/c/Users/Denis/Course_work/src/tree/splay_tree.h:
-
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/mnt/c/Users/Denis/MAI/CP/src/request_handler/request_handler_with_command.h:
 
 /usr/include/x86_64-linux-gnu/sys/stat.h:
 
@@ -2960,10 +2971,6 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 /usr/include/linux/stddef.h:
 
 /usr/include/c++/11/ext/type_traits.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-/mnt/c/Users/Denis/Course_work/src/allocators/allocator_type.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
@@ -2999,10 +3006,6 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
-/mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.h:
-
-/mnt/c/Users/Denis/Course_work/src/allocators/boundary_tags_allocator.cpp:
-
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/include/c++/11/bits/stl_pair.h:
@@ -3015,25 +3018,17 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
-/mnt/c/Users/Denis/Course_work/src/type_data/student_definition.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/include/c++/11/cwchar:
+
+/mnt/c/Users/Denis/MAI/CP/src/commands/command_remove_data.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
 /usr/include/c++/11/bits/nested_exception.h:
 
-/mnt/c/Users/Denis/Course_work/src/memory/memory.cpp:
-
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/usr/include/c++/11/debug/assertions.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
-
-/mnt/c/Users/Denis/Course_work/src/logger/logger_builder.h:
 
 /usr/include/math.h:
 
@@ -3051,13 +3046,13 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
-/mnt/c/Users/Denis/Course_work/src/not_implemented/not_implemented.h:
-
 /usr/include/x86_64-linux-gnu/sys/sem.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
 /usr/include/c++/11/bits/exception_ptr.h:
+
+/mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.h:
 
 /usr/include/c++/11/ext/string_conversions.h:
 
@@ -3070,8 +3065,6 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/c++/11/typeinfo:
-
-/mnt/c/Users/Denis/Course_work/src/exception/doesnt_exist.h:
 
 /usr/include/c++/11/bits/move.h:
 
@@ -3095,8 +3088,6 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/x86_64-linux-gnu/bits/stat.h:
 
-/mnt/c/Users/Denis/Course_work/src/logger/logger_holder.h:
-
 /usr/include/c++/11/ext/numeric_traits.h:
 
 /usr/include/features.h:
@@ -3105,7 +3096,15 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/c++/11/bits/iterator_concepts.h:
 
+/usr/include/x86_64-linux-gnu/bits/msq.h:
+
+/usr/include/x86_64-linux-gnu/bits/shm.h:
+
+/mnt/c/Users/Denis/MAI/CP/src/type_data/student_definition.h:
+
 /usr/include/x86_64-linux-gnu/bits/sigstack.h:
+
+/mnt/c/Users/Denis/MAI/CP/src/tree/binary_search_tree.h:
 
 /usr/include/c++/11/clocale:
 
@@ -3136,10 +3135,6 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 /usr/include/c++/11/iosfwd:
 
 /usr/include/c++/11/initializer_list:
-
-/mnt/c/Users/Denis/Course_work/src/commands/command_remove_collection.h:
-
-/mnt/c/Users/Denis/Course_work/src/commands/command_add_pool.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
@@ -3179,13 +3174,11 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/errno.h:
 
-/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.h:
-
 /usr/include/x86_64-linux-gnu/bits/signum-arch.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
-/mnt/c/Users/Denis/Course_work/src/singleton/logger_singleton.h:
+/mnt/c/Users/Denis/MAI/CP/src/commands/command_add_collection.h:
 
 /usr/include/sched.h:
 
@@ -3199,15 +3192,17 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/asm-generic/errno.h:
 
-/mnt/c/Users/Denis/Course_work/src/singleton/database_singleton.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
-
-/mnt/c/Users/Denis/Course_work/src/commands/command_remove_pool.h:
 
 /usr/include/c++/11/bits/charconv.h:
 
 /usr/include/c++/11/bits/basic_string.tcc:
+
+/mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder.cpp:
+
+/usr/include/c++/11/bits/stl_stack.h:
+
+/mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.h:
 
 /usr/include/c++/11/bits/locale_classes.tcc:
 
@@ -3222,8 +3217,6 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 /usr/include/c++/11/stdexcept:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_semid64_ds.h:
-
-/mnt/c/Users/Denis/Course_work/src/request_handler/request_handler_with_command.h:
 
 /usr/include/c++/11/bits/uniform_int_dist.h:
 
@@ -3245,6 +3238,8 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/c++/11/bits/enable_special_members.h:
 
+/mnt/c/Users/Denis/MAI/CP/src/logger/logger_holder.h:
+
 /usr/include/c++/11/bits/codecvt.h:
 
 /usr/include/c++/11/bits/basic_ios.tcc:
@@ -3254,8 +3249,6 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 /usr/include/c++/11/bits/istream.tcc:
 
 /usr/include/c++/11/stdlib.h:
-
-/mnt/c/Users/Denis/Course_work/src/logger/logger_builder_concrete.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
@@ -3275,15 +3268,13 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
-/mnt/c/Users/Denis/Course_work/src/request_handler/abstract_handler.h:
-
-/mnt/c/Users/Denis/Course_work/src/allocators/list_memory.h:
-
 /usr/include/c++/11/bits/streambuf.tcc:
 
 /usr/include/string.h:
 
 /usr/include/x86_64-linux-gnu/sys/time.h:
+
+/mnt/c/Users/Denis/MAI/CP/src/commands/command_add_data.h:
 
 /usr/include/fcntl.h:
 
@@ -3313,11 +3304,17 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/x86_64-linux-gnu/bits/statx.h:
 
+/mnt/c/Users/Denis/MAI/CP/src/memory/memory_holder.cpp:
+
+/mnt/c/Users/Denis/MAI/CP/src/allocators/list_memory.cpp:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
 
 /usr/include/asm-generic/posix_types.h:
 
 /usr/include/c++/11/bits/fstream.tcc:
+
+/mnt/c/Users/Denis/MAI/CP/src/allocators/boundary_tags_allocator.cpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
 
@@ -3343,24 +3340,28 @@ CMakeFiles/server.dir/mnt/c/Users/Denis/Course_work/src/memory/memory_holder.cpp
 
 /usr/include/x86_64-linux-gnu/bits/statx-generic.h:
 
+/mnt/c/Users/Denis/MAI/CP/src/singleton/database_singleton.h:
+
+/mnt/c/Users/Denis/MAI/CP/src/logger/logger.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/mnt/c/Users/Denis/MAI/CP/src/logger/logger_builder_concrete.h:
+
+/usr/include/c++/11/tr1/beta_function.tcc:
+
+/usr/include/c++/11/array:
+
 /usr/include/c++/11/bits/stl_map.h:
 
 /usr/include/limits.h:
 
 /usr/include/c++/11/bits/stl_relops.h:
 
-/usr/include/c++/11/tr1/beta_function.tcc:
-
-/usr/include/c++/11/array:
-
 /usr/include/c++/11/bits/ptr_traits.h:
-
-/mnt/c/Users/Denis/Course_work/src/logger/logger.h:
 
 /usr/include/stdint.h:
 
 /usr/include/endian.h:
 
 /usr/include/c++/11/bits/erase_if.h:
-
-/mnt/c/Users/Denis/Course_work/src/comparer/comparers.h:

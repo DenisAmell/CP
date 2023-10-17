@@ -71,18 +71,6 @@ public:
 
 		_database_entrypoint = new red_black_tree<std::string, pool, stdstring_comparer>();
 
-		// _chain.add_handler(new command_add_pool());
-		// .add_handler(new command_remove_pool())
-		// .add_handler(new command_add_scheme())
-		// .add_handler(new command_remove_scheme())
-		// .add_handler(new command_add_collection())
-		// .add_handler(new command_remove_collection())
-		// .add_handler(new command_add_data())
-		// .add_handler(new command_remove_data())
-		// .add_handler(new command_get_data())
-		// .add_handler(new command_get_data_between())
-		// .add_handler(new command_update_data());
-
 		_instance = this;
 	}
 
@@ -97,15 +85,7 @@ public:
 	database_singleton& operator=(database_singleton&&) = delete;
 
 public:
-	// void handle_request(
-	//     std::string const &request)
-	// {
-	//     if (!_chain.handle(request))
-	//     {
-	//         std::cout << "[DATA BASE] command can't be executed" << std::endl
-	//                   << std::endl;
-	//     }
-	// }
+
 
 	void add_pool(
 		std::string const& pool_name,

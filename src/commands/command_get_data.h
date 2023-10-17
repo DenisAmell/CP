@@ -3,6 +3,7 @@
 #include <iostream>
 #include "command.h"
 #include "../singleton/database_singleton.h"
+#include "../flyweight/string_flyweight_factory.h"
 
 class command_get_data final : public command<std::string>
 {
@@ -38,7 +39,7 @@ public:
 
 				_data_key.format = reporting_format_convert(result_parsed_strings[6]);
 
-				_data_key.subject = std::move(result_parsed_strings[7].substr(0, result_parsed_strings[7].find("\r")));
+                _data_key.subject = string_flyweight_factory::get_instance().get_string_flyweight(result_parsed_strings[7].substr(0, result_parsed_strings[7].find("\r")))->get_value();
 
 				return true;
 			}

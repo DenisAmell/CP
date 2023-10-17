@@ -442,7 +442,7 @@ void file_mapping() {
 		std::cout << "Enter: ";
 		std::cin >> number_menu;
 
-		
+
 		if (number_menu == "1") {
 			//send(shmId, "Command", strlen("Command"), 0);
 			std::cout << "Command" << std::endl;
@@ -470,7 +470,7 @@ void file_mapping() {
 
 
 			}
-		} 
+		}
 		else if (number_menu == "2") {
 			std::cout << "gg" << std::endl;
 
@@ -610,5 +610,5 @@ int main(int argc, char* argv[]) {
 
 #endif
 
-	return 0;
+    return 0;
 }

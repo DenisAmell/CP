@@ -9,6 +9,7 @@
 #include "../singleton/database_singleton.h"
 #include "../type_data/student_definition.h"
 #include <string>
+#include "../flyweight/string_flyweight_factory.h"
 
 class command_remove_data final : public command<std::string>
 {
@@ -59,7 +60,7 @@ public:
 		data_key->id_session = _id_session;
 		data_key->id_student = _id_student;
 		data_key->format = _format;
-		data_key->subject = _subject;
+		data_key->subject = string_flyweight_factory::get_instance().get_string_flyweight(_subject)->get_value();
 
 		database_singleton::get_instance()->remove_data(_pool_name, _scheme_name, _collection_name, data_key);
 		logger_singleton::get_instance()->get_logger()->log("command_remove_data::execute(std::string const &request) called", logger::severity::trace);
