@@ -155,7 +155,9 @@
 				49,
 				50,
 				52,
-				53
+				53,
+				54,
+				55
 			]
 		},
 		{
@@ -457,6 +459,16 @@
 		{
 			"backtrace" : 1,
 			"path" : "src/flyweight/string_flyweight_factory.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/commands/command_restoration.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/commands/command_clean.h",
 			"sourceGroupIndex" : 0
 		}
 	],

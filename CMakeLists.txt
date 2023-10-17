@@ -65,5 +65,7 @@ add_executable(KURSACH
         src/request_handler_with_command_chain.h
         src/main.cpp
         src/flyweight/string_flyweight.h
-        src/flyweight/string_flyweight_factory.h)
+        src/flyweight/string_flyweight_factory.h
+        src/commands/command_restoration.h
+        src/commands/command_clean.h)
 target_link_libraries(KURSACH)
