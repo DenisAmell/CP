@@ -18,7 +18,7 @@ private:
 	char* _filename_save = nullptr;
 
 public:
-	command_remove_collection(char* filename) :
+	command_remove_collection(char* filename = nullptr) :
 		_filename_save(filename) {};
 	virtual ~command_remove_collection() = default;
 
@@ -58,8 +58,8 @@ void command_remove_collection::execute(std::string const&)
 	{
 		std::ofstream file_save(_filename_save, std::ios::app);
 		file_save.is_open();
-		file_save << "REMOVE_COLLECTION " + _pool_name
-			+ _scheme_name
+		file_save << "REMOVE_COLLECTION " + _pool_name + "  "
+			+ _scheme_name + " "
 			+ _collection_name << std::endl;
 	}
 

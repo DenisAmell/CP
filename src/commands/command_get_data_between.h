@@ -20,7 +20,7 @@ private:
 	char* _filename_save = nullptr;
 
 public:
-	command_get_data_between(char* filename) :
+	command_get_data_between(char* filename = nullptr) :
 		_filename_save(filename) {};
 	virtual ~command_get_data_between() = default;
 
@@ -53,6 +53,9 @@ bool command_get_data_between::can_execute(std::string const& request)
 
 		_right_data_key._id = is_unsigned_convert(result[5]);
 
+        if (_left_data_key._id > _right_data_key._id)
+            return false;
+
 		return true;
 	}
 	return false;
@@ -64,11 +67,11 @@ void command_get_data_between::execute(std::string const&)
 	{
 		std::ofstream file_save(_filename_save, std::ios::app);
 		file_save.is_open();
-		file_save << "GET_DATA_BETWEEN"
-			+ _pool_name
-			+ _scheme_name
-			+ _collection_name
-			+ std::to_string(_left_data_key._id)
+		file_save << "GET_DATA_BETWEEN "
+			+ _pool_name + " "
+			+ _scheme_name + " "
+			+ _collection_name + " "
+			+ std::to_string(_left_data_key._id) + " "
 			+ std::to_string(_right_data_key._id) << std::endl;
 	}
 

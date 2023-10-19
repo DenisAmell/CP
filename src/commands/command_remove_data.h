@@ -19,7 +19,7 @@ private:
 	char* _filename_save = nullptr;
 
 public:
-	command_remove_data(char* filename) :
+	command_remove_data(char* filename = nullptr) :
 		_filename_save(filename) {};
 	virtual ~command_remove_data() = default;
 
@@ -61,9 +61,9 @@ void command_remove_data::execute(std::string const&)
 		std::ofstream file_save(_filename_save, std::ios::app);
 		file_save.is_open();
 		file_save << "REMOVE_DATA "
-			+ _pool_name
-			+ _scheme_name
-			+ _collection_name
+			+ _pool_name + " "
+			+ _scheme_name + " "
+			+ _collection_name + " "
 			+ std::to_string(_data_key._id) << std::endl;
 	}
 

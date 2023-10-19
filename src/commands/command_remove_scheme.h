@@ -17,7 +17,7 @@ private:
 	char* _filename_save = nullptr;
 
 public:
-	command_remove_scheme(char* filename) :
+	command_remove_scheme(char* filename = nullptr) :
 		_filename_save(filename) {};
 	virtual ~command_remove_scheme() = default;
 
@@ -55,7 +55,7 @@ void command_remove_scheme::execute(std::string const&)
 	{
 		std::ofstream file_save(_filename_save, std::ios::app);
 		file_save.is_open();
-		file_save << "REMOVE_SCHEME " + _pool_name
+		file_save << "REMOVE_SCHEME " + _pool_name + " "
 			+ _scheme_name << std::endl;
 	}
 

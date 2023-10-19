@@ -24,7 +24,7 @@ private:
 
 
 public:
-	command_add_pool(char* filename) :
+	command_add_pool(char* filename = nullptr) :
 		_filename_save(filename) {};
 	virtual ~command_add_pool() = default;
 
@@ -69,10 +69,10 @@ void command_add_pool::execute(std::string const& request)
 	{
 		std::ofstream file_save(_filename_save, std::ios::app);
 		file_save.is_open();
-		file_save << "ADD_POOL " + _pool_name 
-			+ allocator_type_convert_to_string(_pool_allocator_type)
-			+ std::to_string(_allocator_size) 
-			+ convert_allocate_mode_to_string(_pool_allocate_mode) 
+		file_save << "ADD_POOL " + _pool_name + " "
+			+ allocator_type_convert_to_string(_pool_allocator_type) + " "
+			+ std::to_string(_allocator_size) + " "
+			+ convert_allocate_mode_to_string(_pool_allocate_mode) + " "
 			+ trees_type_convert_to_string(_tree_type) << std::endl;
 	}
 

@@ -19,7 +19,7 @@ private:
 	char* _filename_save = nullptr;
 
 public:
-	command_add_scheme(char* filename) :
+	command_add_scheme(char* filename = nullptr) :
 		_filename_save(filename) {};
 	virtual ~command_add_scheme() = default;
 
@@ -59,10 +59,9 @@ void command_add_scheme::execute(std::string const& request)
 	{
 		std::ofstream file_save(_filename_save, std::ios::app);
 		file_save.is_open();
-		file_save << "ADD_SCHEME " + _pool_name
-			+ _scheme_name
-			+ trees_type_convert_to_string(_tree_type)
-			<< std::endl;
+		file_save << "ADD_SCHEME " + _pool_name + " "
+			+ _scheme_name + " "
+			+ trees_type_convert_to_string(_tree_type) << std::endl;
 	}
 
 	logger_singleton::get_instance()

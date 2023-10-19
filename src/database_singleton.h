@@ -22,6 +22,7 @@
 #include "request_handler_with_command_chain.h"
 #include <string>
 #include <iostream>
+#include <fstream>
 
 class database_singleton
 {
@@ -29,6 +30,7 @@ public:
 	static database_singleton* get_instance();
 	void add_pool(std::string const& name_pool, allocator_type allocator_type, size_t allocator_size, memory::allocate_mode mode, trees_type _trees_type);
 	void add_scheme(std::string const& name_pool, std::string const& name_scheme, trees_type _trees_type);
+    void clean(std::string const& filename_for_clean);
 	void add_collection(std::string const& name_pool, std::string const& name_scheme, std::string const& name_collection, trees_type _trees_type);
 	void add_data(std::string const& name_pool, std::string const& name_scheme, std::string const& name_collection, key* data_key, value* data_value);
 	void get_data(std::string const& name_pool, std::string const& name_scheme, std::string const& name_collection, key* data_key);
@@ -125,6 +127,11 @@ void database_singleton::add_scheme(std::string const& name_pool, std::string co
 	{
 		std::cout << excep.what() << std::endl;
 	}
+}
+
+void database_singleton::clean(std::string const& filename_for_clean)
+{
+    std::ofstream clean_file(filename_for_clean, std::ios::trunc);
 }
 
 void database_singleton::add_collection(std::string const& name_pool, std::string const& name_scheme, std::string const& name_collection, trees_type _trees_type)

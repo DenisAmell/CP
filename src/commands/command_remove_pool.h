@@ -16,7 +16,7 @@ private:
 	char* _filename_save = nullptr;
 
 public:
-	command_remove_pool(char* filename) :
+	command_remove_pool(char* filename = nullptr) :
 		_filename_save(filename) {};
 	virtual ~command_remove_pool() = default;
 

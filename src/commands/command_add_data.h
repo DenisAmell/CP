@@ -75,20 +75,20 @@ void command_add_data::execute(std::string const& request)
 	{
 		std::ofstream file_save(_filename_save, std::ios::app);
 		file_save.is_open();
-		file_save << "ADD_DATA " + _pool_name
-			+ _scheme_name
-			+ _collection_name 
-			+ std::to_string(_data_key._id)
-			+ type_of_meeting_convert_to_string(_data_value._type_of_meeting)
-			+ format_convert_to_string(_data_value._format)
-			+ *(_data_value._meeting_description)
-			+ *(_data_value._link_to_meeting )
-			+ *(_data_value._first_name )
-			+ *(_data_value._last_name)
-			+ *(_data_value._middle_name)
-			+ *(_data_value._data )
-			+ *(_data_value._time)
-			+ std::to_string(_data_value._duration_of_meeting)
+		file_save << "ADD_DATA " + _pool_name  + " "
+			+ _scheme_name + " "
+			+ _collection_name  + " "
+			+ std::to_string(_data_key._id) + " "
+			+ type_of_meeting_convert_to_string(_data_value._type_of_meeting) + " "
+			+ format_convert_to_string(_data_value._format) + " "
+			+ *(_data_value._meeting_description) + " "
+			+ *(_data_value._link_to_meeting ) + " "
+			+ *(_data_value._first_name ) + " "
+			+ *(_data_value._last_name) + " "
+			+ *(_data_value._middle_name) + " "
+			+ *(_data_value._data ) + " "
+			+ *(_data_value._time) + " "
+			+ std::to_string(_data_value._duration_of_meeting) + " "
 			+ *(_data_value._list_invitees) << std::endl;
 			//TODO: add other areas of structures 'work_calendar' + pars_to_string for this areas
 	}
